@@ -20,7 +20,7 @@ Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveColliderEvent
 hinzufügen. 
 Wir erhalten diese Klassen auch mit Hilfe des Buttons *Add Component*
 in Inspector des Objekts.
-Die Klassen finden wir in der Kategorie *HTC/VIU$/ObjectGrabber*.
+Die Klassen finden wir in der Kategorie *HTC/VIU/ObjectGrabber*.
 Prinzipiell muss ein Objekt, das wir mit einer dieser Klassen bewegen möchten eine *RigidBody*-Komponente
 und einen Collider enthalten, da VIU die Berührung über Kollissions-Events realisiert.
 
