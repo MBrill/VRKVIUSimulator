@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using HTC.UnityPlugin.Vive;
 
@@ -18,7 +17,7 @@ public enum controllerChoice
 /// Wir verfolgen nur, falls an diesem Controller der Trigger oder ein andere,
 /// im Inspektor konfigurierbarer Button gedrückt ist.
 /// </remarks>
-public class FollowtheController : MonoBehaviour
+public class FollowTheController : MonoBehaviour
 {
     /// <summary>
     /// Welcher Controller wird verfolgt?
@@ -138,8 +137,5 @@ public class FollowtheController : MonoBehaviour
             theButton,
             ButtonEventType.Up,
             m_Stop);
-        
     }
-    
-  
 }
