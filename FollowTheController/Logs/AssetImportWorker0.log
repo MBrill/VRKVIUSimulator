@@ -1,10 +1,10 @@
 Using pre-set license
-Built from '2021.3/staging' branch; Version is '2021.3.11f1 (0a5ca18544bf) revision 679073'; Using compiler version '192829333'; Build Type 'Release'
+Built from '2021.3/staging' branch; Version is '2021.3.14f1 (eee1884e7226) revision 15655304'; Using compiler version '192829333'; Build Type 'Release'
 OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'de' Physical Memory: 32510 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2021.3.11f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2021.3.14f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
@@ -15,7 +15,7 @@ C:/Users/brill/Develop/Github/VirtualReality/VRKompakt/Unity/VR/VRKVIUSimulator/
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57461
+64121
 Successfully changed project path to: C:/Users/brill/Develop/Github/VirtualReality/VRKompakt/Unity/VR/VRKVIUSimulator/FollowTheController
 C:/Users/brill/Develop/Github/VirtualReality/VRKompakt/Unity/VR/VRKVIUSimulator/FollowTheController
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,10 +47,10 @@ C:/Users/brill/Develop/Github/VirtualReality/VRKompakt/Unity/VR/VRKVIUSimulator/
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 82.37 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 85.79 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2021.3.11f1 (0a5ca18544bf)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Resources/UnitySubsystems
+Initialize engine version: 2021.3.14f1 (eee1884e7226)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/brill/Develop/Github/VirtualReality/VRKompakt/Unity/VR/VRKVIUSimulator/FollowTheController/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
@@ -60,54 +60,54 @@ Direct3D:
     VRAM:     16191 MB
     Driver:   31.0.15.2698
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56216
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.14f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.14f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56128
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.003886 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.14f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.004749 seconds.
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 75.83 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 79.70 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.488 seconds
+- Completed reload, in  0.541 seconds
 Domain Reload Profiling:
-	ReloadAssembly (489ms)
-		BeginReloadAssembly (52ms)
+	ReloadAssembly (541ms)
+		BeginReloadAssembly (54ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (360ms)
-			LoadAssemblies (51ms)
+		EndReloadAssembly (394ms)
+			LoadAssemblies (53ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (78ms)
+			SetupTypeCache (88ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (21ms)
-			SetupLoadedEditorAssemblies (223ms)
+			RebuildScriptCaches (22ms)
+			SetupLoadedEditorAssemblies (242ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (42ms)
+				InitializePlatformSupportModulesInManaged (46ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (76ms)
+				RefreshPlugins (80ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (73ms)
-				ProcessInitializeOnLoadMethodAttributes (31ms)
+				ProcessInitializeOnLoadAttributes (79ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004580 seconds.
+Registered in 0.004593 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
@@ -115,124 +115,47 @@ Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
 Mono: successfully reloaded assembly
-- Completed reload, in  1.003 seconds
+- Completed reload, in  1.089 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1003ms)
-		BeginReloadAssembly (190ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (123ms)
-		EndReloadAssembly (729ms)
-			LoadAssemblies (71ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (207ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (48ms)
-			SetupLoadedEditorAssemblies (372ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (80ms)
-				ProcessInitializeOnLoadAttributes (183ms)
-				ProcessInitializeOnLoadMethodAttributes (92ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4361 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 66 unused Assets / (57.1 KB). Loaded Objects now: 4795.
-Memory consumption went from 147.7 MB to 147.6 MB.
-Total: 6.094600 ms (FindLiveObjects: 0.499000 ms CreateObjectMapping: 0.162300 ms MarkObjects: 5.350300 ms  DeleteObjects: 0.082000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 664470.231213 seconds.
-  path: Assets/Scripts/Animation
-  artifactKey: Guid(12d5c39e3022d3044914e215647eb429) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Animation using Guid(12d5c39e3022d3044914e215647eb429) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fa57013c64de30e92127232b37fd6e5') in 0.014749 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.297966 seconds.
-  path: Assets/Scripts/Animation/FollowTheTarget.cs
-  artifactKey: Guid(443507e5ce83f544e834d861b5abdc00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Animation/FollowTheTarget.cs using Guid(443507e5ce83f544e834d861b5abdc00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00a56dd03e4c47598777508efc08a851') in 0.013206 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.490496 seconds.
-  path: Assets/Scripts/Animation/FollowtheController.cs
-  artifactKey: Guid(d7ae0ba71e3ffaa4a87bfa07a00aa8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Animation/FollowtheController.cs using Guid(d7ae0ba71e3ffaa4a87bfa07a00aa8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81e84574f94432492d77843106389f42') in 0.005500 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004840 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.96 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.979 seconds
-Domain Reload Profiling:
-	ReloadAssembly (979ms)
-		BeginReloadAssembly (115ms)
+	ReloadAssembly (1089ms)
+		BeginReloadAssembly (188ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (785ms)
-			LoadAssemblies (68ms)
+			CreateAndSetChildDomain (119ms)
+		EndReloadAssembly (807ms)
+			LoadAssemblies (71ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (273ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (359ms)
+			SetupTypeCache (245ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (401ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
+				InitializePlatformSupportModulesInManaged (14ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (75ms)
-				ProcessInitializeOnLoadAttributes (163ms)
-				ProcessInitializeOnLoadMethodAttributes (96ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (202ms)
+				ProcessInitializeOnLoadMethodAttributes (98ms)
 				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.85 ms, found 3 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4352 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 55 unused Assets / (25.7 KB). Loaded Objects now: 4798.
-Memory consumption went from 147.3 MB to 147.3 MB.
-Total: 6.150100 ms (FindLiveObjects: 0.354500 ms CreateObjectMapping: 0.136700 ms MarkObjects: 5.585900 ms  DeleteObjects: 0.071700 ms)
+Unloading 4343 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 67 unused Assets / (57.1 KB). Loaded Objects now: 4776.
+Memory consumption went from 147.0 MB to 147.0 MB.
+Total: 5.910900 ms (FindLiveObjects: 0.351400 ms CreateObjectMapping: 0.148600 ms MarkObjects: 5.309300 ms  DeleteObjects: 0.099600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -246,20 +169,62 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 46.767276 seconds.
-  path: Assets/Scripts/Animation/FollowtheController.cs
-  artifactKey: Guid(d7ae0ba71e3ffaa4a87bfa07a00aa8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Animation/FollowtheController.cs using Guid(d7ae0ba71e3ffaa4a87bfa07a00aa8b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '248213b79bac903b018aa3ffb1152070') in 0.013185 seconds 
+  Time since last request: 81975.340548 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility
+  artifactKey: Guid(8b608c5a58e520544ac116bd8ec63105) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility using Guid(8b608c5a58e520544ac116bd8ec63105) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fcc41cc8cea87b3731da0a2fd72d01f') in 0.012069 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.758947 seconds.
-  path: Assets/Scripts/Interaction
-  artifactKey: Guid(4698c86695669cd4a8ec6518ea98f690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Interaction using Guid(4698c86695669cd4a8ec6518ea98f690) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e915bd65a55b26e6f4bce9875fd4a6f5') in 0.006043 seconds 
+  Time since last request: 1.120031 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Examples
+  artifactKey: Guid(b91da71c58f530247bcf2e4769d59a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Examples using Guid(b91da71c58f530247bcf2e4769d59a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a74662ac27ca43ab592d7ee72c6bc621') in 0.008217 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.425888 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Examples/9.TrackedHandUGUIInteraction
+  artifactKey: Guid(a1e0db3a9fd515243859ff9a0fab6198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Examples/9.TrackedHandUGUIInteraction using Guid(a1e0db3a9fd515243859ff9a0fab6198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50b13d0999b6065285082596c9c56bc0') in 0.005289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.053268 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Examples/8.NearFieldHandInteraction
+  artifactKey: Guid(4b370555dc8b98d4ea93f995f50ecdc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Examples/8.NearFieldHandInteraction using Guid(4b370555dc8b98d4ea93f995f50ecdc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dce00b8f808ebbaf78e9fc56cc13a09') in 0.005794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.796942 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Examples/7.RoleBindingExample
+  artifactKey: Guid(a73d2df6d39d1e64daf782e4e44904b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Examples/7.RoleBindingExample using Guid(a73d2df6d39d1e64daf782e4e44904b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27668de1079783be2a1c100c084340bd') in 0.005645 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.141008 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Examples/6.ControllerManagerSample
+  artifactKey: Guid(c7d01a623685e724d90caac03903d250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Examples/6.ControllerManagerSample using Guid(c7d01a623685e724d90caac03903d250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ea7f432c0bc275e7b2a53993c05dcca') in 0.006998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.955935 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Examples/10.ControllerTooltips
+  artifactKey: Guid(35f1520d3ce62ed46befd51f030f67c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Examples/10.ControllerTooltips using Guid(35f1520d3ce62ed46befd51f030f67c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de9cc36ae477cd23a3c7bb66c75ab76c') in 0.005802 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.048692 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Examples/10.ControllerTooltips/GridMataterial.mat
+  artifactKey: Guid(ef9706aad694cbe47b4bbba6ed12b241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Examples/10.ControllerTooltips/GridMataterial.mat using Guid(ef9706aad694cbe47b4bbba6ed12b241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36bcd4095f5dcd907b327ad9237a94b1') in 0.228842 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.261065 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Examples/10.ControllerTooltips/ControllerTooltips.unity
+  artifactKey: Guid(a292fc1b04cdcfd44bcc8bb61ba87cf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Examples/10.ControllerTooltips/ControllerTooltips.unity using Guid(a292fc1b04cdcfd44bcc8bb61ba87cf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b4e20d9a12dbd1e0750a066ef7aecbd') in 0.005536 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004119 seconds.
+Registered in 0.004715 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
@@ -267,43 +232,43 @@ Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.95 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 - Completed reload, in  0.983 seconds
 Domain Reload Profiling:
 	ReloadAssembly (984ms)
-		BeginReloadAssembly (114ms)
+		BeginReloadAssembly (117ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (796ms)
-			LoadAssemblies (69ms)
+		EndReloadAssembly (777ms)
+			LoadAssemblies (76ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (232ms)
+			SetupTypeCache (242ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (51ms)
-			SetupLoadedEditorAssemblies (387ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (384ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
+				InitializePlatformSupportModulesInManaged (22ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (63ms)
-				ProcessInitializeOnLoadAttributes (180ms)
-				ProcessInitializeOnLoadMethodAttributes (118ms)
+				BeforeProcessingInitializeOnLoad (61ms)
+				ProcessInitializeOnLoadAttributes (189ms)
+				ProcessInitializeOnLoadMethodAttributes (106ms)
 				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.15 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 4.21 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4352 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 55 unused Assets / (25.7 KB). Loaded Objects now: 4801.
-Memory consumption went from 147.3 MB to 147.3 MB.
-Total: 5.591700 ms (FindLiveObjects: 0.348800 ms CreateObjectMapping: 0.210400 ms MarkObjects: 4.986700 ms  DeleteObjects: 0.044200 ms)
+Unloading 4334 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 56 unused Assets / (25.7 KB). Loaded Objects now: 4820.
+Memory consumption went from 151.2 MB to 151.2 MB.
+Total: 5.843200 ms (FindLiveObjects: 0.378400 ms CreateObjectMapping: 0.377600 ms MarkObjects: 5.043100 ms  DeleteObjects: 0.043100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -316,9 +281,21 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  Time since last request: 46.094951 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Examples/10.ControllerTooltips/SelectColorUIController.cs
+  artifactKey: Guid(7db24d6277613b5489e64a5251e30234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Examples/10.ControllerTooltips/SelectColorUIController.cs using Guid(7db24d6277613b5489e64a5251e30234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0db8588b262dda06dfef49ecdc736e96') in 0.021884 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.687387 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Examples/10.ControllerTooltips/ModeManager.cs
+  artifactKey: Guid(c6bfcc2dbafdb6c4facfe1dccad64d7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Examples/10.ControllerTooltips/ModeManager.cs using Guid(c6bfcc2dbafdb6c4facfe1dccad64d7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b72b50cbd9bc4fa33d20c2255c1220d8') in 0.004898 seconds 
+========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005180 seconds.
+Registered in 0.004393 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
@@ -326,43 +303,43 @@ Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.98 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.34 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.994 seconds
+- Completed reload, in  1.013 seconds
 Domain Reload Profiling:
-	ReloadAssembly (994ms)
+	ReloadAssembly (1014ms)
 		BeginReloadAssembly (114ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (803ms)
-			LoadAssemblies (78ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (825ms)
+			LoadAssemblies (72ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (268ms)
+			SetupTypeCache (242ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (362ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (416ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (18ms)
+				InitializePlatformSupportModulesInManaged (23ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (67ms)
-				ProcessInitializeOnLoadAttributes (169ms)
-				ProcessInitializeOnLoadMethodAttributes (101ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (190ms)
+				ProcessInitializeOnLoadMethodAttributes (124ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.17 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 5.05 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4351 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 56 unused Assets / (25.7 KB). Loaded Objects now: 4803.
-Memory consumption went from 147.3 MB to 147.3 MB.
-Total: 5.465800 ms (FindLiveObjects: 0.279600 ms CreateObjectMapping: 0.116900 ms MarkObjects: 5.030600 ms  DeleteObjects: 0.037600 ms)
+Unloading 4334 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 56 unused Assets / (25.6 KB). Loaded Objects now: 4823.
+Memory consumption went from 151.2 MB to 151.2 MB.
+Total: 7.250000 ms (FindLiveObjects: 0.388100 ms CreateObjectMapping: 0.160400 ms MarkObjects: 6.651000 ms  DeleteObjects: 0.048400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -377,7 +354,7 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006284 seconds.
+Registered in 0.004339 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
@@ -388,158 +365,40 @@ Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 1.13 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.037 seconds
+- Completed reload, in  0.992 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1038ms)
-		BeginReloadAssembly (113ms)
+	ReloadAssembly (993ms)
+		BeginReloadAssembly (116ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (851ms)
+		EndReloadAssembly (802ms)
 			LoadAssemblies (71ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (267ms)
+			SetupTypeCache (241ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (428ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (403ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (23ms)
+				InitializePlatformSupportModulesInManaged (21ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (75ms)
-				ProcessInitializeOnLoadAttributes (214ms)
-				ProcessInitializeOnLoadMethodAttributes (108ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (193ms)
+				ProcessInitializeOnLoadMethodAttributes (115ms)
 				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.01 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 5.70 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4351 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 55 unused Assets / (25.7 KB). Loaded Objects now: 4806.
-Memory consumption went from 147.3 MB to 147.3 MB.
-Total: 5.722100 ms (FindLiveObjects: 0.418900 ms CreateObjectMapping: 0.215800 ms MarkObjects: 5.003300 ms  DeleteObjects: 0.082800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006274 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.005 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1005ms)
-		BeginReloadAssembly (120ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (801ms)
-			LoadAssemblies (76ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (265ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (51ms)
-			SetupLoadedEditorAssemblies (344ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (18ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (59ms)
-				ProcessInitializeOnLoadAttributes (167ms)
-				ProcessInitializeOnLoadMethodAttributes (95ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.80 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4349 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 57 unused Assets / (25.6 KB). Loaded Objects now: 4807.
-Memory consumption went from 147.2 MB to 147.2 MB.
-Total: 5.607600 ms (FindLiveObjects: 0.351100 ms CreateObjectMapping: 0.213400 ms MarkObjects: 4.988200 ms  DeleteObjects: 0.054100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004454 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.07 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.937 seconds
-Domain Reload Profiling:
-	ReloadAssembly (937ms)
-		BeginReloadAssembly (112ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (752ms)
-			LoadAssemblies (72ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (215ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (381ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (62ms)
-				ProcessInitializeOnLoadAttributes (182ms)
-				ProcessInitializeOnLoadMethodAttributes (112ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.55 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4349 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 55 unused Assets / (25.6 KB). Loaded Objects now: 4810.
-Memory consumption went from 147.2 MB to 147.2 MB.
-Total: 6.470600 ms (FindLiveObjects: 0.452600 ms CreateObjectMapping: 0.241800 ms MarkObjects: 5.737400 ms  DeleteObjects: 0.037400 ms)
+Unloading 4334 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 56 unused Assets / (25.7 KB). Loaded Objects now: 4826.
+Memory consumption went from 151.2 MB to 151.2 MB.
+Total: 8.463900 ms (FindLiveObjects: 0.433500 ms CreateObjectMapping: 0.249200 ms MarkObjects: 7.716600 ms  DeleteObjects: 0.061200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -553,26 +412,14 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 280.605067 seconds.
-  path: Assets/Scripts/Animation/FollowTheControllerWithLogs.cs
-  artifactKey: Guid(5f9f20ea035c4dc43871160c1133b3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Animation/FollowTheControllerWithLogs.cs using Guid(5f9f20ea035c4dc43871160c1133b3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff2e132e33b3dca3729564f8ecfa8889') in 0.013200 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 140.491965 seconds.
-  path: Assets/Scripts/Animation/FollowTheControllerWithLogs.cs
-  artifactKey: Guid(5f9f20ea035c4dc43871160c1133b3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Animation/FollowTheControllerWithLogs.cs using Guid(5f9f20ea035c4dc43871160c1133b3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae39c0b2a75a752c193f55a80d6fca28') in 0.001837 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 20.588911 seconds.
-  path: Assets/Scripts/Animation/FollowTheControllerWithLogs.cs
-  artifactKey: Guid(5f9f20ea035c4dc43871160c1133b3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Animation/FollowTheControllerWithLogs.cs using Guid(5f9f20ea035c4dc43871160c1133b3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4738743bb0f52efe641d3744415cf806') in 0.001787 seconds 
+  Time since last request: 961.767768 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Examples/7.RoleBindingExample/RoleBindingExample.unity
+  artifactKey: Guid(bc4e44a3b6c99684384abd378f45e9fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Examples/7.RoleBindingExample/RoleBindingExample.unity using Guid(bc4e44a3b6c99684384abd378f45e9fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55e132fe22f4161a6bc2bb545098c145') in 0.018632 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004465 seconds.
+Registered in 0.004714 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
@@ -586,37 +433,126 @@ Mono: successfully reloaded assembly
 - Completed reload, in  1.027 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1028ms)
-		BeginReloadAssembly (122ms)
+		BeginReloadAssembly (117ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (38ms)
-		EndReloadAssembly (812ms)
-			LoadAssemblies (67ms)
+		EndReloadAssembly (820ms)
+			LoadAssemblies (70ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (275ms)
+			SetupTypeCache (229ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (53ms)
-			SetupLoadedEditorAssemblies (355ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (414ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (20ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (64ms)
-				ProcessInitializeOnLoadAttributes (166ms)
-				ProcessInitializeOnLoadMethodAttributes (98ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (196ms)
+				ProcessInitializeOnLoadMethodAttributes (129ms)
 				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 5.48 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 8.08 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4350 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 55 unused Assets / (25.7 KB). Loaded Objects now: 4814.
-Memory consumption went from 147.3 MB to 147.3 MB.
-Total: 5.927000 ms (FindLiveObjects: 0.284400 ms CreateObjectMapping: 0.127100 ms MarkObjects: 5.471400 ms  DeleteObjects: 0.043100 ms)
+Unloading 4334 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 56 unused Assets / (25.8 KB). Loaded Objects now: 4829.
+Memory consumption went from 151.2 MB to 151.2 MB.
+Total: 7.200900 ms (FindLiveObjects: 0.394300 ms CreateObjectMapping: 0.190300 ms MarkObjects: 6.559700 ms  DeleteObjects: 0.054400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 30.716334 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Examples/6.ControllerManagerSample/ControllerManagerSample.unity
+  artifactKey: Guid(47f6e15cfe07a644095ae09e4fd298a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Examples/6.ControllerManagerSample/ControllerManagerSample.unity using Guid(47f6e15cfe07a644095ae09e4fd298a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a7980672aec54836268cacdb22bd0ed') in 0.013440 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.459158 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Examples/6.ControllerManagerSample/Scripts
+  artifactKey: Guid(f10badc680b8e6548b66439d8783a53f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Examples/6.ControllerManagerSample/Scripts using Guid(f10badc680b8e6548b66439d8783a53f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3f61e2427960f2f778d640bcb7333d7') in 0.005510 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.724059 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Examples/6.ControllerManagerSample/Scripts/ChangeMaterialToButtonsColor.cs
+  artifactKey: Guid(0ee012eca24e76e4dac8fce388ea951c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Examples/6.ControllerManagerSample/Scripts/ChangeMaterialToButtonsColor.cs using Guid(0ee012eca24e76e4dac8fce388ea951c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '908c3c0cb6c0e6214cc8302d89c69bad') in 0.005510 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.249581 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Examples/6.ControllerManagerSample/Scripts/ShowMenuOnClick.cs
+  artifactKey: Guid(82f13b6073133754e85a2098fffc779b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Examples/6.ControllerManagerSample/Scripts/ShowMenuOnClick.cs using Guid(82f13b6073133754e85a2098fffc779b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a84c177c490028132b4f18a53ee3495') in 0.005439 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.233702 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Examples/6.ControllerManagerSample/Scripts/SpawnObjectOnTriggerExit.cs
+  artifactKey: Guid(464cbdc121d1b72428c28867e893f7f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Examples/6.ControllerManagerSample/Scripts/SpawnObjectOnTriggerExit.cs using Guid(464cbdc121d1b72428c28867e893f7f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '419ca708d8ae36284afde57cb1c7d1cd') in 0.005776 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004780 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.036 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1037ms)
+		BeginReloadAssembly (116ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (843ms)
+			LoadAssemblies (71ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (237ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (434ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (23ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (204ms)
+				ProcessInitializeOnLoadMethodAttributes (127ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 5.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4334 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 56 unused Assets / (25.7 KB). Loaded Objects now: 4832.
+Memory consumption went from 151.3 MB to 151.2 MB.
+Total: 7.511100 ms (FindLiveObjects: 0.356000 ms CreateObjectMapping: 0.180700 ms MarkObjects: 6.908100 ms  DeleteObjects: 0.064800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -631,7 +567,395 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005674 seconds.
+Registered in 0.004514 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.08 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.013 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1014ms)
+		BeginReloadAssembly (114ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (824ms)
+			LoadAssemblies (71ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (246ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (419ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (22ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (203ms)
+				ProcessInitializeOnLoadMethodAttributes (120ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 5.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4334 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 56 unused Assets / (25.7 KB). Loaded Objects now: 4835.
+Memory consumption went from 151.3 MB to 151.2 MB.
+Total: 7.206800 ms (FindLiveObjects: 0.406000 ms CreateObjectMapping: 0.198300 ms MarkObjects: 6.546000 ms  DeleteObjects: 0.054800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004823 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.23 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.988 seconds
+Domain Reload Profiling:
+	ReloadAssembly (989ms)
+		BeginReloadAssembly (110ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (807ms)
+			LoadAssemblies (67ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (241ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (407ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (23ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (194ms)
+				ProcessInitializeOnLoadMethodAttributes (111ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 5.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4334 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 56 unused Assets / (25.7 KB). Loaded Objects now: 4838.
+Memory consumption went from 151.3 MB to 151.3 MB.
+Total: 7.429000 ms (FindLiveObjects: 0.368600 ms CreateObjectMapping: 0.155900 ms MarkObjects: 6.847100 ms  DeleteObjects: 0.047400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 929.045828 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts
+  artifactKey: Guid(9643ffea5b77cca419aa9c3f9625209f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts using Guid(9643ffea5b77cca419aa9c3f9625209f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22d6d1ae604dc85bc14124a7d21e2ea5') in 0.014004 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.362687 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveRole
+  artifactKey: Guid(d86bd10250945c04a8fba05aadf7d215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveRole using Guid(d86bd10250945c04a8fba05aadf7d215) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e84cfbed7f77e44d5f6bf0c72c840b8') in 0.005862 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.230185 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveRole/ViveRole.cs
+  artifactKey: Guid(c00a409f621cb2c429be3c7396f4fa99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveRole/ViveRole.cs using Guid(c00a409f621cb2c429be3c7396f4fa99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88209feebd0bd7570b877ec703849a60') in 0.001820 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.899831 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveRole/ViveRoleBindingsHelper.cs
+  artifactKey: Guid(4f21e9f542d73914180798bfa4c535d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveRole/ViveRoleBindingsHelper.cs using Guid(4f21e9f542d73914180798bfa4c535d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '203c8de04ea49d69712780a60779f458') in 0.005141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.132044 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveRole/ViveRoleEnum.cs
+  artifactKey: Guid(54700b8b41e967244be6803d06dadfb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveRole/ViveRoleEnum.cs using Guid(54700b8b41e967244be6803d06dadfb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6bda01159b49d9f039f0b955061b6f9') in 0.005158 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.125470 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveRole/ViveRoleMap.cs
+  artifactKey: Guid(2308116a0a01d9e469ab2693ceacbe9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveRole/ViveRoleMap.cs using Guid(2308116a0a01d9e469ab2693ceacbe9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50398b596f7afaca5e2b7e370dc77dfb') in 0.005332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.334928 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveRole/ViveRoleMapHandler.cs
+  artifactKey: Guid(6df2ab5a47129594a9020fe8084014e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveRole/ViveRoleMapHandler.cs using Guid(6df2ab5a47129594a9020fe8084014e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4890cf7c0c52c5a74b1922a7afe677d8') in 0.006200 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.771050 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveRole/ViveRoleProperty.cs
+  artifactKey: Guid(31b4476583620864ea3c7afa60609ba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveRole/ViveRoleProperty.cs using Guid(31b4476583620864ea3c7afa60609ba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9a54d0608153b5680a8ac23bc0351ff') in 0.005080 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.270997 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveRole/ViveRoleSetter.cs
+  artifactKey: Guid(387fb5d74b1a932479013876b27a0e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveRole/ViveRoleSetter.cs using Guid(387fb5d74b1a932479013876b27a0e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '096f52a7480932ba6347c436db7bf389') in 0.005535 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.404394 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveInput
+  artifactKey: Guid(1d794a621032c424db4ff33092b7c1e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveInput using Guid(1d794a621032c424db4ff33092b7c1e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09a19931583ac4a8a4f398bf931e0f87') in 0.005423 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.981742 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveColliderEvent
+  artifactKey: Guid(3a75531590c794c468c5eba956d1628d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveColliderEvent using Guid(3a75531590c794c468c5eba956d1628d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9de0de330b66c7a7b5301ff6541366b') in 0.005573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.150472 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveColliderEvent/ViveColliderEventData.cs
+  artifactKey: Guid(3d56742afa1365641b45ecd15d6153a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveColliderEvent/ViveColliderEventData.cs using Guid(3d56742afa1365641b45ecd15d6153a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c083c6f0c816952a58d7dca1091a690') in 0.004986 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.709745 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveColliderEvent/ViveColliderEventCaster.cs
+  artifactKey: Guid(1ef2272bf13df804f93135bad41885ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveColliderEvent/ViveColliderEventCaster.cs using Guid(1ef2272bf13df804f93135bad41885ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '444e47862a0330f523815ad652ae7313') in 0.005070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.444624 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveRaycaster
+  artifactKey: Guid(0db5db9d05f5481439aab3e229e0aa89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveRaycaster using Guid(0db5db9d05f5481439aab3e229e0aa89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5142cc9d6bcb8a030b64fcbb0da01c1e') in 0.006488 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.086193 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveRaycaster/ViveRaycaster.cs
+  artifactKey: Guid(174b153ed154e784a8bd7e3b391fe253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveRaycaster/ViveRaycaster.cs using Guid(174b153ed154e784a8bd7e3b391fe253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '811a6febf9e696350459e2cbd711fd33') in 0.002194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.880682 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveRaycaster/VivePointerEventData.cs
+  artifactKey: Guid(22483ebe86156a348b744a051dd69b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveRaycaster/VivePointerEventData.cs using Guid(22483ebe86156a348b744a051dd69b6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0df835b74151acdfc0ab534ef27a0d5') in 0.005683 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 60.844900 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ControllerTooltip
+  artifactKey: Guid(63ea91e44670d6b448d6605f5a67de4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ControllerTooltip using Guid(63ea91e44670d6b448d6605f5a67de4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '054e567c69353e3f9f954c7b2a090ed1') in 0.006573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.251511 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ControllerTooltip/DefaultTooltipPrefab.prefab
+  artifactKey: Guid(f64ed917a7e3d044d8d831b345edca5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ControllerTooltip/DefaultTooltipPrefab.prefab using Guid(f64ed917a7e3d044d8d831b345edca5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c084b4ff1f0cf93e4550b28ce14965e') in 0.064210 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.525295 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ControllerTooltip/DefaultTooltipRenderDataAsset.cs
+  artifactKey: Guid(50c3114128a71ad4a80e400cfa3188fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ControllerTooltip/DefaultTooltipRenderDataAsset.cs using Guid(50c3114128a71ad4a80e400cfa3188fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f28e8eb91162147db0b10e397b5a9d0') in 0.005393 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.389858 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ControllerTooltip/DefaultTooltipRenderer.cs
+  artifactKey: Guid(1ff5dcf5d85a78343b09d86b9818cd89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ControllerTooltip/DefaultTooltipRenderer.cs using Guid(1ff5dcf5d85a78343b09d86b9818cd89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5db530f71566045583b6a16823570ee') in 0.005117 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.174643 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ControllerTooltip/TooltipRenderDataAssetBase.cs
+  artifactKey: Guid(19a7a1b205bdb124c9eb8fddf899138d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ControllerTooltip/TooltipRenderDataAssetBase.cs using Guid(19a7a1b205bdb124c9eb8fddf899138d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9fcce973cb9ec292dd66f6401fce384') in 0.005424 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.140133 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ControllerTooltip/TooltipRendererBase.cs
+  artifactKey: Guid(98c7c18feac50034e9d194fa56d59086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ControllerTooltip/TooltipRendererBase.cs using Guid(98c7c18feac50034e9d194fa56d59086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5915f57adaf4ca1067ed7ca73d4f6c88') in 0.005661 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.517094 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ControllerTooltip/TooltipRigAsset.cs
+  artifactKey: Guid(2a1992a9d48a9b242a859e077b4275c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ControllerTooltip/TooltipRigAsset.cs using Guid(2a1992a9d48a9b242a859e077b4275c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49f3542d0b19c5220b47fab460d402b1') in 0.005472 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.197674 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ControllerTooltip/DefaultTooltipPrefab.cs
+  artifactKey: Guid(3d1b74c4162c0ed419d62c6071d736af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ControllerTooltip/DefaultTooltipPrefab.cs using Guid(3d1b74c4162c0ed419d62c6071d736af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7de18b56846d0e05b4a79eb98ecfb4e') in 0.001843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.897329 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc
+  artifactKey: Guid(6b459162ca1a7874db9b6c93b8ab181d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc using Guid(6b459162ca1a7874db9b6c93b8ab181d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff7456ae0f3910aae229284d41eaebb8') in 0.006467 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.204320 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/BasicGrabbable.cs
+  artifactKey: Guid(2c1e088ce10ab7d4c87f03fd1f2dfcae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/BasicGrabbable.cs using Guid(2c1e088ce10ab7d4c87f03fd1f2dfcae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f1f527c50c55c6fecdd7aed57402c13') in 0.005335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.350123 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/ControllerManagerSample.cs
+  artifactKey: Guid(afea3b80346a74d4bb1ccdcd457390bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/ControllerManagerSample.cs using Guid(afea3b80346a74d4bb1ccdcd457390bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cf03a8e2f95a52dfe72c120d55473e4') in 0.005348 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.254712 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/DeviceInputDebugger.cs
+  artifactKey: Guid(242d8d10c2601f848b82b850e1d677e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/DeviceInputDebugger.cs using Guid(242d8d10c2601f848b82b850e1d677e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '084e6d6f05a024e3a5ab81fb7423f310') in 0.004846 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.429279 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/ExternalCameraHook.cs
+  artifactKey: Guid(a8deef80f4da8a44f858a453c0f74ecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/ExternalCameraHook.cs using Guid(a8deef80f4da8a44f858a453c0f74ecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d185f6f52b0ab373ee6f7ee062aa439') in 0.004922 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 48.495335 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/OverlayKeyboardSample.cs
+  artifactKey: Guid(cecce3f724b63824a858c964a8a84e1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/OverlayKeyboardSample.cs using Guid(cecce3f724b63824a858c964a8a84e1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e670e7b815293e3bd051e29d5bf99a46') in 0.006780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.324218 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/MaterialChanger.cs
+  artifactKey: Guid(079afddb0d7f05e40bcb44383f149949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/MaterialChanger.cs using Guid(079afddb0d7f05e40bcb44383f149949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70f23b82e4a0e5d63c53dc5cf655ad2d') in 0.005065 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.807091 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/Teleportable.cs
+  artifactKey: Guid(4f753025abc16bb45bbc83939f863bfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/Teleportable.cs using Guid(4f753025abc16bb45bbc83939f863bfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '077a21bf29bfabe67522486fae7883bc') in 0.005734 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 447.908680 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveInput/ControllerState.cs
+  artifactKey: Guid(db1ddb2a6686e9b4ca73911ae17152f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveInput/ControllerState.cs using Guid(db1ddb2a6686e9b4ca73911ae17152f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e1608f859b33ab0929118255e1d4459') in 0.007359 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.599765 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveInput/ViveInput.cs
+  artifactKey: Guid(d411276c604086141ae1eff2b8bf37b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveInput/ViveInput.cs using Guid(d411276c604086141ae1eff2b8bf37b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b90135120ded406e61cce9c4874aee0') in 0.004862 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.374449 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveInput/ViveInputButtonMask.cs
+  artifactKey: Guid(96b8a4405402c8a4e90d5418f476d25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveInput/ViveInputButtonMask.cs using Guid(96b8a4405402c8a4e90d5418f476d25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35f6b4d18a11acb7d03539fbd47c96fa') in 0.006101 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.189011 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveInput/ViveInputStatic.cs
+  artifactKey: Guid(9d199422eb9dfb1498c1bd1b2b320bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveInput/ViveInputStatic.cs using Guid(9d199422eb9dfb1498c1bd1b2b320bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c95c82c1f89d62f1ef50193aa65e9ede') in 0.006001 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.724778 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveInput/ViveInputVirtualButton.cs
+  artifactKey: Guid(93ab9066e8186884da64ee239717c741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveInput/ViveInputVirtualButton.cs using Guid(93ab9066e8186884da64ee239717c741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0f1f237aa23981e42643bdd31f4b0f4') in 0.005770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.486055 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/WaveVRExtension
+  artifactKey: Guid(feafc516f3064404fb5ff64810937cbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/WaveVRExtension using Guid(feafc516f3064404fb5ff64810937cbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f71e3da14c12cc7f92bef4365a89fd9') in 0.006409 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.179296 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/OculusVRExtension
+  artifactKey: Guid(9d156d4c4fb957547bff681c048aa955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/OculusVRExtension using Guid(9d156d4c4fb957547bff681c048aa955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd91edb3f0e27580d7a40b363b99efc08') in 0.006180 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.852591 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/ExCamConfigInterface
+  artifactKey: Guid(b45b8a1e5db9a1945952eab6bbadccae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/ExCamConfigInterface using Guid(b45b8a1e5db9a1945952eab6bbadccae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfccbbbe4f9ae344b28fa68df42cf38f') in 0.006285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.805999 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/Editor
+  artifactKey: Guid(644ed8e93e5e5bb4fa11d520309dd547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/Editor using Guid(644ed8e93e5e5bb4fa11d520309dd547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1e35d627a7ec4db7935e989b3093157') in 0.005622 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.132810 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/VivePose
+  artifactKey: Guid(fd91e8baf49477e4d861a58c22857ad9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/VivePose using Guid(fd91e8baf49477e4d861a58c22857ad9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b14d2eb3ee722a0243c15121f02aa09') in 0.006049 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.949414 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/VIUSettingsPartials
+  artifactKey: Guid(e92033f6b8df86d429fc75ffc146d5ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/VIUSettingsPartials using Guid(e92033f6b8df86d429fc75ffc146d5ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06d62d2c5987ad9c2320fd28ad5f26e5') in 0.006001 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 220.434500 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc172811d573b296104adb4d2728db37') in 0.005370 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.355094 seconds.
+  path: Assets/Scenes/Basis.unity
+  artifactKey: Guid(ffbd1622a9d47df4cabe7047a786fa8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Basis.unity using Guid(ffbd1622a9d47df4cabe7047a786fa8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33503f63e6aa161de06d946d6b47826b') in 0.005641 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007295 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
@@ -642,548 +966,40 @@ Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 1.10 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.977 seconds
+- Completed reload, in  1.054 seconds
 Domain Reload Profiling:
-	ReloadAssembly (977ms)
-		BeginReloadAssembly (131ms)
+	ReloadAssembly (1055ms)
+		BeginReloadAssembly (116ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (762ms)
-			LoadAssemblies (90ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (856ms)
+			LoadAssemblies (84ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (257ms)
+			SetupTypeCache (265ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (354ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (409ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
+				InitializePlatformSupportModulesInManaged (25ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (64ms)
-				ProcessInitializeOnLoadAttributes (172ms)
-				ProcessInitializeOnLoadMethodAttributes (94ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.90 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4351 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 56 unused Assets / (25.7 KB). Loaded Objects now: 4817.
-Memory consumption went from 147.3 MB to 147.3 MB.
-Total: 5.202500 ms (FindLiveObjects: 0.264600 ms CreateObjectMapping: 0.118000 ms MarkObjects: 4.784200 ms  DeleteObjects: 0.034300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 233.161744 seconds.
-  path: Assets/Scripts/Animation/FollowTheControllerWithLogs.cs
-  artifactKey: Guid(5f9f20ea035c4dc43871160c1133b3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Animation/FollowTheControllerWithLogs.cs using Guid(5f9f20ea035c4dc43871160c1133b3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26171ef30cb175add321d690b4591f1e') in 0.009091 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.015017 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.13 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.189 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1189ms)
-		BeginReloadAssembly (146ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (52ms)
-		EndReloadAssembly (958ms)
-			LoadAssemblies (94ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (305ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (60ms)
-			SetupLoadedEditorAssemblies (435ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (31ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (75ms)
-				ProcessInitializeOnLoadAttributes (216ms)
-				ProcessInitializeOnLoadMethodAttributes (106ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 6.33 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4351 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 56 unused Assets / (25.7 KB). Loaded Objects now: 4820.
-Memory consumption went from 147.3 MB to 147.3 MB.
-Total: 5.392000 ms (FindLiveObjects: 0.314000 ms CreateObjectMapping: 0.126400 ms MarkObjects: 4.908600 ms  DeleteObjects: 0.041900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007361 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.02 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.285 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1286ms)
-		BeginReloadAssembly (129ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (40ms)
-		EndReloadAssembly (1064ms)
-			LoadAssemblies (93ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (261ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (72ms)
-			SetupLoadedEditorAssemblies (565ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (24ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (92ms)
-				ProcessInitializeOnLoadAttributes (289ms)
-				ProcessInitializeOnLoadMethodAttributes (151ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 5.58 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4351 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 56 unused Assets / (25.8 KB). Loaded Objects now: 4823.
-Memory consumption went from 147.3 MB to 147.3 MB.
-Total: 6.287400 ms (FindLiveObjects: 0.525400 ms CreateObjectMapping: 0.163300 ms MarkObjects: 5.518800 ms  DeleteObjects: 0.078000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 42.949998 seconds.
-  path: Packages/com.unity.services.analytics/package.json
-  artifactKey: Guid(1214e5b938827470b85d454683e058ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.services.analytics/package.json using Guid(1214e5b938827470b85d454683e058ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42ee7b9195f495a4e11e5cb394bc70eb') in 0.032536 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 189.657413 seconds.
-  path: Assets/Scripts/Animation/FollowTheControllerWithLogs.cs
-  artifactKey: Guid(5f9f20ea035c4dc43871160c1133b3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Animation/FollowTheControllerWithLogs.cs using Guid(5f9f20ea035c4dc43871160c1133b3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71efd64d158b0f1fad6d8b64f7adcd03') in 0.001592 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 39.256795 seconds.
-  path: Assets/Scripts/Animation/FollowTheControllerWithLogs.cs
-  artifactKey: Guid(5f9f20ea035c4dc43871160c1133b3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Animation/FollowTheControllerWithLogs.cs using Guid(5f9f20ea035c4dc43871160c1133b3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23bc0d19d93254b777e6b3ff2489e6e5') in 0.001699 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.993586 seconds.
-  path: Assets/Scripts/Animation/FollowTheControllerWithLogs.cs
-  artifactKey: Guid(5f9f20ea035c4dc43871160c1133b3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Animation/FollowTheControllerWithLogs.cs using Guid(5f9f20ea035c4dc43871160c1133b3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d50c687ea48cc0b46bea32100e1789') in 0.001770 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 122.036341 seconds.
-  path: Assets/Scripts/Animation/FollowTheControllerWithLogs.cs
-  artifactKey: Guid(5f9f20ea035c4dc43871160c1133b3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Animation/FollowTheControllerWithLogs.cs using Guid(5f9f20ea035c4dc43871160c1133b3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a624aa0ed90ae7613e84ce7049c5808') in 0.001864 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004702 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.978 seconds
-Domain Reload Profiling:
-	ReloadAssembly (978ms)
-		BeginReloadAssembly (117ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (40ms)
-		EndReloadAssembly (784ms)
-			LoadAssemblies (68ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (247ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (377ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (20ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (64ms)
-				ProcessInitializeOnLoadAttributes (181ms)
-				ProcessInitializeOnLoadMethodAttributes (106ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.02 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4351 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 56 unused Assets / (25.7 KB). Loaded Objects now: 4827.
-Memory consumption went from 147.4 MB to 147.3 MB.
-Total: 5.428200 ms (FindLiveObjects: 0.275200 ms CreateObjectMapping: 0.122600 ms MarkObjects: 4.966700 ms  DeleteObjects: 0.062600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006367 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.99 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.897 seconds
-Domain Reload Profiling:
-	ReloadAssembly (897ms)
-		BeginReloadAssembly (107ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (711ms)
-			LoadAssemblies (66ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (199ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (372ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (18ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (64ms)
-				ProcessInitializeOnLoadAttributes (176ms)
-				ProcessInitializeOnLoadMethodAttributes (108ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.34 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4351 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 56 unused Assets / (25.7 KB). Loaded Objects now: 4830.
-Memory consumption went from 147.4 MB to 147.3 MB.
-Total: 5.583600 ms (FindLiveObjects: 0.324400 ms CreateObjectMapping: 0.151100 ms MarkObjects: 5.051200 ms  DeleteObjects: 0.055600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005780 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.929 seconds
-Domain Reload Profiling:
-	ReloadAssembly (930ms)
-		BeginReloadAssembly (111ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (742ms)
-			LoadAssemblies (70ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (205ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (390ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (64ms)
-				ProcessInitializeOnLoadAttributes (182ms)
-				ProcessInitializeOnLoadMethodAttributes (121ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.96 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4351 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 56 unused Assets / (25.8 KB). Loaded Objects now: 4833.
-Memory consumption went from 147.4 MB to 147.4 MB.
-Total: 6.832900 ms (FindLiveObjects: 0.405800 ms CreateObjectMapping: 0.266300 ms MarkObjects: 6.094400 ms  DeleteObjects: 0.064200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006070 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.95 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.933 seconds
-Domain Reload Profiling:
-	ReloadAssembly (934ms)
-		BeginReloadAssembly (108ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (752ms)
-			LoadAssemblies (67ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (202ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (399ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (18ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (65ms)
-				ProcessInitializeOnLoadAttributes (185ms)
-				ProcessInitializeOnLoadMethodAttributes (124ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.80 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4351 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 56 unused Assets / (25.8 KB). Loaded Objects now: 4836.
-Memory consumption went from 147.4 MB to 147.4 MB.
-Total: 5.532700 ms (FindLiveObjects: 0.317300 ms CreateObjectMapping: 0.134700 ms MarkObjects: 5.036700 ms  DeleteObjects: 0.042600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005299 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.03 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.932 seconds
-Domain Reload Profiling:
-	ReloadAssembly (933ms)
-		BeginReloadAssembly (110ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (749ms)
-			LoadAssemblies (72ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (231ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (358ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (61ms)
-				ProcessInitializeOnLoadAttributes (169ms)
-				ProcessInitializeOnLoadMethodAttributes (103ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.09 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4351 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 56 unused Assets / (25.8 KB). Loaded Objects now: 4839.
-Memory consumption went from 147.4 MB to 147.4 MB.
-Total: 5.654200 ms (FindLiveObjects: 0.297100 ms CreateObjectMapping: 0.127300 ms MarkObjects: 5.188200 ms  DeleteObjects: 0.040700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004424 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.30 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.933 seconds
-Domain Reload Profiling:
-	ReloadAssembly (934ms)
-		BeginReloadAssembly (110ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (750ms)
-			LoadAssemblies (71ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (214ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (382ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (21ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (62ms)
-				ProcessInitializeOnLoadAttributes (177ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (197ms)
 				ProcessInitializeOnLoadMethodAttributes (113ms)
 				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 5.38 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 5.32 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4351 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 56 unused Assets / (25.8 KB). Loaded Objects now: 4842.
-Memory consumption went from 147.4 MB to 147.4 MB.
-Total: 6.699900 ms (FindLiveObjects: 0.430000 ms CreateObjectMapping: 0.257100 ms MarkObjects: 5.958700 ms  DeleteObjects: 0.051900 ms)
+Unloading 4334 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 56 unused Assets / (25.7 KB). Loaded Objects now: 4848.
+Memory consumption went from 151.4 MB to 151.4 MB.
+Total: 6.773200 ms (FindLiveObjects: 0.394600 ms CreateObjectMapping: 0.155300 ms MarkObjects: 6.168600 ms  DeleteObjects: 0.052700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -1198,7 +1014,7 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005677 seconds.
+Registered in 0.005792 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
@@ -1206,397 +1022,43 @@ Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.94 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.35 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.887 seconds
+- Completed reload, in  1.098 seconds
 Domain Reload Profiling:
-	ReloadAssembly (888ms)
-		BeginReloadAssembly (106ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (32ms)
-		EndReloadAssembly (706ms)
-			LoadAssemblies (66ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (211ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (355ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (60ms)
-				ProcessInitializeOnLoadAttributes (168ms)
-				ProcessInitializeOnLoadMethodAttributes (103ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 5.25 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4351 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 56 unused Assets / (25.7 KB). Loaded Objects now: 4845.
-Memory consumption went from 147.4 MB to 147.4 MB.
-Total: 6.166900 ms (FindLiveObjects: 0.377600 ms CreateObjectMapping: 0.161100 ms MarkObjects: 5.580700 ms  DeleteObjects: 0.045200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004734 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.09 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.973 seconds
-Domain Reload Profiling:
-	ReloadAssembly (973ms)
-		BeginReloadAssembly (111ms)
+	ReloadAssembly (1098ms)
+		BeginReloadAssembly (114ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (784ms)
-			LoadAssemblies (71ms)
+		EndReloadAssembly (909ms)
+			LoadAssemblies (73ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (250ms)
+			SetupTypeCache (253ms)
 			ReleaseScriptCaches (2ms)
 			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (370ms)
+			SetupLoadedEditorAssemblies (475ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (21ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (62ms)
-				ProcessInitializeOnLoadAttributes (181ms)
-				ProcessInitializeOnLoadMethodAttributes (99ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.68 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4356 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 56 unused Assets / (25.7 KB). Loaded Objects now: 4853.
-Memory consumption went from 147.5 MB to 147.5 MB.
-Total: 6.475800 ms (FindLiveObjects: 0.352300 ms CreateObjectMapping: 0.164700 ms MarkObjects: 5.909100 ms  DeleteObjects: 0.048000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004474 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.96 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.955 seconds
-Domain Reload Profiling:
-	ReloadAssembly (956ms)
-		BeginReloadAssembly (108ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (772ms)
-			LoadAssemblies (68ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (209ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (412ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (20ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (73ms)
-				ProcessInitializeOnLoadAttributes (192ms)
-				ProcessInitializeOnLoadMethodAttributes (121ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.14 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4356 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 56 unused Assets / (25.7 KB). Loaded Objects now: 4856.
-Memory consumption went from 147.6 MB to 147.5 MB.
-Total: 5.739300 ms (FindLiveObjects: 0.409600 ms CreateObjectMapping: 0.136800 ms MarkObjects: 5.150900 ms  DeleteObjects: 0.040600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005898 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.01 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.028 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1028ms)
-		BeginReloadAssembly (106ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (836ms)
-			LoadAssemblies (65ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (203ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (490ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (18ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (71ms)
-				ProcessInitializeOnLoadAttributes (251ms)
-				ProcessInitializeOnLoadMethodAttributes (143ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.34 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4356 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 56 unused Assets / (25.8 KB). Loaded Objects now: 4859.
-Memory consumption went from 147.6 MB to 147.5 MB.
-Total: 6.377700 ms (FindLiveObjects: 0.362500 ms CreateObjectMapping: 0.148400 ms MarkObjects: 5.818700 ms  DeleteObjects: 0.046300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005089 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.973 seconds
-Domain Reload Profiling:
-	ReloadAssembly (974ms)
-		BeginReloadAssembly (113ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (784ms)
-			LoadAssemblies (69ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (234ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (392ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (20ms)
+				InitializePlatformSupportModulesInManaged (24ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
 				BeforeProcessingInitializeOnLoad (78ms)
-				ProcessInitializeOnLoadAttributes (184ms)
-				ProcessInitializeOnLoadMethodAttributes (104ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				ProcessInitializeOnLoadAttributes (222ms)
+				ProcessInitializeOnLoadMethodAttributes (144ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.05 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 6.26 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4356 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 56 unused Assets / (25.7 KB). Loaded Objects now: 4862.
-Memory consumption went from 147.6 MB to 147.6 MB.
-Total: 5.481400 ms (FindLiveObjects: 0.276300 ms CreateObjectMapping: 0.126800 ms MarkObjects: 5.027200 ms  DeleteObjects: 0.049000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004811 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.95 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.889 seconds
-Domain Reload Profiling:
-	ReloadAssembly (889ms)
-		BeginReloadAssembly (120ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (692ms)
-			LoadAssemblies (68ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (214ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (333ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (59ms)
-				ProcessInitializeOnLoadAttributes (155ms)
-				ProcessInitializeOnLoadMethodAttributes (94ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 5.02 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4356 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 56 unused Assets / (25.8 KB). Loaded Objects now: 4865.
-Memory consumption went from 147.6 MB to 147.6 MB.
-Total: 6.817200 ms (FindLiveObjects: 0.338500 ms CreateObjectMapping: 0.141500 ms MarkObjects: 6.221500 ms  DeleteObjects: 0.114600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005536 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\FollowTheController\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.46 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.942 seconds
-Domain Reload Profiling:
-	ReloadAssembly (942ms)
-		BeginReloadAssembly (110ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (756ms)
-			LoadAssemblies (70ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (224ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (384ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (21ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (72ms)
-				ProcessInitializeOnLoadAttributes (171ms)
-				ProcessInitializeOnLoadMethodAttributes (113ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 5.62 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4356 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 56 unused Assets / (25.7 KB). Loaded Objects now: 4868.
-Memory consumption went from 147.6 MB to 147.6 MB.
-Total: 6.521500 ms (FindLiveObjects: 0.345700 ms CreateObjectMapping: 0.176100 ms MarkObjects: 5.937100 ms  DeleteObjects: 0.061000 ms)
+Unloading 4334 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 56 unused Assets / (25.8 KB). Loaded Objects now: 4851.
+Memory consumption went from 151.4 MB to 151.4 MB.
+Total: 7.817100 ms (FindLiveObjects: 0.396800 ms CreateObjectMapping: 0.176200 ms MarkObjects: 7.186300 ms  DeleteObjects: 0.055600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
