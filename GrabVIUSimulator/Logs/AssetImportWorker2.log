@@ -1,0 +1,499 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.16f1 (4016570cf34f) revision 4200023'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'de' Physical Memory: 32510 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.16f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/brill/Develop/Github/VirtualReality/VRKompakt/Unity/VR/VRKVIUSimulator/GrabVIUSimulator
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+60644
+Successfully changed project path to: C:/Users/brill/Develop/Github/VirtualReality/VRKompakt/Unity/VR/VRKVIUSimulator/GrabVIUSimulator
+C:/Users/brill/Develop/Github/VirtualReality/VRKompakt/Unity/VR/VRKVIUSimulator/GrabVIUSimulator
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [13840] Host "[IP] 172.29.240.1 [Port] 0 [Flags] 2 [Guid] 292135071 [EditorId] 292135071 [Version] 1048832 [Id] WindowsEditor(7,evans) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [13840] Host "[IP] 172.29.240.1 [Port] 0 [Flags] 2 [Guid] 292135071 [EditorId] 292135071 [Version] 1048832 [Id] WindowsEditor(7,evans) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 93.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.16f1 (4016570cf34f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/brill/Develop/Github/VirtualReality/VRKompakt/Unity/VR/VRKVIUSimulator/GrabVIUSimulator/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3080 Laptop GPU (ID=0x249c)
+    Vendor:   NVIDIA
+    VRAM:     16191 MB
+    Driver:   31.0.15.2698
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56200
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.006761 seconds.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 74.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.563 seconds
+Domain Reload Profiling:
+	ReloadAssembly (563ms)
+		BeginReloadAssembly (55ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (412ms)
+			LoadAssemblies (54ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (102ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (247ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (58ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (75ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (78ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003766 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\GrabVIUSimulator\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\GrabVIUSimulator\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.029 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1030ms)
+		BeginReloadAssembly (192ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (121ms)
+		EndReloadAssembly (748ms)
+			LoadAssemblies (61ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (201ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (413ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (20ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (60ms)
+				ProcessInitializeOnLoadAttributes (309ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3470 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (56.1 KB). Loaded Objects now: 3935.
+Memory consumption went from 120.7 MB to 120.7 MB.
+Total: 3.641400 ms (FindLiveObjects: 0.293600 ms CreateObjectMapping: 0.110800 ms MarkObjects: 3.156900 ms  DeleteObjects: 0.079000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 371334.101393 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Prefabs/ViveRig.prefab
+  artifactKey: Guid(cbfd31aaac017204885fcc03f0579a1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Prefabs/ViveRig.prefab using Guid(cbfd31aaac017204885fcc03f0579a1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '786a03751952ecc3e418aa81d271db85') in 0.072256 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002934 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\GrabVIUSimulator\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\GrabVIUSimulator\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.078 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1079ms)
+		BeginReloadAssembly (106ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (896ms)
+			LoadAssemblies (64ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (223ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (501ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (37ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (371ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (2ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3462 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (24.7 KB). Loaded Objects now: 3941.
+Memory consumption went from 120.4 MB to 120.4 MB.
+Total: 2.933100 ms (FindLiveObjects: 0.258400 ms CreateObjectMapping: 0.116300 ms MarkObjects: 2.528000 ms  DeleteObjects: 0.029200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002938 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\GrabVIUSimulator\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\brill\Develop\Github\VirtualReality\VRKompakt\Unity\VR\VRKVIUSimulator\GrabVIUSimulator\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.870 seconds
+Domain Reload Profiling:
+	ReloadAssembly (871ms)
+		BeginReloadAssembly (94ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (703ms)
+			LoadAssemblies (56ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (181ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (394ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (28ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (45ms)
+				ProcessInitializeOnLoadAttributes (296ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (2ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.39 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3462 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (24.7 KB). Loaded Objects now: 3944.
+Memory consumption went from 120.4 MB to 120.4 MB.
+Total: 3.150400 ms (FindLiveObjects: 0.297600 ms CreateObjectMapping: 0.131000 ms MarkObjects: 2.685600 ms  DeleteObjects: 0.035100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 244.234886 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources
+  artifactKey: Guid(f1d532c1e91ce734ab54807c1a4c1f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources using Guid(f1d532c1e91ce734ab54807c1a4c1f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b5d8d03d96aa55098f4015408e1e717') in 0.015329 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.049006 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/VIUBindingInterface.prefab
+  artifactKey: Guid(26a034c83db7bcb4f99de4ddf57cbcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/VIUBindingInterface.prefab using Guid(26a034c83db7bcb4f99de4ddf57cbcfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a3aeb5bb84812cb559617ff750622d5') in 0.038647 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.607649 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models
+  artifactKey: Guid(81d67f08bf2b07a43a98b9d064d22c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models using Guid(81d67f08bf2b07a43a98b9d064d22c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '248e557233022128e51bb79edb0d0eb2') in 0.005656 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.086550 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/ObjModelDaydreamController.fbx
+  artifactKey: Guid(279eae6e1e119ec4f97c601f4658ea98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/ObjModelDaydreamController.fbx using Guid(279eae6e1e119ec4f97c601f4658ea98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1e806b8f4a244f807ad63741925665b') in 0.299148 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelOculusTrackedHandRight.prefab
+  artifactKey: Guid(635ba5f0b840cc54ba6ac023a6c9b3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelOculusTrackedHandRight.prefab using Guid(635ba5f0b840cc54ba6ac023a6c9b3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '797e3d080d4f2439a1080ab97c29932b') in 0.035470 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelWaveLegacyTrackedHandRight.prefab
+  artifactKey: Guid(4d5a2d8c358f9ac4db78338a3e18c7a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelWaveLegacyTrackedHandRight.prefab using Guid(4d5a2d8c358f9ac4db78338a3e18c7a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5da7ca6fad32151fa8af274d4db8e145') in 0.013921 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelOculusQuestOrRiftSControllerRight.prefab
+  artifactKey: Guid(168fcee857b239245b839d6b4c3d2d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelOculusQuestOrRiftSControllerRight.prefab using Guid(168fcee857b239245b839d6b4c3d2d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb6135740ef01b2f926a62553b08998e') in 0.014414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelViveHandTrackingTrackedHandRight.prefab
+  artifactKey: Guid(b9a887fb50be38e4e84f6bfbbc26d57d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelViveHandTrackingTrackedHandRight.prefab using Guid(b9a887fb50be38e4e84f6bfbbc26d57d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '724ee628e27fe54883f8bbdd7109a0f7') in 0.023108 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/ObjModelHandLeft_26.fbx
+  artifactKey: Guid(5cb4fe9f98186d941b37d3ea64e2bd71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/ObjModelHandLeft_26.fbx using Guid(5cb4fe9f98186d941b37d3ea64e2bd71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d16247014efa4c450c972015e1f8895') in 0.017795 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/ObjModelViveFocusFinch.fbx
+  artifactKey: Guid(aa58a01d293edc24987fbbf6ec9578ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/ObjModelViveFocusFinch.fbx using Guid(aa58a01d293edc24987fbbf6ec9578ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19535ebf41584047c0b56dde15637149') in 0.040466 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelOculusGoController.prefab
+  artifactKey: Guid(eb81d87d3b9a20e42976d9e6fdff48a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelOculusGoController.prefab using Guid(eb81d87d3b9a20e42976d9e6fdff48a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2848f69c8e6dfcfdbb3fed11fdece4b') in 0.010070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelIndexControllerRight.prefab
+  artifactKey: Guid(eef64bbf7f95c974b8a2effcbc0a3f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelIndexControllerRight.prefab using Guid(eef64bbf7f95c974b8a2effcbc0a3f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '420995687de51d7bbb311f8131f7f76f') in 0.006136 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/ObjModelOculusSensor.fbx
+  artifactKey: Guid(c8886ded5921aea4cb5f6efddcd6b9f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/ObjModelOculusSensor.fbx using Guid(c8886ded5921aea4cb5f6efddcd6b9f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '977523f56a5ba4f77a520becc417e018') in 0.012689 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelWaveLegacyTrackedHandLeft.prefab
+  artifactKey: Guid(9056320bb10a21a4782b8dbfe5870461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelWaveLegacyTrackedHandLeft.prefab using Guid(9056320bb10a21a4782b8dbfe5870461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7267f5bb7c8ebd495e8e48e60736f6ed') in 0.010654 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelViveController.prefab
+  artifactKey: Guid(cd41dc1459ac9a945ab13148fcaf6574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelViveController.prefab using Guid(cd41dc1459ac9a945ab13148fcaf6574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '357680563786945d57358df28bd3e177') in 0.010250 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelOculusGearVrController.prefab
+  artifactKey: Guid(d35a216c66c350a4b9271430d390df1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelOculusGearVrController.prefab using Guid(d35a216c66c350a4b9271430d390df1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d51acb6b88615f255d7588c05f5efb3') in 0.010764 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelOculusSensor.prefab
+  artifactKey: Guid(2c2099480c1b09b49b123ba87f48456c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelOculusSensor.prefab using Guid(2c2099480c1b09b49b123ba87f48456c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ef296f8a30f3dad0a7ae134a6ce0745') in 0.011459 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/ObjModelViveFlowPhoneController.fbx
+  artifactKey: Guid(7cdcd63a240f5ac4db2bbc977525a3be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/ObjModelViveFlowPhoneController.fbx using Guid(7cdcd63a240f5ac4db2bbc977525a3be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '161ee21ee838383b794ae7d4bc7240a5') in 0.054419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelWMRControllerLeft.prefab
+  artifactKey: Guid(660ddf181ae0cf34e83efbe29b90acc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelWMRControllerLeft.prefab using Guid(660ddf181ae0cf34e83efbe29b90acc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12d0860b785a95bbd3dd92a0aa4fcf97') in 0.104820 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelOculusQuestOrRiftSControllerLeft.prefab
+  artifactKey: Guid(1587ed6f309906347a153766688233e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelOculusQuestOrRiftSControllerLeft.prefab using Guid(1587ed6f309906347a153766688233e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56139bfc93f483d64cbb90732052bc7e') in 0.010193 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelKnucklesRight.prefab
+  artifactKey: Guid(c2bb7668e99e3b44cb17473208d3a790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelKnucklesRight.prefab using Guid(c2bb7668e99e3b44cb17473208d3a790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '147aa9df2fe4501ecaacdcbf45d8e93c') in 0.010278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelSteamVRSkeletonLeft.prefab
+  artifactKey: Guid(d43326885e62c5d43a7753e075cadf56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelSteamVRSkeletonLeft.prefab using Guid(d43326885e62c5d43a7753e075cadf56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '380c71e25f72f8db1991aca861917684') in 0.011143 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelViveCosmosControllerRight.prefab
+  artifactKey: Guid(1e0753deab720f945b4f2dc9ae9eac64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelViveCosmosControllerRight.prefab using Guid(1e0753deab720f945b4f2dc9ae9eac64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf71ee7d00762ac563b3dc72293f2d59') in 0.007010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelViveFocusFinch.prefab
+  artifactKey: Guid(1c997af07165b6348bd95769a755cac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelViveFocusFinch.prefab using Guid(1c997af07165b6348bd95769a755cac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82f8d18eccc7c7348be1607f12a66f36') in 0.010576 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelOculusTouchRight.prefab
+  artifactKey: Guid(fb9aa177fa87fc44d831255bf057c139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelOculusTouchRight.prefab using Guid(fb9aa177fa87fc44d831255bf057c139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '520b74d89bba92f9c02c85b4afb34f6b') in 0.010985 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/ObjModelViveBaseStation.fbx
+  artifactKey: Guid(049146e7ae633314bac999005e1fefb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/ObjModelViveBaseStation.fbx using Guid(049146e7ae633314bac999005e1fefb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '124f4fbaa960c9c82b421cc179578eda') in 0.015748 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/ObjModelViveFocus3ControllerRight.fbx
+  artifactKey: Guid(d9ee3de76ea0eda4ab5b4077402b10a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/ObjModelViveFocus3ControllerRight.fbx using Guid(d9ee3de76ea0eda4ab5b4077402b10a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2cb97dbba6c4f0819246dc1de442579') in 0.061576 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelViveFocus3ControllerLeft.prefab
+  artifactKey: Guid(fbb008dd14c00bf48b4606451eedd3e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelViveFocus3ControllerLeft.prefab using Guid(fbb008dd14c00bf48b4606451eedd3e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee71f8548ebb4e841cc21b6efb26d39b') in 0.012601 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelUnknown.prefab
+  artifactKey: Guid(d4e1e979cda7b354b8d19911537d9e9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelUnknown.prefab using Guid(d4e1e979cda7b354b8d19911537d9e9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f80b5218380119b831ce4a33993a099') in 0.009485 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/ObjModelOculusTouchRight.fbx
+  artifactKey: Guid(5ddc673c3add8d44ca7de2b080765736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/ObjModelOculusTouchRight.fbx using Guid(5ddc673c3add8d44ca7de2b080765736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fadc9c068389b9c264857b0d377c5d15') in 0.013281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelOculusQuestControllerLeft.prefab
+  artifactKey: Guid(70626e17c3abc8b4cb65e74a3ce19f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelOculusQuestControllerLeft.prefab using Guid(70626e17c3abc8b4cb65e74a3ce19f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04d2e153093810ba2dc8067bd9e147ca') in 0.008755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/ObjModelViveController.fbx
+  artifactKey: Guid(a84c25639fd3f5b47826a4a5e99e0428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/ObjModelViveController.fbx using Guid(a84c25639fd3f5b47826a4a5e99e0428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd907aab21fdeb80ff0f2f55b0df83978') in 0.012235 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
