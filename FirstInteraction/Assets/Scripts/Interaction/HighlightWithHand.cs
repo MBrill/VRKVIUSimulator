@@ -24,16 +24,16 @@ public class HighlightWithHand : MonoBehaviour
     /// <remarks>
     ///Default ist die rechte Hand.
     /// </remarks>
-
     [Tooltip("Welcher Controller (links/rechts) soll für das Highlight verwendet werden?")]
     public HandRole MainHand = HandRole.RightHand;
     
     /// <summary>
     /// Der verwendete Button kann im Editor mit Hilfe
     /// eines Pull-Downs eingestellt werden.
-    /// 
-    /// Default ist der Trigger des Controllers.
     /// </summary>
+    /// <remarks>
+    /// Default ist der Trigger des Controllers.
+    ///  </remarks>
     [Tooltip("Welcher Button auf dem Controller soll verwendet werden?")]
     public ControllerButton TheButton = ControllerButton.Trigger;
 
