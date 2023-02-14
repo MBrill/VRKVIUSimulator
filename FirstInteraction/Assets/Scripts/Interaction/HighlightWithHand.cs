@@ -1,5 +1,5 @@
-using UnityEngine;
 using HTC.UnityPlugin.Vive;
+using UnityEngine;
 
 /// <summary>
 /// Highlighter für ein GameObject,
@@ -19,7 +19,7 @@ public class HighlightWithHand : MonoBehaviour
     public Material HighlightMaterial;
 
     /// <summary>
-    /// Welche Hand wollen wir verwenden?
+    Welcher Controller wirdverwendet?
     /// </summary>
     /// <remarks>
     ///Default ist die rechte Hand.

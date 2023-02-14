@@ -4,12 +4,12 @@ using UnityEngine.Events;
 
 /// <summary>
 /// Handling der Events HoverEnter, HoverExit,
-/// PressEnter und PressExit für einen einzelnen Cube in CCC.
+/// PressEnter und PressExit für einen einzelnen Cube in CCCalt.
 /// </summary>
 /// <remarks>
 /// Voraussetzung: Das Prefab ViveColliders ist in der Szene enthalten.
 /// Der Contoller-Button der für die Press-Events eingesetzt
-/// wird wird im übergeordneten GameObject CCC gesetzt
+/// wird wird im übergeordneten GameObject CCCalt gesetzt
 /// und hier abgefragt.
 /// </remarks>
 public class CCCubeEventManager : MonoBehaviour, 
@@ -30,10 +30,11 @@ public class CCCubeEventManager : MonoBehaviour,
     /// <summary>
    ///  Funktion, die bei HoverEnter aufgerufen wird
    /// </summary>
-   /// <param name="eventData"></param>
     public void OnColliderEventHoverEnter(ColliderHoverEventData eventData)
     {
-        Debug.Log("Berührung hat begonnen!");
+        Logger.Debug(">>> CCCubeEventManager.OnColliderEventHoverEnter");
+        Logger.Debug("HoverEnter Event");
+        Logger.Debug("<<< CCCubeEventManager.OnColliderEventHoverEnter");
     }
 
    /// <summary>
@@ -41,7 +42,9 @@ public class CCCubeEventManager : MonoBehaviour,
    /// </summary> 
    public void OnColliderEventHoverExit(ColliderHoverEventData eventData)
     {
-        Debug.Log("Berührung ist beendet!");
+        Logger.Debug(">>> CCCubeEventManager.OnColliderEventHoverExit");
+        Logger.Debug("HoverExit Event");
+        Logger.Debug("<<< CCCubeEventManager.OnColliderEventHoverExit");
     }
     
    /// <summary>
@@ -49,7 +52,9 @@ public class CCCubeEventManager : MonoBehaviour,
    /// </summary> 
    public void OnColliderEventPressEnter(ColliderButtonEventData eventData)
     {
-        Debug.Log("Selektion hat stattgefunden!");
+        Logger.Debug(">>> CCCubeEventManager.OnColliderEventPressEnter");
+        Logger.Debug("PressEnter Event");
+        Logger.Debug("<<< CCCubeEventManager.OnColliderEventPressEnter");
     }
 
    /// <summary>
@@ -57,9 +62,15 @@ public class CCCubeEventManager : MonoBehaviour,
    /// </summary> 
    public void OnColliderEventPressExit(ColliderButtonEventData eventData)
     {
-        Debug.Log("Event wird ausgelöst!");
+
+        Logger.Debug(">>> CCCubeEventManager.OnColliderEventPressExit");
+        object[] args = {gameObject.name, 
+            "Event ausgelöst!",            
+        };
+        Logger.InfoFormat("{0}; {1};", args);
+        Logger.Debug("<<< CCCubeEventManager.OnColliderEventPressExit");
         MyEvent.Invoke();
-        m_logEvent.Invoke();
+        m_LogEvent.Invoke();
     }
 
    /// <summary>
@@ -67,30 +78,47 @@ public class CCCubeEventManager : MonoBehaviour,
    /// </summary>
    void Awake()
    {
-       // Im übergeordneten GameObject CCC nachsehen, welchen
-       // Button wir eingestellt haben.
-       var m_triggerButton = GetComponentInParent<ColliderButtonEventData.InputButton>();
        // Callbacks registrieren
        MyEvent.AddListener(m_Logging);
-       m_logEvent.AddListener(m_Logging);
+       m_LogEvent.AddListener(m_Logging);
+       
+       // Im übergeordneten GameObject CCC nachsehen, welchen
+       // Button wir eingestellt haben.
+       if (transform.parent == null) return;
+       var layer = GameObject.Find(transform.parent.name);
+       var rootObject = GameObject.Find(layer.transform.parent.name);
+       m_triggerButton = rootObject.GetComponent<CCC>().selectButton;
    }
+
+   /// <summary>
+   /// Name des GameObjects, das durch dieses Prefab definiert wird.
+   /// </summary>
+   private string m_goName;
    
    /// <summary>
    /// Button, der in CCC eingestellt ist.
    /// </summary>
-   private ColliderButtonEventData.InputButton m_triggerButton;
+   private ColliderButtonEventData.InputButton m_triggerButton = 
+       ColliderButtonEventData.InputButton.Trigger;
+   
    /// <summary>
    /// Unity-Event mit einem Callback, der mit Hilfe von Log4net
    /// die Events protokolliert. Ob die Protokollierung auf der Konsole
    /// oder eine Datei durchgeführt wird entscheiden wir in einer
    /// Konfigurationsdatei.
    /// </summary>
-   private UnityEvent m_logEvent = new UnityEvent();
-
-   private void m_Logging()
+   protected UnityEvent m_LogEvent = new UnityEvent();
+   
+   protected virtual  void m_Logging()
    {
-       // Logging in log4back.
-       Debug.Log("Event ausgelöst!");
+       Logger.Debug(">>> CCCubeEventManager.m_Logging");
+       Logger.Debug("Event ausgelöst!");
+       Logger.Debug("<<< CCCubeEventManager.m_Logging");
    }
-
+   
+   /// <summary>
+   /// Instanz eines Log4Net Loggers
+   /// </summary>
+   private static readonly log4net.ILog Logger 
+       = log4net.LogManager.GetLogger(typeof(CCCubeEventManager));
 }

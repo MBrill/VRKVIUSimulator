@@ -23,7 +23,7 @@ namespace HTC.UnityPlugin.Utility
         //     AAA,
         //     BBB,
         //     zzz = -2,
-        //     CCC = 35,
+        //     CCCalt = 35,
         //     Default = 0,
         //     EEE,
         //     FFF,
@@ -39,7 +39,7 @@ namespace HTC.UnityPlugin.Utility
         // EEE      | 1
         // BBB      | 1
         // FFF      | 2
-        // CCC      | 35
+        // CCCalt      | 35
         // GGG      | 65
         // zzz      | -2
         // Invalid  | -1
@@ -50,7 +50,7 @@ namespace HTC.UnityPlugin.Utility
         // AAA            | AAA               | 0
         // BBB            | BBB               | 1
         // zzz            | zzz               | -2
-        // CCC            | CCC               | 35
+        // CCCalt            | CCCalt               | 35
         // Default (AAA)  | Default           | 0
         // EEE (BBB)      | EEE               | 1
         // FFF            | FFF               | 2
@@ -60,7 +60,7 @@ namespace HTC.UnityPlugin.Utility
         // ---------------------------------------------------------------------------------
         // AAA                | AAA                   | 0                   | 1ul << 0
         // BBB                | BBB                   | 1                   | 1ul << 1
-        // CCC                | CCC                   | 35                  | 1ul << 35
+        // CCCalt                | CCCalt                   | 35                  | 1ul << 35
         // Default (AAA)      | Default               | 0                   | 1ul << 0
         // EEE (BBB)          | EEE                   | 1                   | 1ul << 1
         // FFF                | FFF                   | 2                   | 1ul << 2
