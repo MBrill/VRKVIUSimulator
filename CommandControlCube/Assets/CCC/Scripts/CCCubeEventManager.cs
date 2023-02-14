@@ -67,6 +67,7 @@ public class CCCubeEventManager : MonoBehaviour,
         object[] args = {gameObject.name, 
             "Event ausgelöst!",            
         };
+        
         Logger.InfoFormat("{0}; {1};", args);
         Logger.Debug("<<< CCCubeEventManager.OnColliderEventPressExit");
         MyEvent.Invoke();
