@@ -19,7 +19,7 @@ public class HighlightWithHand : MonoBehaviour
     public Material HighlightMaterial;
 
     /// <summary>
-    Welcher Controller wirdverwendet?
+    /// Welcher Controller wird verwendet?
     /// </summary>
     /// <remarks>
     ///Default ist die rechte Hand.
@@ -37,12 +37,17 @@ public class HighlightWithHand : MonoBehaviour
     [Tooltip("Welcher Button auf dem Controller soll verwendet werden?")]
     public ControllerButton TheButton = ControllerButton.Trigger;
 
+    /// <summary>
+    ///  Logische Variable, mit der wir überprüfen können, ob
+    /// aktuell die Taste gedrückt gehalten wird.
+    /// </summary>
     private bool m_status = false;
 
     /// <summary>
     /// Variable, die das Original-Material des Objekts enthält
     /// </summary>
     private Material myMaterial;
+    
     /// <summary>
     /// Wir fragen die Materialien ab und speichern die Farben als Instanzen
     /// der Klasse Color ab.
@@ -80,7 +85,7 @@ public class HighlightWithHand : MonoBehaviour
     /// Listener wieder aus der Registrierung
     /// herausnehmen beim Beenden der Anwendung
     /// </summary>
-    private void OnDestroy()
+    private void OnDisable()
     {
         ViveInput.RemoveListenerEx(MainHand,
                                    TheButton,
