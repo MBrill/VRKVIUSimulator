@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/BasisGoGo.unity
+    guid: 0f785289affb8484485f4ec6c849ab35
   m_configObjects: {}

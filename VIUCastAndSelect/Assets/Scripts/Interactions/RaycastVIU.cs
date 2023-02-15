@@ -37,7 +37,6 @@ public class RaycastVIU : Raycast
     /// <remarks>
     ///Default ist die rechte Hand.
     /// </remarks>
-    [Tooltip("Welcher Controller (links/rechts) soll für das Highlight verwendet werden?")]
     private HandRole m_CastHand = HandRole.RightHand;
     
     /// <summary>
@@ -71,6 +70,5 @@ public class RaycastVIU : Raycast
             TheButton,
             ButtonEventType.Up,
             m_castTheRay);
-        
     }
 }
