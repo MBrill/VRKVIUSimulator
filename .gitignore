@@ -8,12 +8,15 @@
 *.swp
 
 # Andere Unity Verzeichnisse
-Unity/**/Library/*
-Unity/**/obj/*
-Unity/**/ProjectSettings/*
-Unity/**/UserSettings/*
-Unity/**/Logs/*
+**/Library/*
+**/obj/*
+**/ProjectSettings/*
+**/UserSettings/*
+**/Logs/*
 
+
+# Rider Files
+**/.idea/*
 
 # Prerequisites
 *.d
