@@ -519,7 +519,7 @@ namespace HTC.UnityPlugin.VRModuleManagement
             if (WaveVR_Render.Instance != null)
             {
                 // Only effected when origin is OnHead or OnGround
-                // This way you can manually set WaveVR_Render origin to other value lik OnTrackingObserver or OnHead_3DoF
+                // This way you can manually set WaveVR_Render origin to other Value lik OnTrackingObserver or OnHead_3DoF
                 if (VRModule.trackingSpaceType == VRModuleTrackingSpaceType.RoomScale)
                 {
                     if (WaveVR_Render.Instance.origin == WVR_PoseOriginModel.WVR_PoseOriginModel_OriginOnHead)
@@ -696,7 +696,7 @@ namespace HTC.UnityPlugin.VRModuleManagement
 
                 // update pose
                 var devicePose = content.pose.pose;
-                currState.velocity = new Vector3(devicePose.Velocity.v0, devicePose.Velocity.v1, -devicePose.Velocity.v2);
+                currState.velocity = new Vector3(devicePose.m_Velocity.v0, devicePose.m_Velocity.v1, -devicePose.m_Velocity.v2);
                 currState.angularVelocity = new Vector3(-devicePose.AngularVelocity.v0, -devicePose.AngularVelocity.v1, devicePose.AngularVelocity.v2);
 
                 var rigidTransform = content.rigidTransform;

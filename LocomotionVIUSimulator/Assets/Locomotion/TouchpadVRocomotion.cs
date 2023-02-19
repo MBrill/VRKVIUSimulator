@@ -82,10 +82,10 @@ public abstract class TouchpadVRocomotion : Locomotion
             ViveInput.AddListenerEx(moveHand, 
                                                  moveButton, 
                                                  ButtonEventType.Down,  
-                                                 Velocity.Decrease);
+                                                 m_Velocity.Decrease);
             ViveInput.AddListenerEx(moveHand, moveButton, 
                                                  ButtonEventType.Down,
-                                                 Velocity.Increase);
+                                                 m_Velocity.Increase);
         }
 
         /// <summary>
@@ -95,10 +95,10 @@ public abstract class TouchpadVRocomotion : Locomotion
         {
              ViveInput.RemoveListenerEx(moveHand, moveButton, 
                                                          ButtonEventType.Down,  
-                                                         Velocity.Decrease);
+                                                         m_Velocity.Decrease);
             ViveInput.RemoveListenerEx(moveHand, moveButton, 
                                                         ButtonEventType.Down, 
-                                                        Velocity.Increase);
+                                                        m_Velocity.Increase);
         }
         
         /// <summary>
@@ -130,7 +130,7 @@ public abstract class TouchpadVRocomotion : Locomotion
         /// </remarks>
         protected override void UpdateSpeed()
         {
-            Speed = Velocity.value/3.6f;
+            m_Speed = m_Velocity.Value/3.6f;
         }
         
         /// <summary>
@@ -140,8 +140,8 @@ public abstract class TouchpadVRocomotion : Locomotion
         /// </summary>
         protected override void InitializeSpeed()
         {
-            Velocity = new ScalarProvider(initialSpeed, vDelta, 
+            m_Velocity = new LinearBlend(initialSpeed, vDelta, 
                                                                       0.0f, vMax);
-            Speed = Velocity.value;
+            m_Speed = m_Velocity.Value;
         }
 }

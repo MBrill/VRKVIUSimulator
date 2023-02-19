@@ -42,7 +42,7 @@ namespace HTC.UnityPlugin.Vive
 
             position = EditorGUI.PrefixLabel(position, new GUIContent(property.displayName));
 
-            // get display mask value
+            // get display mask Value
             s_displayedMask.Clear();
             var maskProperty = property.FindPropertyRelative("raw");
             var enumDisplayLength = s_enumInfo.displayedMaskLength;

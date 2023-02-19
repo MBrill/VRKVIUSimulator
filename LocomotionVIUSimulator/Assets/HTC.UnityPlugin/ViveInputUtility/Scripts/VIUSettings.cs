@@ -10,7 +10,7 @@ namespace HTC.UnityPlugin.Vive
     public partial class VIUSettings : ScriptableObject
     {
         public const string DEFAULT_RESOURCE_PATH = "VIUSettings";
-        public const string INDIVIDUAL_TOUCHPAD_JOYSTICK_VALUE_TOOLTIP = "Set touchpad and joystick value individually for different controller type. For example, Vive Controller will have touchpad value but no thumbstick value, Oculus Touch will have thumbstick value but no touchpad value.";
+        public const string INDIVIDUAL_TOUCHPAD_JOYSTICK_VALUE_TOOLTIP = "Set touchpad and joystick Value individually for different controller type. For example, Vive Controller will have touchpad Value but no thumbstick Value, Oculus Touch will have thumbstick Value but no touchpad Value.";
         public const bool AUTO_CHECK_NEW_VIU_VERSION_DEFAULT_VALUE = true;
         public const float VIRTUAL_DPAD_DEAD_ZONE_DEFAULT_VALUE = 0.25f;
         public const bool INDIVIDUAL_TOUCHPAD_JOYSTICK_VALUE_DEFAULT_VALUE = false;

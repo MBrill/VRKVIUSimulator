@@ -17,6 +17,11 @@ using UnityEngine;
 ///
 /// In dieser Klasse kommen Geräte und Einstellungen für den
 /// Inspektor dazu.
+///
+/// Nochmals auftrennen und die VIU-Funktionalität in eine
+/// Klasse "Controller" auslagern, wie bei WIM und anderen
+/// Techniken.
+/// Dann ist es einfach später UXR zu verwenden!
 /// </remarks>
 public abstract class JoystickLocomotion : Locomotion
 {
@@ -47,21 +52,22 @@ public abstract class JoystickLocomotion : Locomotion
         /// </summary>
         [Tooltip("Geschwindigkeit")]
         [Range(0.1f, 20.0f)]
-        public float initialSpeed = 5.0f; 
+        public float InitialSpeed = 5.0f; 
         
         /// <summary>
-        /// Maximal mögliche Geschwindigkeit
+        /// Maximal mögliche Geschwindigkeit in km/h.
         /// </summary>
-        [Tooltip("Maximal mögliche Bahngeschwindigkeit")]
+        [Tooltip("Maximal mögliche Geschwindigkeit")]
         [Range(0.001f, 20.0f)]
-        public float vMax = 10.0f;
+        public float MaximumSpeed = 10.0f;
 
         /// <summary>
-        /// Delta für das Verändern der Geschwindigkeit
+        /// Delta für das Verändern der Geschwindigkeit in km/h.
         /// </summary>
         [Tooltip("Delta für die Veränderung der Bahngeschwindigkeit")]
         [Range(0.001f, 2.0f)]
-        public float vDelta = 0.2f;
+        public float DeltaSpeed = 0.2f;
+        
         /// <summary>
         /// Button auf dem Controller für das Abbremsen der Fortbewegung.
         /// </summary>
@@ -69,7 +75,7 @@ public abstract class JoystickLocomotion : Locomotion
         /// Default ist "Pad"
         /// </remarks>
         [Tooltip("Button für das Verkleinern der Bahngeschwindigkeit")] 
-        public ControllerButton decButton = ControllerButton.Pad;
+        public ControllerButton DecButton = ControllerButton.Pad;
 
         /// <summary>
         /// Button auf dem Controller für das Beschleunigen der Fortbewegung.
@@ -78,7 +84,7 @@ public abstract class JoystickLocomotion : Locomotion
         /// Default ist "Grip"
         /// </remarks>
         [Tooltip("Button für das Vergrößern der Bahngeschwindigkeit")]
-        public ControllerButton accButton = ControllerButton.Grip;
+        public ControllerButton AccButton = ControllerButton.Grip;
         
 
         ///<summary>
@@ -90,12 +96,12 @@ public abstract class JoystickLocomotion : Locomotion
         /// </remarks>
         protected void OnEnable()
         {
-            ViveInput.AddListenerEx(moveHand, decButton, 
+            ViveInput.AddListenerEx(moveHand, DecButton, 
                                                  ButtonEventType.Down,  
-                                                 Velocity.Decrease);
-            ViveInput.AddListenerEx(moveHand, accButton, 
+                                                 m_Velocity.Decrease);
+            ViveInput.AddListenerEx(moveHand, AccButton, 
                                                  ButtonEventType.Down,
-                                                 Velocity.Increase);
+                                                 m_Velocity.Increase);
         }
 
         /// <summary>
@@ -103,12 +109,12 @@ public abstract class JoystickLocomotion : Locomotion
         /// </summary>
         protected void OnDisable()
         {
-             ViveInput.RemoveListenerEx(moveHand, decButton, 
+             ViveInput.RemoveListenerEx(moveHand, DecButton, 
                                                          ButtonEventType.Down,  
-                                                         Velocity.Decrease);
-            ViveInput.RemoveListenerEx(moveHand, accButton, 
+                                                         m_Velocity.Decrease);
+            ViveInput.RemoveListenerEx(moveHand, AccButton, 
                                                         ButtonEventType.Down, 
-                                                        Velocity.Increase);
+                                                        m_Velocity.Increase);
         }
         
         /// <summary>
@@ -117,10 +123,6 @@ public abstract class JoystickLocomotion : Locomotion
         /// <remarks>
         ///Wir verwenden den forward-Vektor des
         /// Orientierungsobjekts als Bewegungsrichtung.
-        ///
-        /// Deshalb verwenden wir hier nicht die Funktion
-        /// UpdateOrientation, sondern setzen die Bewegungsrichtung
-        /// direkt.
         /// </remarks>
         protected virtual void Update()
         {
@@ -140,7 +142,7 @@ public abstract class JoystickLocomotion : Locomotion
         protected override void Move()
         {
             if (Moving)
-                transform.Translate(Speed * Time.deltaTime * Direction);
+                transform.Translate(m_Speed * Time.deltaTime * m_Direction);
         }
         
         /// <summary>
@@ -152,7 +154,7 @@ public abstract class JoystickLocomotion : Locomotion
         /// </remarks>
         protected override void UpdateSpeed()
         {
-            Speed = Velocity.value/3.6f;
+            m_Speed = m_Velocity.Value/3.6f;
         }
         
         /// <summary>
@@ -162,9 +164,9 @@ public abstract class JoystickLocomotion : Locomotion
         /// </summary>
         protected override void InitializeSpeed()
         {
-            Velocity = new ScalarProvider(initialSpeed, vDelta, 
-                                                                      0.0f, vMax);
-            Speed = Velocity.value;
+            m_Velocity = new LinearBlend(InitialSpeed, DeltaSpeed, 
+                                                                      0.0f, MaximumSpeed);
+            m_Speed = m_Velocity.Value/3.6f;
         }
 
         /// <summary>

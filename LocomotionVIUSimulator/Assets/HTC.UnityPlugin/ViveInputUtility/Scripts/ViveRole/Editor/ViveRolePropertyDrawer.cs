@@ -131,7 +131,7 @@ namespace HTC.UnityPlugin.Vive
                 roleType = ViveRoleEnum.ValidViveRoleTable.GetValueByIndex(roleTypeIndex);
             }
 
-            // find current role value index
+            // find current role Value index
             var roleTypeInfo = ViveRoleEnum.GetInfo(roleType);
             var roleValueIndex = roleTypeInfo.GetElementIndexByName(roleValueName);
             if (roleValueIndex < 0)
@@ -139,7 +139,7 @@ namespace HTC.UnityPlugin.Vive
                 roleValueIndex = roleTypeInfo.InvalidRoleValueIndex;
             }
 
-            // draw pupup box, get new role type index / value index
+            // draw pupup box, get new role type index / Value index
             var newRoleTypeIndex = EditorGUI.Popup(enumTypeRect, roleTypeIndex, s_roleTypeNames);
             var newRoleValueIndex = EditorGUI.Popup(enumValueRect, roleValueIndex, EnumUtils.GetDisplayInfo(roleType).displayedNames);
 

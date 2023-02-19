@@ -115,7 +115,7 @@ namespace HTC.UnityPlugin.VRModuleManagement
                         Bones[i] = boneObj.transform;
 
                         Vector3 pos = ovrSkeleton.Bones[i].Pose.Position.FromFlippedXVector3f();
-                        Quaternion rot = ovrSkeleton.Bones[i].Pose.Orientation.FromFlippedXQuatf();
+                        Quaternion rot = ovrSkeleton.Bones[i].Pose.m_Orientation.FromFlippedXQuatf();
                         Bones[i].localPosition = pos;
                         Bones[i].localRotation = rot;
                     }
@@ -142,7 +142,7 @@ namespace HTC.UnityPlugin.VRModuleManagement
             public void Update(OVRPlugin.HandState handState)
             {
                 Root.localPosition = handState.RootPose.Position.FromFlippedZVector3f();
-                Root.localRotation = handState.RootPose.Orientation.FromFlippedZQuatf();
+                Root.localRotation = handState.RootPose.m_Orientation.FromFlippedZQuatf();
                 Root.localScale = new Vector3(handState.HandScale, handState.HandScale, handState.HandScale);
 
                 OVRPlugin.Skeleton ovrSkeleton;
@@ -475,9 +475,9 @@ namespace HTC.UnityPlugin.VRModuleManagement
             return INVALID_DEVICE_INDEX;
         }
 
-        private static RigidPose ToPose(OVRPlugin.Posef value)
+        private static RigidPose ToPose(OVRPlugin.Posef Value)
         {
-            var ovrPose = value.ToOVRPose();
+            var ovrPose = Value.ToOVRPose();
             return new RigidPose(ovrPose.position, ovrPose.orientation);
         }
 

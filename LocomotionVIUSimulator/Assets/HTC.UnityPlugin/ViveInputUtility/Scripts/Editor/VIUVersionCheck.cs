@@ -146,11 +146,11 @@ namespace HTC.UnityPlugin.Vive
         /// </summary>
         public static int ignoredSettingsCount { get; private set; }
         /// <summary>
-        /// Count of settings that are not using recommended value
+        /// Count of settings that are not using recommended Value
         /// </summary>
         public static int shouldNotifiedSettingsCount { get; private set; }
         /// <summary>
-        /// Count of settings that are not ignored and not using recommended value
+        /// Count of settings that are not ignored and not using recommended Value
         /// </summary>
         public static int notifiedSettingsCount { get; private set; }
 

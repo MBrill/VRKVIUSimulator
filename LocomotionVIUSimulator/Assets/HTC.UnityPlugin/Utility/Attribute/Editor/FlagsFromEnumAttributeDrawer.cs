@@ -69,7 +69,7 @@ namespace HTC.UnityPlugin.Utility
             {
                 position = EditorGUI.PrefixLabel(position, new GUIContent(property.displayName));
 
-                // get display mask value
+                // get display mask Value
                 s_displayedMask.Clear();
                 var enumDisplayLength = enumInfo.displayedMaskLength;
                 var realMask = (ulong)property.longValue;

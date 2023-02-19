@@ -42,9 +42,9 @@ namespace HTC.UnityPlugin.Vive
             public Vector3 position;
             [FieldOffset(20), InputControl(displayName = "Rotation", noisy = true)]
             public Quaternion rotation;
-            [FieldOffset(36), InputControl(displayName = "Velocity", noisy = true)]
+            [FieldOffset(36), InputControl(displayName = "m_Velocity", noisy = true)]
             public Vector3 velocity;
-            [FieldOffset(48), InputControl(displayName = "Angular Velocity", noisy = true)]
+            [FieldOffset(48), InputControl(displayName = "Angular m_Velocity", noisy = true)]
             public Vector3 angularVelocity;
         }
 
@@ -470,7 +470,7 @@ namespace HTC.UnityPlugin.Vive
                 pose = new VIUSyntheticDeviceState.PoseState()
                 {
                     isTracked = deviceState.isPoseValid,
-                    trackingState = TrackingState.Position | TrackingState.Rotation | TrackingState.Velocity | TrackingState.AngularVelocity,
+                    trackingState = TrackingState.Position | TrackingState.Rotation | TrackingState.m_Velocity | TrackingState.AngularVelocity,
                     position = deviceState.position,
                     rotation = deviceState.rotation,
                     velocity = deviceState.velocity,

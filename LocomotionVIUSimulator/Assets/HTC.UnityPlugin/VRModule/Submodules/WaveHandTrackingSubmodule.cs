@@ -251,9 +251,9 @@ namespace HTC.UnityPlugin.VRModuleManagement
 
             public bool isActive { get { return activity == FeatureActivity.Started; } }
 
-            public void SetActive(bool value)
+            public void SetActive(bool Value)
             {
-                if (value) { Activate(); }
+                if (Value) { Activate(); }
                 else { Deactivate(); }
             }
 
@@ -466,7 +466,7 @@ namespace HTC.UnityPlugin.VRModuleManagement
                 };
             }
 
-            public void SetActive(bool value) { activator.SetActive(value); }
+            public void SetActive(bool Value) { activator.SetActive(Value); }
 
             public bool TryFetchData(WVR_PoseOriginModel originModel)
             {
@@ -558,7 +558,7 @@ namespace HTC.UnityPlugin.VRModuleManagement
                 /// WVR_HandTrackerInfo_t.jointMappingArray
                 jointMappingArray = new WVR_HandJoint[jointCount];
                 intJointMappingArray = new int[jointMappingArray.Length];
-                intJointMappingArray = Array.ConvertAll(jointMappingArray, delegate (WVR_HandJoint value) { return (int)value; });
+                intJointMappingArray = Array.ConvertAll(jointMappingArray, delegate (WVR_HandJoint Value) { return (int)Value; });
                 handTrackerInfo.jointMappingArray = Marshal.AllocHGlobal(sizeof(int) * intJointMappingArray.Length);
                 Marshal.Copy(intJointMappingArray, 0, handTrackerInfo.jointMappingArray, intJointMappingArray.Length);
                 /*unsafe
@@ -646,7 +646,7 @@ namespace HTC.UnityPlugin.VRModuleManagement
                 }
 
                 Marshal.Copy(handTrackerInfo.jointMappingArray, intJointMappingArray, 0, intJointMappingArray.Length);
-                jointMappingArray = Array.ConvertAll(intJointMappingArray, delegate (int value) { return (WVR_HandJoint)value; });
+                jointMappingArray = Array.ConvertAll(intJointMappingArray, delegate (int Value) { return (WVR_HandJoint)Value; });
                 /*unsafe
                 {
                     for (int i = 0; i < jointMappingArray.Length; i++)
@@ -770,7 +770,7 @@ namespace HTC.UnityPlugin.VRModuleManagement
                 };
             }
 
-            public void SetActive(bool value) { activator.SetActive(value); }
+            public void SetActive(bool Value) { activator.SetActive(Value); }
 
             public bool TryFetchData()
             {

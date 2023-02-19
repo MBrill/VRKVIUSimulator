@@ -19,7 +19,7 @@ using UnityEngine;
         /// </remarks>
 
         [Tooltip("GameObject, das die Bewegungsrichtung definiert")]
-        public GameObject orientationObject;
+        public GameObject OrientationObject;
         
         
         /// <summary>
@@ -27,7 +27,7 @@ using UnityEngine;
         /// </summary>
         protected override void InitializeDirection()
         {
-            Direction = orientationObject.transform.forward;
+            m_Direction = OrientationObject.transform.forward;
         }
  }
 

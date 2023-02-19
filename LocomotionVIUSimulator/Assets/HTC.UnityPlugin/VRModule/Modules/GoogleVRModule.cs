@@ -223,7 +223,7 @@ namespace HTC.UnityPlugin.VRModuleManagement
             {
                 currState.position = m_rightArm.ControllerPositionFromHead;
                 currState.rotation = m_rightArm.ControllerRotationFromHead;
-                currState.isPoseValid = m_rightDevice.Orientation != Quaternion.identity;
+                currState.isPoseValid = m_rightDevice.m_Orientation != Quaternion.identity;
             }
 
             EnsureValidDeviceState(LEFT_HAND_INDEX, out prevState, out currState);
@@ -231,7 +231,7 @@ namespace HTC.UnityPlugin.VRModuleManagement
             {
                 currState.position = m_leftArm.ControllerPositionFromHead;
                 currState.rotation = m_leftArm.ControllerRotationFromHead;
-                currState.isPoseValid = m_leftDevice.Orientation != Quaternion.identity;
+                currState.isPoseValid = m_leftDevice.m_Orientation != Quaternion.identity;
             }
         }
 
@@ -409,7 +409,7 @@ namespace HTC.UnityPlugin.VRModuleManagement
             {
                 currState.position = m_gvrArmModel.ControllerPositionFromHead;
                 currState.rotation = m_gvrArmModel.ControllerRotationFromHead;
-                currState.isPoseValid = GvrControllerInput.Orientation != Quaternion.identity;
+                currState.isPoseValid = GvrControllerInput.m_Orientation != Quaternion.identity;
             }
         }
 

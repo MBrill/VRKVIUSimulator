@@ -80,8 +80,8 @@ namespace HTC.UnityPlugin.VRModuleManagement
             {
                 if (trackedIndex == OpenVR.k_unTrackedDeviceIndex_Hmd) { throw new ArgumentException("Value cannot be OpenVR.k_unTrackedDeviceIndex_Hmd(" + OpenVR.k_unTrackedDeviceIndex_Hmd + ")", "trackedIndex"); }
                 if (moduleIndex == VRModule.HMD_DEVICE_INDEX) { throw new ArgumentException("Value cannot be VRModule.HMD_DEVICE_INDEX(" + VRModule.HMD_DEVICE_INDEX + ")", "moduleIndex"); }
-                if (!IsValidTracked(trackedIndex)) { throw new ArgumentException("Invalid value (" + trackedIndex + ")", "trackedIndex"); }
-                if (!IsValidModule(moduleIndex)) { throw new ArgumentException("Invalid value (" + moduleIndex + ")", "moduleIndex"); }
+                if (!IsValidTracked(trackedIndex)) { throw new ArgumentException("Invalid Value (" + trackedIndex + ")", "trackedIndex"); }
+                if (!IsValidModule(moduleIndex)) { throw new ArgumentException("Invalid Value (" + moduleIndex + ")", "moduleIndex"); }
                 if (IsValidTracked(tracked2module[trackedIndex])) { throw new Exception("tracked2module at [" + trackedIndex + "] is not empty(" + tracked2module[trackedIndex] + ")"); }
                 if (IsValidModule(module2tracked[moduleIndex])) { throw new Exception("module2tracked at [" + moduleIndex + "] is not empty(" + module2tracked[moduleIndex] + ")"); }
                 tracked2module[trackedIndex] = moduleIndex;
@@ -566,7 +566,7 @@ namespace HTC.UnityPlugin.VRModuleManagement
                 var compositor = OpenVR.Compositor;
                 if (compositor == null) { return; }
 
-                compositor.SetTrackingSpace(value);
+                compositor.SetTrackingSpace(Value);
             }
         }
 
@@ -637,10 +637,10 @@ namespace HTC.UnityPlugin.VRModuleManagement
         }
 
         private void OnInputFocusArgs(params object[] args) { OnInputFocus((bool)args[0]); }
-        private void OnInputFocus(bool value)
+        private void OnInputFocus(bool Value)
         {
-            m_hasInputFocus = value;
-            InvokeInputFocusEvent(value);
+            m_hasInputFocus = Value;
+            InvokeInputFocusEvent(Value);
         }
 
         private void OnTrackedDeviceRoleChangedArgs(params object[] args) { OnTrackedDeviceRoleChanged((VREvent_t)args[0]); }

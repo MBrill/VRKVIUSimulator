@@ -23,9 +23,9 @@ public class Walk : SingleObjectDirection
         /// </summary>
         protected override void UpdateDirection()
         {
-            Direction = orientationObject.transform.forward;
-            Direction.y = 0.0f;
-            Direction.Normalize();
+            m_Direction = OrientationObject.transform.forward;
+            m_Direction.y = 0.0f;
+            m_Direction.Normalize();
         }
         
         /// <summary>

@@ -7,14 +7,14 @@ using UnityEngine;
 /// wie Walking-in-Place oder Arm-Swinging.
 /// </summary>
 /// <remarks>
-/// Diese Klasse ist von VRKL.MBU.Locomotion abgeleitet.
+/// Diese Klasse ist von Locomotion abgeleitet.
 ///
-/// Welche getrackten Objekte wir verwenden und wie viele
+/// Welche getrackten Objekte wir verwenden und wie viele davon
 /// legen wir in den von dieser Klasse abgeleiteten Klassen fest!
 /// </remarks>
 public abstract class InPlaceLocomotion : Locomotion
 {
-        [Header("Definition der Bewegungsrichtung")]
+        [Header("Walking-in-Place")]
         /// <summary>
         /// Welches GameObject verwenden wir für die Definition der Richtung?
         /// </summary>
@@ -22,40 +22,25 @@ public abstract class InPlaceLocomotion : Locomotion
         /// Sinnvoll ist bei Walking-in-Place der Kopf, oder irgend ein anderes
         /// getracktes GameObject.
         /// </remarks>
-        [Tooltip("GameObject, das die Bewegungsrichtung definiert")]
+        [Tooltip("Welches Objekt definiert die Bewegungsrichtung?")]
         public GameObject orientationObject;
         
         /// <summary>
-        /// Geschwindigkeit für die Bewegung der Kamera in km/.
+        /// Geschwindigkeit für die Bewegung der Kamera in km/h.
         /// </summary>
-        /// <remarks>
-        /// Vorerst protected gesetzt. Mittelfristig werden wir
-        /// die Geschwindigkeit aus der Bewegung auf der Stelle
-        /// herauslesen.
-        /// </remarks>
-        private float initialSpeed = 5.0f; 
+        [Tooltip("Geschwindigkeit in km/h")]
+        public float InitialSpeed = 1.0f; 
         
-        /// <summary>
-        /// Maximale Geschwindigkeit für die Bewegung der Kamera in km/.
-        /// </summary>
-        /// <remarks>
-        /// Vorerst protected gesetzt. Mittelfristig werden wir
-        /// die Geschwindigkeit aus der Bewegung auf der Stelle
-        /// herauslesen.
-        /// </remarks>
-        private float vMax = 10.0f;
-
-        /// <summary>
-        /// Delta für das Verändern der Geschwindigkeit
-        /// </summary>
-
-        private float vDelta = 0.2f;
-
+        [Tooltip("Schwellwert für das Auslösen der Bewegung")] 
+        [Range(0.01f, 1.0f)]
+        public float Threshold = 0.05f;
+        
+        
         /// <summary>
         /// Update aufrufen und die Bewegung ausführen.
         /// </summary>
         /// <remarks>
-        ///Wir verwenden den forward-Vektor des
+        /// Wir verwenden den forward-Vektor des
         /// Orientierungsobjekts als Bewegungsrichtung.
         ///
         /// Deshalb verwenden wir hier nicht die Funktion
@@ -65,9 +50,7 @@ public abstract class InPlaceLocomotion : Locomotion
         protected virtual void Update()
         {
             UpdateDirection();
-            // Vorerst machen wir kein Update auf die Bahngeschwindigkeit
-            // Diese ist aktuell konstant!
-            //UpdateSpeed();
+            UpdateSpeed();
             Trigger();
             Move();
         }
@@ -76,13 +59,15 @@ public abstract class InPlaceLocomotion : Locomotion
         /// Die Bewegung durchführen.
         /// </summary>
         /// <remarks>
-        /// Die Bewegung wird durchgeführt, wenn eine in dieser Klasse
-        /// deklarierte logische Variable true ist.
+        /// Die Bewegung wird durchgeführt, falls die Variable
+        /// Moving in der Basisklasse true ist.
+        ///
+        /// Darüber entscheiden wir in der Funktion Trigger..
         /// <remarks>
         protected override void Move()
         {
             if (Moving)
-                transform.Translate(Speed * Time.deltaTime * Direction);
+                transform.Translate(m_Speed * Time.deltaTime * m_Direction);
         }
         
         /// <summary>
@@ -94,7 +79,7 @@ public abstract class InPlaceLocomotion : Locomotion
         /// </remarks>
         protected override void UpdateSpeed()
         {
-
+            m_Speed = m_Velocity.Value/3.6f;
         }
         
         /// <summary>
@@ -104,9 +89,10 @@ public abstract class InPlaceLocomotion : Locomotion
         /// </summary>
         protected override void InitializeSpeed()
         {
-            Velocity = new ScalarProvider(initialSpeed, vDelta, 
-                                                                      0.0f, vMax);
-            Speed = initialSpeed/3.6f;
+            // Wir verändern die Geschwindigkeit nicht ...
+            m_Velocity = new LinearBlend(InitialSpeed, 0.001f,
+                0.0f, 2.0f * InitialSpeed);
+            m_Speed = m_Velocity.Value/3.6f;
         }
 
         /// <summary>
@@ -120,9 +106,9 @@ public abstract class InPlaceLocomotion : Locomotion
         /// </summary>
         protected override void UpdateDirection()
         {
-            Direction = orientationObject.transform.forward;
-            Direction.y = 0.0f;
-            Direction.Normalize();
+            m_Direction = orientationObject.transform.forward;
+            m_Direction.y = 0.0f;
+            m_Direction.Normalize();
         }
         
         /// <summary>
@@ -135,9 +121,9 @@ public abstract class InPlaceLocomotion : Locomotion
         /// </remarks>
         protected override void InitializeDirection()
         {
-            Direction = orientationObject.transform.forward;
-            Direction.y = 0.0f;
-            Direction.Normalize();
+            m_Direction = orientationObject.transform.forward;
+            m_Direction.y = 0.0f;
+            m_Direction.Normalize();
         }
         
         /// <summary>

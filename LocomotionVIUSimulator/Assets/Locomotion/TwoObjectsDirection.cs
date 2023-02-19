@@ -30,8 +30,8 @@ public abstract class TwoObjectsDirection : JoystickLocomotion
         /// </summary>
         protected override void InitializeDirection()
         {
-            Direction = endObject.transform.position-startObject.transform.position;
-            Direction.Normalize();
+            m_Direction = endObject.transform.position-startObject.transform.position;
+            m_Direction.Normalize();
         }
 }
 

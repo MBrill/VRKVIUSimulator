@@ -103,7 +103,7 @@ namespace HTC.UnityPlugin.Vive
             var featureSetting = UnityEditor.XR.OpenXR.Features.FeatureHelpers.GetFeatureWithIdForBuildTarget(target, id);
             if (featureSetting != null)
             {
-                featureSetting.enabled = value;
+                featureSetting.enabled = Value;
             }
 #endif
         }

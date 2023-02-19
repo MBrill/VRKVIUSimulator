@@ -168,7 +168,7 @@ namespace HTC.UnityPlugin.Pointer3D
 
             if (lhs.sortingLayer != rhs.sortingLayer)
             {
-                // Uses the layer value to properly compare the relative order of the layers.
+                // Uses the layer Value to properly compare the relative order of the layers.
                 var rid = SortingLayer.GetLayerValueFromID(rhs.sortingLayer);
                 var lid = SortingLayer.GetLayerValueFromID(lhs.sortingLayer);
                 return rid.CompareTo(lid);
@@ -281,7 +281,7 @@ namespace HTC.UnityPlugin.Pointer3D
                 raycaster.Raycast();
                 var result = raycaster.FirstRaycastResult();
 
-                // prepare raycaster value
+                // prepare raycaster Value
                 var scrollDelta = raycaster.GetScrollDelta();
                 var raycasterPos = raycaster.transform.position;
                 var raycasterRot = raycaster.transform.rotation;

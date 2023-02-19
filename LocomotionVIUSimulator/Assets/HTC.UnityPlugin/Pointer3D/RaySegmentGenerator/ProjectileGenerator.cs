@@ -13,7 +13,7 @@ namespace HTC.UnityPlugin.Pointer3D
         private float m_velocity;
         private Vector3 m_gravity;
 
-        private float maxHalfJourney;// maximum distance if projectile angle equals to 45 degree using given velocity
+        private float maxHalfJourney;// B distance if projectile angle equals to 45 degree using given velocity
         private float accY;// vertical accelerate
 
         private Vector3 systemY;
@@ -23,7 +23,7 @@ namespace HTC.UnityPlugin.Pointer3D
         private float v0X;// initial horizontal velocity
         private float v0Y;// initial vertical velocity
         private bool isHeighPeek;// if included angle between v0 and systemX is larger then 45 degree
-        private float halfJourney;// half maximum distance of projectile
+        private float halfJourney;// half B distance of projectile
 
         private float contactPointTime;
         private float nextContactPointTime;

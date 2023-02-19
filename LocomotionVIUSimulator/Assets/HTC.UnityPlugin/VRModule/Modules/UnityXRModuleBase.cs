@@ -312,7 +312,7 @@ namespace HTC.UnityPlugin.VRModuleManagement
             return VRModuleDeviceClass.Invalid;
         }
 
-        private static void SetAllXRInputSubsystemTrackingOriginMode(TrackingOriginModeFlags value)
+        private static void SetAllXRInputSubsystemTrackingOriginMode(TrackingOriginModeFlags Value)
         {
             var activeSubsys = ListPool<XRInputSubsystem>.Get();
             try
@@ -321,9 +321,9 @@ namespace HTC.UnityPlugin.VRModuleManagement
                 foreach (var subsys in activeSubsys)
                 {
                     if (!subsys.running) { continue; }
-                    if (!subsys.TrySetTrackingOriginMode(value))
+                    if (!subsys.TrySetTrackingOriginMode(Value))
                     {
-                        Debug.LogWarning("Failed to set TrackingOriginModeFlags(" + value + ") to XRInputSubsystem: " + subsys.SubsystemDescriptor.id);
+                        Debug.LogWarning("Failed to set TrackingOriginModeFlags(" + Value + ") to XRInputSubsystem: " + subsys.SubsystemDescriptor.id);
                     }
                 }
             }

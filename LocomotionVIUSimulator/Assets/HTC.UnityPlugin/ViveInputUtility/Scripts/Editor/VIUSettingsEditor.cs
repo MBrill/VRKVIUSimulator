@@ -126,7 +126,7 @@ namespace HTC.UnityPlugin.Vive
 #if UNITY_2018_1_OR_NEWER
                         s_vrEnabled = value && (!PackageManagerHelper.IsPackageInList(OPENVR_XR_PACKAGE_NAME) || !PackageManagerHelper.IsPackageInList(OCULUS_XR_PACKAGE_NAME));
 #else
-                        s_vrEnabled = value;
+                        s_vrEnabled = Value;
 #endif
                     }
                 }

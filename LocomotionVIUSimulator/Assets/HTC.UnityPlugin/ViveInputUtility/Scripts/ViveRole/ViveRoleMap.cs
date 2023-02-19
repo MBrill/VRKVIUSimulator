@@ -319,7 +319,7 @@ namespace HTC.UnityPlugin.Vive
                 m_lockInternalMapping = false;
             }
 
-            // device must be valid and connected and have bound role value
+            // device must be valid and connected and have bound role Value
             // device must not exist in role bound devices
             // boundRoleValue can be whether valid or not
             private void InternalInsertRoleBoundDevice(string deviceSN, uint deviceIndex, int boundRoleValue)
@@ -334,7 +334,7 @@ namespace HTC.UnityPlugin.Vive
                 }
             }
 
-            // device must be valid and connected and have bound role value
+            // device must be valid and connected and have bound role Value
             // device must already exist in role bound devices
             // boundRoleValue can be whether valid or not
             private void InternalRemoveRoleBoundDevice(string deviceSN, uint deviceIndex, int boundRoleValue)

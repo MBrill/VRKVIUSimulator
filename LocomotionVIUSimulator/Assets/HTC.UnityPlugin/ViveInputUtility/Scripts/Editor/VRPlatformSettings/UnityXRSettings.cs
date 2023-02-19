@@ -32,7 +32,7 @@ namespace HTC.UnityPlugin.Vive
                     OpenXRProjectValidation.GetCurrentValidationIssues(s_tempOpenXRValidationIssues, VIUSettingsEditor.activeBuildTargetGroup);
                     return s_tempOpenXRValidationIssues.Count;
                 },
-                setValueFunc = (int value) =>
+                setValueFunc = (int Value) =>
                 {
                     try
                     {
@@ -65,9 +65,9 @@ namespace HTC.UnityPlugin.Vive
                 {
                     return OpenXRSettings.ActiveBuildTargetInstance.GetFeatures<OpenXRInteractionFeature>().All(feature => feature.enabled);
                 },
-                setValueFunc = (bool value) =>
+                setValueFunc = (bool Value) =>
                 {
-                    if (!value)
+                    if (!Value)
                     {
                         return;
                     }

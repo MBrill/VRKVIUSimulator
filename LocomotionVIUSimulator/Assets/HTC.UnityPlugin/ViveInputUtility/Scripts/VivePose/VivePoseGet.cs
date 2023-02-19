@@ -53,7 +53,7 @@ namespace HTC.UnityPlugin.Vive
         }
 
         /// <summary>
-        /// Returns true if tracking data of the device identified by role has valid value.
+        /// Returns true if tracking data of the device identified by role has valid Value.
         /// </summary>
         public static bool HasTracking(HandRole role)
         {
@@ -61,7 +61,7 @@ namespace HTC.UnityPlugin.Vive
         }
 
         /// <summary>
-        /// Returns true if tracking data of the device identified by role has valid value.
+        /// Returns true if tracking data of the device identified by role has valid Value.
         /// </summary>
         public static bool HasTracking(DeviceRole role)
         {
@@ -145,7 +145,7 @@ namespace HTC.UnityPlugin.Vive
         }
 
         /// <summary>
-        /// Returns true if tracking data of the device identified by role has valid value.
+        /// Returns true if tracking data of the device identified by role has valid Value.
         /// </summary>
         public static bool HasTracking(ViveRoleProperty role)
         {
@@ -337,7 +337,7 @@ namespace HTC.UnityPlugin.Vive
         }
         #endregion extend generic
 
-        #region extend property role type & value
+        #region extend property role type & Value
         /// <param name="roleType">
         /// Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
         /// Use ViveRole.ValidateViveRoleEnum() to validate role type

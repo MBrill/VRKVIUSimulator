@@ -87,7 +87,7 @@ namespace HTC.UnityPlugin.Vive
 
                 m_validRoleLength = m_maxValidRoleValue - m_minValidRoleValue + 1;
 
-                // initialize role valid array, in case that the sequence of value of the enum type is not continuous
+                // initialize role valid array, in case that the sequence of Value of the enum type is not continuous
                 m_roleValid = new bool[m_validRoleLength];
                 for (int i = 0; i < m_info.displayedValues.Length; ++i)
                 {

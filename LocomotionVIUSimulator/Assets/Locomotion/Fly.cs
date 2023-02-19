@@ -23,7 +23,7 @@
         /// </summary>
         protected override void UpdateDirection()
         {
-            Direction = orientationObject.transform.forward;
+            m_Direction = OrientationObject.transform.forward;
         }
         
         /// <summary>
@@ -40,7 +40,7 @@
         /// </remarks>
         protected override void UpdateOrientation()
         {
-            Orientation.x = orientationObject.transform.eulerAngles.x;
-            Orientation.y = orientationObject.transform.eulerAngles.y;
+            m_Orientation.x = OrientationObject.transform.eulerAngles.x;
+            m_Orientation.y = OrientationObject.transform.eulerAngles.y;
         }
  }

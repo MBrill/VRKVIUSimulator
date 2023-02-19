@@ -17,11 +17,11 @@ namespace HTC.UnityPlugin.Utility
     public abstract class EnumToIntResolver { }
 
     /// <summary>
-    /// A base generic class that provide function that converts Enum value into int value.
+    /// A base generic class that provide function that converts Enum Value into int Value.
     /// 
     /// </summary>
     /// <remarks>
-    /// Resolver should provide faster function to convert from TEnum into int value
+    /// Resolver should provide faster function to convert from TEnum into int Value
     /// If not defined, EnumArrayBase<TEnum> static constructor can only provide slower convert function like "(int)(object)enumValue" or "EqualityComparer<TEnum>.Default.GetHashCode(enumValue)"
     /// 
     /// <example>
@@ -370,7 +370,7 @@ namespace HTC.UnityPlugin.Utility
                 rangeCheckFunc = RangeCheckFromUInt16;
             }
 
-            // find out min/max/length value in defined enum values
+            // find out min/max/length Value in defined enum values
             var fields = StaticEnumType.GetFields().Where(WithoutInvalidIndexAttr).OrderBy((Func<FieldInfo, int>)CompareMetadataToken).ToArray();
             var fieldEnums = new TEnum[fields.Length];
             var fieldValues = new int[fields.Length];
@@ -532,7 +532,7 @@ namespace HTC.UnityPlugin.Utility
             if (funcE2I != null) { return; }
 
             // Find first found custom resolver
-            // resolver should provide faster function to convert TEnum to int value
+            // resolver should provide faster function to convert TEnum to int Value
             // most common & fasteast converting is to directly cast in the script like "return (int)enumValue;"
             // In this generic constructor, we can only use slower converting function like "(int)(object)enumValue" or "EqualityComparer<TEnum>.Default.GetHashCode(enumValue)"
             EnumToIntResolver<TEnum> resolver;
@@ -629,7 +629,7 @@ namespace HTC.UnityPlugin.Utility
             EnumValueEnumerator EnumValuesFrom(TEnum from, TEnum to);
 
             /// <summary>
-            /// Length between min and max TEnum value
+            /// Length between min and max TEnum Value
             /// </summary>
             int Length { get; }
             /// <summary>
@@ -846,7 +846,7 @@ namespace HTC.UnityPlugin.Utility
         public TEnum Max { get { return StaticMax; } }
 
         /// <summary>
-        /// Length between min and max TEnum value
+        /// Length between min and max TEnum Value
         /// </summary>
         public override int Length { get { return StaticLength; } }
 

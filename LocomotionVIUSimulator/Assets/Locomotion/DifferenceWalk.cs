@@ -25,9 +25,9 @@ public class DifferenceWalk : TwoObjectsDirection
         /// </summary>
         protected override void UpdateDirection()
         {
-            Direction = endObject.transform.position - startObject.transform.position;
-            Direction.y = 0.0f;
-            Direction.Normalize();
+            m_Direction = endObject.transform.position - startObject.transform.position;
+            m_Direction.y = 0.0f;
+            m_Direction.Normalize();
         }
 
         protected override void UpdateOrientation()

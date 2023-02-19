@@ -87,9 +87,9 @@ namespace HTC.UnityPlugin.Vive
                 return m_lastCheckMergedResult;
             }
 
-            private void Merge(bool value)
+            private void Merge(bool Value)
             {
-                if (!value) { return; }
+                if (!Value) { return; }
 
                 if (!Directory.Exists(m_mainDirPath))
                 {
@@ -430,12 +430,12 @@ namespace HTC.UnityPlugin.Vive
 
                     VIUSettings.activateUnityXRModule = XRPluginManagementUtils.IsAnyXRLoaderEnabled(requirdPlatform);
 #elif UNITY_5_5_OR_NEWER
-                    OpenVRSDK.enabled = value;
-                    VIUSettings.activateUnityNativeVRModule = value || supportOculus;
+                    OpenVRSDK.enabled = Value;
+                    VIUSettings.activateUnityNativeVRModule = Value || supportOculus;
 #elif UNITY_5_4_OR_NEWER
-                    OpenVRSDK.enabled = value;
+                    OpenVRSDK.enabled = Value;
 #else
-                    if (value)
+                    if (Value)
                     {
                         virtualRealitySupported = false;
                     }

@@ -10,24 +10,26 @@ using UnityEngine;
         /// Festlegen der Bewegungsrichtung.
         /// </summary>
         /// <remarks>
-        /// Bewegungsrichtung als normalisierte Vector3-Instanz.
+        /// Bewegungsrichtung als normierte Vector3-Instanz.
         /// Wenn diese Funktion nicht überschrieben wird verwenden
         /// wir forward des GameObjects, an dem die Komponente
         /// hängt.
         /// </remarks>
         protected virtual void InitializeDirection()
         {
-            Direction = transform.forward;
+            m_Direction = transform.forward;
         }
 
         /// <summary>
-        /// Orientierung initialiseren. Wir überschreiben diese
-        /// Funktion in den abgeleiteten Klassen und rufen
-        /// diese Funktion in Locomotion::Awake  auf.
+        /// Initialisierung der Orientierung,. Wird in Awake aufgerufen.
         /// </summary>
+        /// <remarks>
+        ///  Wir überschreiben diese
+        /// Funktion in den abgeleiteten Klassen.
+        /// </remarks>
         protected virtual void InitializeOrientation()
         {
-            Orientation = new Vector3(0.0f, 0.0f, 0.0f);
+            m_Orientation = new Vector3(0.0f, 0.0f, 0.0f);
         }
         
         /// <summary>
@@ -35,7 +37,7 @@ using UnityEngine;
         /// </summary>
         protected virtual void UpdateDirection()
         {
-            Direction = transform.forward;
+            m_Direction = transform.forward;
         }
         
         /// <summary>
@@ -44,18 +46,17 @@ using UnityEngine;
         protected abstract void UpdateSpeed();
 
         /// <summary>
-        /// Orientierung für die Bewegung als Eulerwinkel.
+        /// Update der Orientierungl.
         /// </summary>
-        /// <remarks>
-        /// Orientierungen als Instanz von Vector3.
-        /// </remarks>
         protected abstract void UpdateOrientation();
 
         /// <summary>
-        /// Geschwindigkeit initialiseren. Wir überschreiben diese
-        /// Funktion in den abgeleiteten Klassen und rufen
-        /// diese Funktionin Locomotion::Awake auf.
+        /// Geschwindigkeit initialiseren. Wird in AWake aufgerufen..
         /// </summary>
+        /// <remarks>
+        ///  Wir überschreiben diese
+        /// Funktion in den abgeleiteten Klassen.
+        /// </remarks>
         protected abstract void InitializeSpeed();
 
         /// <summary>
@@ -76,55 +77,36 @@ using UnityEngine;
         /// Die Bewegung wird durchgeführt, wenn eine in dieser Klasse
         /// deklarierte logische Variable true ist.
         /// 
-        /// Wir bewegen uns in Richtung des Vektors Direction,
+        /// Wir bewegen uns in Richtung des Vektors m_Direction,
         /// er typischer Weise auf forward des GameObjects gesetzt wird.
         ///
-        /// Wir orientieren das Objekt mit Hilfe der Eulerwinkel in Orientation
-        /// und führen anschließend eine Translation in Richtung Direction durch.
+        /// Wir orientieren das Objekt mit Hilfe der Eulerwinkel in m_Orientation
+        /// und führen anschließend eine Translation in Richtung m_Direction durch.
         /// <remarks>
         protected virtual void Move()
         {
             if (m_moving)
             {
-                transform.eulerAngles = Orientation;
-                transform.Translate(Speed * Time.deltaTime * Direction);
+                transform.eulerAngles = m_Orientation;
+                transform.Translate(m_Speed * Time.deltaTime * m_Direction);
             }
         }
 
         /// <summary>
-        /// Bewegung ist durch einen Trigger ausgelöst worden.
+        /// Bewegung kann durch einen Trigger ausgelöst worden.
         /// <remarks>
         /// Ob die Bewegung mit Hilfe eines gedrückten Buttons erfolgt
-        /// oder durch zwei Button-Clicks ausgelöst und beendet wird müssen die
-        /// davon abgeleiteten Klassen entscheiden!
+        /// oder durch zwei Button-Clicks ausgelöst und beendet
+        /// wird müssen die  davon abgeleiteten Klassen entscheiden!
         /// </remarks>
         /// </summary>
         private bool m_moving;
-
         protected bool Moving
         {
             get => m_moving;
             set => m_moving = value;
         }
-
-        /// <summary>
-        /// Betrag der Geschwindigkeit für die Bewegung
-        /// <remarks>
-        /// Einheit dieser Variable ist m/s.
-        /// </remarks>
-        /// </summary>
-        protected float Speed;
-
-        /// <summary>
-        /// Vektor mit den Eulerwinkeln für die Kamera
-        /// </summary>
-        protected Vector3 Orientation;
-
-        /// <summary>
-        /// Klasse für die Verwaltung der Bahngeschwindigkeit.
-        /// </summary>
-        protected ScalarProvider Velocity;
-
+        
         /// <summary>
         /// Normierter Richtungsvektor für die Fortbewegung.
         /// </summary>
@@ -133,6 +115,24 @@ using UnityEngine;
         /// aus dem forward-Vektor des Orientierungsobjekts
         /// gesetzt.
         /// </remarks>
-        protected Vector3 Direction;
-}
+        protected Vector3 m_Direction;
+
+        /// <summary>
+        /// Vektor mit den Eulerwinkeln für die Kamera
+        /// </summary>
+        protected Vector3 m_Orientation;
+
+        /// <summary>
+        /// Betrag der Geschwindigkeit für die Bewegung
+        /// <remarks>
+        /// Einheit dieser Variable ist m/s.
+        /// </remarks>
+        /// </summary>
+        protected float m_Speed;
+        
+        /// <summary>
+        /// Klasse für die Verwaltung der Bahngeschwindigkeit.
+        /// </summary>
+        protected ScalarBlend m_Velocity;
+    }
 

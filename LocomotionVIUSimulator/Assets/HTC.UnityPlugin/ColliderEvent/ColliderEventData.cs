@@ -96,7 +96,7 @@ namespace HTC.UnityPlugin.ColliderEvent
             D4,
         }
 
-        // raw delta values
+        // raw Delta values
         private float m_x;
         private float m_y;
         private float m_z;
@@ -105,7 +105,7 @@ namespace HTC.UnityPlugin.ColliderEvent
         public InputAxis axis { get; private set; }
         public Dim dimention { get; private set; }
 
-        // delta values
+        // Delta values
         public float x { get { return dimention >= Dim.D1 ? m_x : 0f; } set { if (dimention >= Dim.D1) m_x = value; } }
         public float y { get { return dimention >= Dim.D2 ? m_y : 0f; } set { if (dimention >= Dim.D2) m_y = value; } }
         public float z { get { return dimention >= Dim.D3 ? m_z : 0f; } set { if (dimention >= Dim.D3) m_z = value; } }

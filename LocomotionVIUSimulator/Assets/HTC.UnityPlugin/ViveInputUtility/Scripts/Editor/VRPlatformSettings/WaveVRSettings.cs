@@ -25,7 +25,7 @@ namespace HTC.UnityPlugin.Vive
         {
             Add(new VIUVersionCheck.RecommendedSetting<UIOrientation>()
             {
-                settingTitle = "Default Interface Orientation",
+                settingTitle = "Default Interface m_Orientation",
                 skipCheckFunc = () => !VIUSettingsEditor.supportWaveVR,
                 currentValueFunc = () => PlayerSettings.defaultInterfaceOrientation,
                 setValueFunc = v => PlayerSettings.defaultInterfaceOrientation = v,
@@ -172,11 +172,11 @@ namespace HTC.UnityPlugin.Vive
                     }
 
 #if UNITY_2019_3_OR_NEWER && VIU_XR_GENERAL_SETTINGS
-                    XRPluginManagementUtils.SetXRLoaderEnabled(UnityXRModule.WAVE_XR_LOADER_CLASS_NAME, requirdPlatform, value);
-                    MockHMDSDK.enabled = value && !PackageManagerHelper.IsPackageInList(WAVE_XR_PACKAGE_NAME);
+                    XRPluginManagementUtils.SetXRLoaderEnabled(UnityXRModule.WAVE_XR_LOADER_CLASS_NAME, requirdPlatform, Value);
+                    MockHMDSDK.enabled = Value && !PackageManagerHelper.IsPackageInList(WAVE_XR_PACKAGE_NAME);
                     VIUSettings.activateUnityXRModule = XRPluginManagementUtils.IsAnyXRLoaderEnabled(requirdPlatform);
 #elif VIU_WAVEVR_3_0_0_OR_NEWER
-                    MockHMDSDK.enabled = value;
+                    MockHMDSDK.enabled = Value;
 #else
                     virtualRealitySupported = false;
 #endif

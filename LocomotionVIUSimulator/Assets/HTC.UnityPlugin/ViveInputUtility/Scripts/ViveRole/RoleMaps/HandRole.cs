@@ -57,7 +57,7 @@ namespace HTC.UnityPlugin.Vive
                 case HandRole.Controller13: return DeviceRole.Controller13;
                 case HandRole.Controller14: return DeviceRole.Controller14;
                 case HandRole.Controller15: return DeviceRole.Controller15;
-                default: return (DeviceRole)((int)DeviceRole.Hmd - 1); // returns invalid value
+                default: return (DeviceRole)((int)DeviceRole.Hmd - 1); // returns invalid Value
             }
         }
     }

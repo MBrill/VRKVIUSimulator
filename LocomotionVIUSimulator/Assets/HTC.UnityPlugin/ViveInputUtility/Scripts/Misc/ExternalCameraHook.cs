@@ -205,7 +205,7 @@ namespace HTC.UnityPlugin.Vive
             if (oldExternalCam != null)
             {
                 SteamVR_Render.instance.externalCamera = null;
-                // To prevent SteamVR_ExternalCamera from setting invalid(0f) sceneResolutionScale value in OnDisable()
+                // To prevent SteamVR_ExternalCamera from setting invalid(0f) sceneResolutionScale Value in OnDisable()
                 oldExternalCam.config.sceneResolutionScale = 0f;
 
 #if !VIU_STEAMVR_2_0_0_OR_NEWER
@@ -311,9 +311,9 @@ namespace HTC.UnityPlugin.Vive
             }
         }
 
-        private void InternalSetQuadViewActive(bool value)
+        private void InternalSetQuadViewActive(bool Value)
         {
-            if (value && m_externalCamera == null && !string.IsNullOrEmpty(m_configPath) && File.Exists(m_configPath))
+            if (Value && m_externalCamera == null && !string.IsNullOrEmpty(m_configPath) && File.Exists(m_configPath))
             {
                 // don't know why SteamVR_ExternalCamera must be instantiated from the prefab
                 // when create SteamVR_ExternalCamera using AddComponent, errors came out when disabling
@@ -356,9 +356,9 @@ namespace HTC.UnityPlugin.Vive
 
             if (m_externalCamera != null)
             {
-                m_externalCamera.gameObject.SetActive(value);
+                m_externalCamera.gameObject.SetActive(Value);
 
-                if (value)
+                if (Value)
                 {
                     VivePose.AddNewPosesListener(this);
                 }
@@ -369,9 +369,9 @@ namespace HTC.UnityPlugin.Vive
             }
         }
 
-        private void InternalSetConfigInterfaceActive(bool value)
+        private void InternalSetConfigInterfaceActive(bool Value)
         {
-            if (value && m_configUI == null)
+            if (Value && m_configUI == null)
             {
                 var prefab = Resources.Load<GameObject>("VIUExCamConfigInterface");
                 if (prefab == null)
@@ -386,7 +386,7 @@ namespace HTC.UnityPlugin.Vive
 
             if (m_configUI != null)
             {
-                m_configUI.SetActive(value);
+                m_configUI.SetActive(Value);
             }
         }
 

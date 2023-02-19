@@ -67,7 +67,7 @@ namespace HTC.UnityPlugin.Vive
         }
 
         /// <summary>
-        /// Returns raw analog value of the trigger button on the controller identified by role
+        /// Returns raw analog Value of the trigger button on the controller identified by role
         /// </summary>
         public static float GetTriggerValue(HandRole role, bool usePrevState = false)
         {
@@ -75,7 +75,7 @@ namespace HTC.UnityPlugin.Vive
         }
 
         /// <summary>
-        /// Returns raw analog value of the touch pad  on the controller identified by role
+        /// Returns raw analog Value of the touch pad  on the controller identified by role
         /// </summary>
         public static Vector2 GetPadAxis(HandRole role, bool usePrevState = false)
         {
@@ -83,7 +83,7 @@ namespace HTC.UnityPlugin.Vive
         }
 
         /// <summary>
-        /// Returns raw analog value of the touch pad on the controller identified by role if pressed,
+        /// Returns raw analog Value of the touch pad on the controller identified by role if pressed,
         /// otherwise, returns Vector2.zero
         /// </summary>
         public static Vector2 GetPadPressAxis(HandRole role)
@@ -92,7 +92,7 @@ namespace HTC.UnityPlugin.Vive
         }
 
         /// <summary>
-        /// Returns raw analog value of the touch pad on the controller identified by role if touched,
+        /// Returns raw analog Value of the touch pad on the controller identified by role if touched,
         /// otherwise, returns Vector2.zero
         /// </summary>
         public static Vector2 GetPadTouchAxis(HandRole role)
@@ -260,7 +260,7 @@ namespace HTC.UnityPlugin.Vive
         }
 
         /// <summary>
-        /// Returns raw analog value of the trigger button on the controller identified by role
+        /// Returns raw analog Value of the trigger button on the controller identified by role
         /// </summary>
         public static float GetTriggerValue(ViveRoleProperty role, bool usePrevState = false)
         {
@@ -268,7 +268,7 @@ namespace HTC.UnityPlugin.Vive
         }
 
         /// <summary>
-        /// Returns raw analog value of the touch pad  on the controller identified by role
+        /// Returns raw analog Value of the touch pad  on the controller identified by role
         /// </summary>
         public static Vector2 GetPadAxis(ViveRoleProperty role, bool usePrevState = false)
         {
@@ -276,7 +276,7 @@ namespace HTC.UnityPlugin.Vive
         }
 
         /// <summary>
-        /// Returns raw analog value of the touch pad on the controller identified by role if pressed,
+        /// Returns raw analog Value of the touch pad on the controller identified by role if pressed,
         /// otherwise, returns Vector2.zero
         /// </summary>
         public static Vector2 GetPadPressAxis(ViveRoleProperty role)
@@ -285,7 +285,7 @@ namespace HTC.UnityPlugin.Vive
         }
 
         /// <summary>
-        /// Returns raw analog value of the touch pad on the controller identified by role if touched,
+        /// Returns raw analog Value of the touch pad on the controller identified by role if touched,
         /// otherwise, returns Vector2.zero
         /// </summary>
         public static Vector2 GetPadTouchAxis(ViveRoleProperty role)
@@ -665,7 +665,7 @@ namespace HTC.UnityPlugin.Vive
         }
         #endregion extend generic
 
-        #region extend property role type & value
+        #region extend property role type & Value
         /// <param name="roleType">
         /// Can be DeviceRole, TrackerRole or any other enum type that have ViveRoleEnumAttribute.
         /// Use ViveRole.ValidateViveRoleEnum() to validate role type

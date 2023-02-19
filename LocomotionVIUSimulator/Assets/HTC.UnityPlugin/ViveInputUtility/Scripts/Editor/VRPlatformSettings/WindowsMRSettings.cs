@@ -96,8 +96,8 @@ namespace HTC.UnityPlugin.Vive
 
                     VIUSettings.activateUnityXRModule = XRPluginManagementUtils.IsAnyXRLoaderEnabled(requirdPlatform);
 #elif UNITY_2018_2_OR_NEWER
-                    WindowsMRSDK.enabled = value;
-                    VIUSettings.activateUnityNativeVRModule = value;
+                    WindowsMRSDK.enabled = Value;
+                    VIUSettings.activateUnityNativeVRModule = Value;
 #endif
                 }
             }

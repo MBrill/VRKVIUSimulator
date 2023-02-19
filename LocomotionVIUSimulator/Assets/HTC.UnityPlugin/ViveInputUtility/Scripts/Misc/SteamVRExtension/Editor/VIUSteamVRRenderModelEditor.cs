@@ -34,7 +34,7 @@ namespace HTC.UnityPlugin.Vive.SteamVRExtension
                 s_renderModelNames = LoadRenderModelNames();
             }
 
-            // Update renderModelIndex based on current modelOverride value.
+            // Update renderModelIndex based on current modelOverride Value.
             m_selectedModelIndex = 0;
             var selectedModelName = m_modelOverrideProp.stringValue;
             if (!string.IsNullOrEmpty(selectedModelName))

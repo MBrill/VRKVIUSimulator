@@ -82,7 +82,7 @@ namespace HTC.UnityPlugin.VRModuleManagement
                 var compositor = OpenVR.Compositor;
                 if (compositor == null) { return; }
 
-                compositor.SetTrackingSpace(value);
+                compositor.SetTrackingSpace(Value);
             }
         }
 
@@ -319,11 +319,11 @@ namespace HTC.UnityPlugin.VRModuleManagement
 
                 foreach (var actionDeviceData in AllActionDevicePath(vrInput, touchActions))
                 {
-                    bool value;
-                    var error = TryGetDigitalValue(vrInput, actionDeviceData.actionHandle, actionDeviceData.devicePathHandle, out value);
+                    bool Value;
+                    var error = TryGetDigitalValue(vrInput, actionDeviceData.actionHandle, actionDeviceData.devicePathHandle, out Value);
                     if (error == EVRInputError.None)
                     {
-                        actionDeviceData.currState.SetButtonTouch(actionDeviceData.inputKey, value);
+                        actionDeviceData.currState.SetButtonTouch(actionDeviceData.inputKey, Value);
                     }
                     else
                     {
@@ -333,11 +333,11 @@ namespace HTC.UnityPlugin.VRModuleManagement
 
                 foreach (var actionDeviceData in AllActionDevicePath(vrInput, v1Actions))
                 {
-                    Vector3 value;
-                    var error = TryGetAnalogValue(vrInput, actionDeviceData.actionHandle, actionDeviceData.devicePathHandle, out value);
+                    Vector3 Value;
+                    var error = TryGetAnalogValue(vrInput, actionDeviceData.actionHandle, actionDeviceData.devicePathHandle, out Value);
                     if (error == EVRInputError.None)
                     {
-                        actionDeviceData.currState.SetAxisValue(actionDeviceData.inputKey, value.x);
+                        actionDeviceData.currState.SetAxisValue(actionDeviceData.inputKey, Value.x);
                     }
                     else
                     {
@@ -347,12 +347,12 @@ namespace HTC.UnityPlugin.VRModuleManagement
 
                 foreach (var actionDeviceData in AllActionDevicePath(vrInput, v2Actions))
                 {
-                    Vector3 value;
-                    var error = TryGetAnalogValue(vrInput, actionDeviceData.actionHandle, actionDeviceData.devicePathHandle, out value);
+                    Vector3 Value;
+                    var error = TryGetAnalogValue(vrInput, actionDeviceData.actionHandle, actionDeviceData.devicePathHandle, out Value);
                     if (error == EVRInputError.None)
                     {
-                        actionDeviceData.currState.SetAxisValue(actionDeviceData.inputKey, value.x);
-                        actionDeviceData.currState.SetAxisValue(actionDeviceData.inputKey + 1, value.y);
+                        actionDeviceData.currState.SetAxisValue(actionDeviceData.inputKey, Value.x);
+                        actionDeviceData.currState.SetAxisValue(actionDeviceData.inputKey + 1, Value.y);
                     }
                     else
                     {
@@ -590,10 +590,10 @@ namespace HTC.UnityPlugin.VRModuleManagement
             joints[jointName] = new JointPose(handPose * new RigidPose(position, rotation));
         }
 
-        private void OnInputFocus(bool value)
+        private void OnInputFocus(bool Value)
         {
-            m_hasInputFocus = value;
-            InvokeInputFocusEvent(value);
+            m_hasInputFocus = Value;
+            InvokeInputFocusEvent(Value);
         }
 
         public override bool HasInputFocus() { return m_hasInputFocus; }
@@ -677,23 +677,23 @@ namespace HTC.UnityPlugin.VRModuleManagement
             }
         }
 
-        private EVRInputError TryGetDigitalValue(CVRInput vrInput, ulong actionHandle, ulong devicePathHandle, out bool value)
+        private EVRInputError TryGetDigitalValue(CVRInput vrInput, ulong actionHandle, ulong devicePathHandle, out bool Value)
         {
             var data = default(InputDigitalActionData_t);
             var error = vrInput.GetDigitalActionData(actionHandle, ref data, m_digitalDataSize, devicePathHandle);
 
-            value = data.bState;
+            Value = data.bState;
             return error;
         }
 
-        private EVRInputError TryGetAnalogValue(CVRInput vrInput, ulong actionHandle, ulong devicePathHandle, out Vector3 value)
+        private EVRInputError TryGetAnalogValue(CVRInput vrInput, ulong actionHandle, ulong devicePathHandle, out Vector3 Value)
         {
             var data = default(InputAnalogActionData_t);
             var error = vrInput.GetAnalogActionData(actionHandle, ref data, m_analogDataSize, devicePathHandle);
 
-            value.x = data.x;
-            value.y = data.y;
-            value.z = data.z;
+            Value.x = data.x;
+            Value.y = data.y;
+            Value.z = data.z;
             return error;
         }
 

@@ -78,10 +78,10 @@ namespace HTC.UnityPlugin.Vive.ExCamConfigInterface
                 Camera cam;
                 if (TryGetTargetExCam(out excam, out cam))
                 {
-                    excam.config.x = value;
+                    excam.config.x = Value;
 
                     var pos = cam.transform.localPosition;
-                    pos.x = value;
+                    pos.x = Value;
                     cam.transform.localPosition = pos;
                 }
             }
@@ -107,10 +107,10 @@ namespace HTC.UnityPlugin.Vive.ExCamConfigInterface
                 Camera cam;
                 if (TryGetTargetExCam(out excam, out cam))
                 {
-                    excam.config.y = value;
+                    excam.config.y = Value;
 
                     var pos = cam.transform.localPosition;
-                    pos.y = value;
+                    pos.y = Value;
                     cam.transform.localPosition = pos;
                 }
             }
@@ -136,10 +136,10 @@ namespace HTC.UnityPlugin.Vive.ExCamConfigInterface
                 Camera cam;
                 if (TryGetTargetExCam(out excam, out cam))
                 {
-                    excam.config.z = value;
+                    excam.config.z = Value;
 
                     var pos = cam.transform.localPosition;
-                    pos.z = value;
+                    pos.z = Value;
                     cam.transform.localPosition = pos;
                 }
             }
@@ -165,10 +165,10 @@ namespace HTC.UnityPlugin.Vive.ExCamConfigInterface
                 Camera cam;
                 if (TryGetTargetExCam(out excam, out cam))
                 {
-                    excam.config.rx = value;
+                    excam.config.rx = Value;
 
                     var rot = cam.transform.localEulerAngles;
-                    rot.x = value;
+                    rot.x = Value;
                     cam.transform.localEulerAngles = rot;
                 }
             }
@@ -194,10 +194,10 @@ namespace HTC.UnityPlugin.Vive.ExCamConfigInterface
                 Camera cam;
                 if (TryGetTargetExCam(out excam, out cam))
                 {
-                    excam.config.ry = value;
+                    excam.config.ry = Value;
 
                     var rot = cam.transform.localEulerAngles;
-                    rot.y = value;
+                    rot.y = Value;
                     cam.transform.localEulerAngles = rot;
                 }
             }
@@ -223,10 +223,10 @@ namespace HTC.UnityPlugin.Vive.ExCamConfigInterface
                 Camera cam;
                 if (TryGetTargetExCam(out excam, out cam))
                 {
-                    excam.config.rz = value;
+                    excam.config.rz = Value;
 
                     var rot = cam.transform.localEulerAngles;
-                    rot.z = value;
+                    rot.z = Value;
                     cam.transform.localEulerAngles = rot;
                 }
             }
@@ -252,9 +252,9 @@ namespace HTC.UnityPlugin.Vive.ExCamConfigInterface
                 Camera cam;
                 if (TryGetTargetExCam(out excam, out cam))
                 {
-                    excam.config.fov = value;
+                    excam.config.fov = Value;
 
-                    cam.fieldOfView = value;
+                    cam.fieldOfView = Value;
                 }
             }
         }
@@ -278,29 +278,29 @@ namespace HTC.UnityPlugin.Vive.ExCamConfigInterface
                 SteamVR_ExternalCamera excam;
                 if (TryGetTargetExCam(out excam))
                 {
-                    excam.config.sceneResolutionScale = value;
-                    SteamVR_Camera.sceneResolutionScale = value;
+                    excam.config.sceneResolutionScale = Value;
+                    SteamVR_Camera.sceneResolutionScale = Value;
                 }
             }
         }
 #if VIU_STEAMVR_1_2_2_OR_NEWER
-        public float ckR { get { SteamVR_ExternalCamera excam; return TryGetTargetExCam(out excam) ? excam.config.r : 0f; } set { SteamVR_ExternalCamera excam; if (TryGetTargetExCam(out excam)) { excam.config.r = value; } } }
-        public float ckG { get { SteamVR_ExternalCamera excam; return TryGetTargetExCam(out excam) ? excam.config.g : 0f; } set { SteamVR_ExternalCamera excam; if (TryGetTargetExCam(out excam)) { excam.config.g = value; } } }
-        public float ckB { get { SteamVR_ExternalCamera excam; return TryGetTargetExCam(out excam) ? excam.config.b : 0f; } set { SteamVR_ExternalCamera excam; if (TryGetTargetExCam(out excam)) { excam.config.b = value; } } }
-        public float ckA { get { SteamVR_ExternalCamera excam; return TryGetTargetExCam(out excam) ? excam.config.a : 0f; } set { SteamVR_ExternalCamera excam; if (TryGetTargetExCam(out excam)) { excam.config.a = value; } } }
+        public float ckR { get { SteamVR_ExternalCamera excam; return TryGetTargetExCam(out excam) ? excam.config.r : 0f; } set { SteamVR_ExternalCamera excam; if (TryGetTargetExCam(out excam)) { excam.config.r = Value; } } }
+        public float ckG { get { SteamVR_ExternalCamera excam; return TryGetTargetExCam(out excam) ? excam.config.g : 0f; } set { SteamVR_ExternalCamera excam; if (TryGetTargetExCam(out excam)) { excam.config.g = Value; } } }
+        public float ckB { get { SteamVR_ExternalCamera excam; return TryGetTargetExCam(out excam) ? excam.config.b : 0f; } set { SteamVR_ExternalCamera excam; if (TryGetTargetExCam(out excam)) { excam.config.b = Value; } } }
+        public float ckA { get { SteamVR_ExternalCamera excam; return TryGetTargetExCam(out excam) ? excam.config.a : 0f; } set { SteamVR_ExternalCamera excam; if (TryGetTargetExCam(out excam)) { excam.config.a = Value; } } }
 #else
         public float ckR { get { return 0f; } set { } }
         public float ckG { get { return 0f; } set { } }
         public float ckB { get { return 0f; } set { } }
         public float ckA { get { return 0f; } set { } }
 #endif
-        public float clipNear { get { SteamVR_ExternalCamera excam; return TryGetTargetExCam(out excam) ? excam.config.near : 0f; } set { SteamVR_ExternalCamera excam; if (TryGetTargetExCam(out excam)) { excam.config.near = value; } } }
-        public float clipFar { get { SteamVR_ExternalCamera excam; return TryGetTargetExCam(out excam) ? excam.config.far : 0f; } set { SteamVR_ExternalCamera excam; if (TryGetTargetExCam(out excam)) { excam.config.far = value; } } }
-        public float offsetNear { get { SteamVR_ExternalCamera excam; return TryGetTargetExCam(out excam) ? excam.config.nearOffset : 0f; } set { SteamVR_ExternalCamera excam; if (TryGetTargetExCam(out excam)) { excam.config.nearOffset = value; } } }
-        public float offsetFar { get { SteamVR_ExternalCamera excam; return TryGetTargetExCam(out excam) ? excam.config.farOffset : 0f; } set { SteamVR_ExternalCamera excam; if (TryGetTargetExCam(out excam)) { excam.config.farOffset = value; } } }
-        public float offsetHMD { get { SteamVR_ExternalCamera excam; return TryGetTargetExCam(out excam) ? excam.config.hmdOffset : 0f; } set { SteamVR_ExternalCamera excam; if (TryGetTargetExCam(out excam)) { excam.config.hmdOffset = value; } } }
-        public float frameSkip { get { SteamVR_ExternalCamera excam; return TryGetTargetExCam(out excam) ? excam.config.frameSkip : 0f; } set { SteamVR_ExternalCamera excam; if (TryGetTargetExCam(out excam)) { excam.config.frameSkip = value; } } }
-        public bool diableStandardAssets { get { SteamVR_ExternalCamera excam; return TryGetTargetExCam(out excam) ? excam.config.disableStandardAssets : false; } set { SteamVR_ExternalCamera excam; if (TryGetTargetExCam(out excam)) { excam.config.disableStandardAssets = value; } } }
+        public float clipNear { get { SteamVR_ExternalCamera excam; return TryGetTargetExCam(out excam) ? excam.config.near : 0f; } set { SteamVR_ExternalCamera excam; if (TryGetTargetExCam(out excam)) { excam.config.near = Value; } } }
+        public float clipFar { get { SteamVR_ExternalCamera excam; return TryGetTargetExCam(out excam) ? excam.config.far : 0f; } set { SteamVR_ExternalCamera excam; if (TryGetTargetExCam(out excam)) { excam.config.far = Value; } } }
+        public float offsetNear { get { SteamVR_ExternalCamera excam; return TryGetTargetExCam(out excam) ? excam.config.nearOffset : 0f; } set { SteamVR_ExternalCamera excam; if (TryGetTargetExCam(out excam)) { excam.config.nearOffset = Value; } } }
+        public float offsetFar { get { SteamVR_ExternalCamera excam; return TryGetTargetExCam(out excam) ? excam.config.farOffset : 0f; } set { SteamVR_ExternalCamera excam; if (TryGetTargetExCam(out excam)) { excam.config.farOffset = Value; } } }
+        public float offsetHMD { get { SteamVR_ExternalCamera excam; return TryGetTargetExCam(out excam) ? excam.config.hmdOffset : 0f; } set { SteamVR_ExternalCamera excam; if (TryGetTargetExCam(out excam)) { excam.config.hmdOffset = Value; } } }
+        public float frameSkip { get { SteamVR_ExternalCamera excam; return TryGetTargetExCam(out excam) ? excam.config.frameSkip : 0f; } set { SteamVR_ExternalCamera excam; if (TryGetTargetExCam(out excam)) { excam.config.frameSkip = Value; } } }
+        public bool diableStandardAssets { get { SteamVR_ExternalCamera excam; return TryGetTargetExCam(out excam) ? excam.config.disableStandardAssets : false; } set { SteamVR_ExternalCamera excam; if (TryGetTargetExCam(out excam)) { excam.config.disableStandardAssets = Value; } } }
 
         public void SaveConfig()
         {

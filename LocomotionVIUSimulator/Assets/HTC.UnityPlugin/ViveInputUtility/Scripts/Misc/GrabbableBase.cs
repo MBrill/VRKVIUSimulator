@@ -131,7 +131,7 @@ namespace HTC.UnityPlugin.Vive
                 maxScale = Mathf.Abs(maxScale);
                 if (minScale < maxScale)
                 {
-                    // FIXME: what if originScale have zero value?
+                    // FIXME: what if originScale have zero Value?
                     var originScaleAbs = new Vector3(Mathf.Abs(originScale.x), Mathf.Abs(originScale.y), Mathf.Abs(originScale.z));
                     if (originScaleAbs.x == originScaleAbs.y && originScaleAbs.y == originScaleAbs.z)
                     {
@@ -139,7 +139,7 @@ namespace HTC.UnityPlugin.Vive
                     }
                     else
                     {
-                        // when scale is irregular, clamp the scale factor to make sure no scale value is out of min/max range
+                        // when scale is irregular, clamp the scale factor to make sure no scale Value is out of min/max range
                         var minScaleAxis = Mathf.Min(originScaleAbs.x, originScaleAbs.y, originScaleAbs.z);
                         var maxScaleAxis = Mathf.Max(originScaleAbs.x, originScaleAbs.y, originScaleAbs.z);
                         if (minScaleAxis / maxScaleAxis >= minScale / maxScale)

@@ -9,7 +9,7 @@ namespace HTC.UnityPlugin.Vive
 {
     // ViveRoleProperty is a serializable class that preserve vive role using 2 strings.
     // There also has a property drawer so you can use it as a serialized field in your MonoBevaviour.
-    // Note that when deserializing, result of type and value is based on the valid role info stored in ViveRoleEnum class
+    // Note that when deserializing, result of type and Value is based on the valid role info stored in ViveRoleEnum class
     [Serializable]
     public class ViveRoleProperty
     {
@@ -171,10 +171,10 @@ namespace HTC.UnityPlugin.Vive
             }
         }
 
-        // update type and value changes
+        // update type and Value changes
         public void Update()
         {
-            if (m_lockUpdate && (m_isTypeDirty || m_isValueDirty)) { throw new Exception("Can't change value during onChange event callback"); }
+            if (m_lockUpdate && (m_isTypeDirty || m_isValueDirty)) { throw new Exception("Can't change Value during onChange event callback"); }
 
             var oldRoleType = m_roleType;
             var oldRoleValue = m_roleValue;
@@ -279,7 +279,7 @@ namespace HTC.UnityPlugin.Vive
             Set(prop.m_roleTypeFullName, prop.m_roleValueName);
         }
 
-        // set by value name to preserve the enum element, since different enum element could have same enum value
+        // set by Value name to preserve the enum element, since different enum element could have same enum Value
         public void Set(string typeFullName, string valueName)
         {
             m_isTypeDirty |= ChangeProp.Set(ref m_roleTypeFullName, typeFullName);
@@ -310,7 +310,7 @@ namespace HTC.UnityPlugin.Vive
             var roleInfo = ViveRoleEnum.GetInfo<TRole>();
             if (m_roleType != typeof(TRole) || !roleInfo.TryGetRoleByName(m_roleValueName, out role))
             {
-                // return invalid if role type not match or the value name not found in roleInfo
+                // return invalid if role type not match or the Value name not found in roleInfo
                 return roleInfo.InvalidRole;
             }
 

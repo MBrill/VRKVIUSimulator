@@ -421,7 +421,7 @@ namespace HTC.UnityPlugin.VRModuleManagement
             internal static extern int GetGestureResult(out IntPtr points, out int frameIndex);
 
             [DllImport(DLLPath)]
-            internal static extern void UseExternalTransform([MarshalAs(UnmanagedType.I1)] bool value);
+            internal static extern void UseExternalTransform([MarshalAs(UnmanagedType.I1)] bool Value);
 
             [DllImport(DLLPath)]
             internal static extern void SetCameraTransform(Vector3 position, Quaternion rotation);
