@@ -1,4 +1,5 @@
 ﻿//========= 2021 2023 - Copyright Manfred Brill. All rights reserved. ===========
+
 using UnityEngine;
 
  /// <summary>
@@ -8,8 +9,7 @@ using UnityEngine;
  /// </summary>
   public abstract class SingleObjectDirection : JoystickLocomotion
  {
-        [Header("Definition der Bewegungsrichtung")]
-        /// <summary>
+     /// <summary>
         /// Welches GameObject verwenden wir für die Definition der Richtung?
         /// </summary>
         /// <remarks>
@@ -17,10 +17,8 @@ using UnityEngine;
         /// GameObjects (wie der Kopf oder ein Vive Tracker) können
         /// sinnvoll eingesetzt  werden.
         /// </remarks>
-
         [Tooltip("GameObject, das die Bewegungsrichtung definiert")]
         public GameObject OrientationObject;
-        
         
         /// <summary>
         /// Bewegungsrichtung auf den forward-Vektor des Orientierungsobjekts setzen.

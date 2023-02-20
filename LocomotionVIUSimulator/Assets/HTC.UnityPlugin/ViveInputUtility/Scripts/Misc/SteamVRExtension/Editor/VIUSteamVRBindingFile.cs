@@ -30,7 +30,7 @@ namespace HTC.UnityPlugin.Vive.SteamVRExtension
             return new VIUSteamVRBindingFile()
             {
                 dirPath = dirPath,
-                fileName = fileName,
+                FileName = FileName,
 
                 app_key = app_key,
                 controller_type = controller_type,

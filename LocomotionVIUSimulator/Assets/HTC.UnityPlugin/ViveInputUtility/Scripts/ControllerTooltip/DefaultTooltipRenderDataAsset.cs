@@ -7,6 +7,6 @@ using UnityEngine;
 
 namespace HTC.UnityPlugin.Vive
 {
-    //[CreateAssetMenu(menuName = "HTC/DefaultTooltipRenderDataAsset", fileName = "DefaultTooltipRenderDataSample")]
+    //[CreateAssetMenu(menuName = "HTC/DefaultTooltipRenderDataAsset", FileName = "DefaultTooltipRenderDataSample")]
     public class DefaultTooltipRenderDataAsset : TooltipRenderDataAssetBase<DefaultTooltipRenderData> { }
 }

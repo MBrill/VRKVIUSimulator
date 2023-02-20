@@ -19,7 +19,7 @@ namespace HTC.UnityPlugin.Vive
         public TextAnchor labelAnchor;
     }
 
-    //[CreateAssetMenu(menuName = "HTC/TooltipRigSetAsset", fileName = "TooltipRigSetAsset")]
+    //[CreateAssetMenu(menuName = "HTC/TooltipRigSetAsset", FileName = "TooltipRigSetAsset")]
     public class TooltipRigAsset : ScriptableObject
     {
         [Serializable]

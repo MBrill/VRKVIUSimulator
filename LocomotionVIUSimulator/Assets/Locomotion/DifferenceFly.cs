@@ -29,7 +29,7 @@ public class DifferenceFly : TwoObjectsDirection
         /// </remarks>
         protected override void UpdateDirection()
         {
-            m_Direction = endObject.transform.position - startObject.transform.position;
+            m_Direction = EndObject.transform.position - StartObject.transform.position;
             m_Direction.Normalize();
         }
 

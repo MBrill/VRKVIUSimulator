@@ -1,4 +1,5 @@
 //========= 2021 - 2023 Copyright Manfred Brill. All rights reserved. ===========
+
 using UnityEngine;
 
 /// <summary>
@@ -56,7 +57,6 @@ public class OneTriggerConstantSpeedWiP : InPlaceLocomotion
                 };
                 s_Logger.LogFormat(LogType.Log, gameObject,
                     "{0:G};{1:G};{2:G}", args);
-
             }
             m_LastValue = position;
         }

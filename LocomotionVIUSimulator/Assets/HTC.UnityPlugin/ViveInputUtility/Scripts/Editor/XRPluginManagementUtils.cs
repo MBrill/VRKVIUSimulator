@@ -216,8 +216,8 @@ namespace HTC.UnityPlugin.Vive
             {
                 if (!string.IsNullOrEmpty(path))
                 {
-                    string fileName = string.Format("{0}.asset", TypeNameToString(typeName));
-                    string targetPath = Path.Combine(path, fileName);
+                    string FileName = string.Format("{0}.asset", TypeNameToString(typeName));
+                    string targetPath = Path.Combine(path, FileName);
                     AssetDatabase.CreateAsset(obj, targetPath);
 
                     return obj;

@@ -925,7 +925,7 @@ namespace HTC.UnityPlugin.Vive
                 var actionFile = new SteamVRExtension.VIUSteamVRActionFile()
                 {
                     dirPath = VIUProjectSettings.partialActionDirPath,
-                    fileName = VIUProjectSettings.partialActionFileName,
+                    FileName = VIUProjectSettings.partialActionFileName,
                 };
 
                 actionFile.action_sets.Add(new SteamVRExtension.VIUSteamVRActionFile.ActionSet()

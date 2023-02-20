@@ -1,11 +1,14 @@
 //========= 2021 - 2023 - Copyright Manfred Brill. All rights reserved. ===========
 
+using UnityEngine;
+
 /// <summary>
-/// Fly als Locomotion in einer VR-Anwendung, mit zwei Objekten für
+/// Walk als Fortbewegung in einer VR-Anwendung,
+/// mit zwei Objekten für
 /// die Definition der Bewegungsrichtung.
 /// </summary>
 /// <remarks>
-/// Fly bedeutet, dass wir die Bewegungsrichtung in allen drei
+/// Walk bedeutet, dass wir die Bewegungsrichtung inx und z-
 /// Koordinatenachsen verändern können.
 ///
 /// Wir verwenden einen Trigger-Button. So lange dieser Button
@@ -20,16 +23,17 @@
 /// </remarks>
 public class DifferenceWalk : TwoObjectsDirection
 {
-        /// <summary>
+    /// <summary>
         /// Bewegungsrichtung auf den forward-Vektor des Orientierungsobjekts setzen.
         /// </summary>
         protected override void UpdateDirection()
         {
-            m_Direction = endObject.transform.position - startObject.transform.position;
+            m_Direction = EndObject.transform.position - StartObject.transform.position;
             m_Direction.y = 0.0f;
             m_Direction.Normalize();
         }
-
+    
+        
         protected override void UpdateOrientation()
         {
             throw new System.NotImplementedException();

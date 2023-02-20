@@ -36,7 +36,7 @@ public class CustomLogHandler :  ILogHandler
     /// <param name="fileName">Dateiname</param>
     /// </summary>
     /// <remarks>
-    /// Wir schreiben die Datei mit dem Namen fileName
+    /// Wir schreiben die Datei mit dem Namen FileName
     /// in den dataPath der Anwendung.
     ///
     /// Im Editor ist dies das Verzeichnis Assets.
@@ -48,13 +48,19 @@ public class CustomLogHandler :  ILogHandler
     {
         var filePath = Application.dataPath + "/" + fileName;
         m_FileStream = new FileStream(filePath, 
-            FileMode.OpenOrCreate, 
+            FileMode.Create, 
             FileAccess.ReadWrite);
         m_StreamWriter = new StreamWriter(m_FileStream);
 
         // Den Default Handler durch diese Klasse ersetzen
         Debug.unityLogger.logHandler = this;
     }
+
+    public void CloseTheLog()
+    {
+        m_StreamWriter.Close();
+    }
+    
     /// <summary>
     /// Wir überschreiben LogFormat aus dem Interface.
     /// </summary>

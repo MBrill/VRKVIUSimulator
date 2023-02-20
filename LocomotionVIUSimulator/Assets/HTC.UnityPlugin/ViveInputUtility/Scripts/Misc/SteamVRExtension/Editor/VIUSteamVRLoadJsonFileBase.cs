@@ -17,17 +17,17 @@ namespace HTC.UnityPlugin.Vive.SteamVRExtension
         [JsonIgnore]
         public string dirPath { get; set; }
         [JsonIgnore]
-        public string fileName { get; set; }
+        public string FileName { get; set; }
         [JsonIgnore]
-        public string fullPath { get { return Path.Combine(dirPath, fileName); } }
+        public string fullPath { get { return Path.Combine(dirPath, FileName); } }
         [JsonIgnore]
         public DateTime lastWriteTime { get; private set; }
 
-        public static bool TryLoad(string dirPath, string fileName, out T file, bool force = false)
+        public static bool TryLoad(string dirPath, string FileName, out T file, bool force = false)
         {
             try
             {
-                var fullPath = Path.Combine(dirPath, fileName);
+                var fullPath = Path.Combine(dirPath, FileName);
                 if (!File.Exists(fullPath)) { file = null; return false; }
 
                 var lastWriteTime = File.GetLastWriteTime(fullPath);
@@ -43,7 +43,7 @@ namespace HTC.UnityPlugin.Vive.SteamVRExtension
 
                 file = JsonConvert.DeserializeObject<T>(File.ReadAllText(fullPath));
                 file.dirPath = dirPath;
-                file.fileName = fileName;
+                file.FileName = FileName;
                 file.lastWriteTime = lastWriteTime;
 
                 if (s_fileCache == null) { s_fileCache = new Dictionary<string, T>() { { fullPath, file } }; }
@@ -73,9 +73,9 @@ namespace HTC.UnityPlugin.Vive.SteamVRExtension
                 return;
             }
 
-            if (string.IsNullOrEmpty(fileName))
+            if (string.IsNullOrEmpty(FileName))
             {
-                Debug.LogWarning("fileName is empty");
+                Debug.LogWarning("FileName is empty");
                 return;
             }
 
@@ -84,7 +84,7 @@ namespace HTC.UnityPlugin.Vive.SteamVRExtension
                 OnBeforeSave(dirPath);
 
                 var json = JsonConvert.SerializeObject(this, Formatting.Indented, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-                File.WriteAllText(Path.Combine(dirPath, fileName), json);
+                File.WriteAllText(Path.Combine(dirPath, FileName), json);
             }
             catch (Exception e)
             {
