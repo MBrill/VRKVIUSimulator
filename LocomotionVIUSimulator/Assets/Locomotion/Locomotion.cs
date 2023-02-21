@@ -71,7 +71,9 @@ using UnityEngine;
         }
 
         /// <summary>
-        /// Die Bewegung durchführen.
+        /// Die Bewegung durchführen. Wir gehen davon aus,
+        /// dass vorher in der Update-Funktion überprüft wird,
+        /// ob die logische Varialble m_moving true ist.
         /// </summary>
         /// <remarks>
         /// Die Bewegung wird durchgeführt, wenn eine in dieser Klasse
@@ -85,11 +87,8 @@ using UnityEngine;
         /// <remarks>
         protected virtual void Move()
         {
-            if (m_moving)
-            {
-                transform.eulerAngles = m_Orientation;
+            transform.eulerAngles = m_Orientation;
                 transform.Translate(m_Speed * Time.deltaTime * m_Direction);
-            }
         }
 
         /// <summary>

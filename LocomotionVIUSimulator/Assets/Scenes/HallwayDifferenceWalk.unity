@@ -1548,6 +1548,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1203748445}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1211490547 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 188906, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
+  m_PrefabInstance: {fileID: 1079610538}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1211766769
 GameObject:
   m_ObjectHideFlags: 0
@@ -2448,13 +2453,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835552558}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c493d208d047a14ebac64d502709e62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlayAreaPosition: {fileID: 1608245029}
-  FileName: Walk.csv
+  Logs: 0
+  FileName: DifferenceFly.csv
 --- !u!114 &1835552562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2462,39 +2468,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835552558}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7f5892c2d159dc4ba6dfe409160b966, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitialSpeed: 5
-  MaximumSpeed: 10
-  DeltaSpeed: 0.2
-  OrientationObject: {fileID: 1731205359}
-  moveHand: 0
-  moveButton: 0
-  DecButton: 1
-  AccButton: 2
---- !u!114 &1835552563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835552558}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30c2ccf3319673e419d108ccb1742421, type: 3}
+  m_Script: {fileID: 11500000, guid: e611e0a5945960340970c5278d5c19b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StartObject: {fileID: 1211490547}
+  EndObject: {fileID: 1731205359}
+  Threshold: 1
   InitialSpeed: 5
-  MaximumSpeed: 10
-  DeltaSpeed: 0.2
-  OrientationObject: {fileID: 1731205359}
-  moveHand: 0
-  moveButton: 0
-  DecButton: 1
-  AccButton: 2
 --- !u!1 &2097231745
 GameObject:
   m_ObjectHideFlags: 0

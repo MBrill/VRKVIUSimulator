@@ -2454,28 +2454,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayAreaPosition: {fileID: 1608245029}
+  Logs: 0
   FileName: Walk.csv
---- !u!114 &1835552562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835552558}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7f5892c2d159dc4ba6dfe409160b966, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InitialSpeed: 5
-  MaximumSpeed: 10
-  DeltaSpeed: 0.2
-  OrientationObject: {fileID: 1731205359}
-  moveHand: 0
-  moveButton: 0
-  DecButton: 1
-  AccButton: 2
---- !u!114 &1835552563
+--- !u!114 &1835552565
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2484,13 +2465,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1835552558}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30c2ccf3319673e419d108ccb1742421, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e48f78fc3c43c7438d73286ed1ee0c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OrientationObject: {fileID: 1731205359}
   InitialSpeed: 5
   MaximumSpeed: 10
   DeltaSpeed: 0.2
-  OrientationObject: {fileID: 1731205359}
   moveHand: 0
   moveButton: 0
   DecButton: 1

@@ -56,6 +56,9 @@ public class CustomLogHandler :  ILogHandler
         Debug.unityLogger.logHandler = this;
     }
 
+    /// <summary>
+    /// Schlieﬂen der Protokolldatei
+    /// </summary>
     public void CloseTheLog()
     {
         m_StreamWriter.Close();
