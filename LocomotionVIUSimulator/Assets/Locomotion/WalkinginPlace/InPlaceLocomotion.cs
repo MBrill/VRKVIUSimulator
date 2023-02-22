@@ -7,8 +7,6 @@ using UnityEngine;
 /// wie Walking-in-Place oder Arm-Swinging.
 /// </summary>
 /// <remarks>
-/// Diese Klasse ist von Locomotion abgeleitet.
-///
 /// Welche getrackten Objekte wir verwenden und wie viele davon
 /// legen wir in den von dieser Klasse abgeleiteten Klassen fest!
 /// </remarks>
@@ -23,7 +21,7 @@ public abstract class InPlaceLocomotion : Locomotion
         /// getracktes GameObject.
         /// </remarks>
         [Tooltip("Welches Objekt definiert die Bewegungsrichtung?")]
-        public GameObject orientationObject;
+        public GameObject OrientationObject;
         
         /// <summary>
         /// Geschwindigkeit für die Bewegung der Kamera in km/h.
@@ -31,28 +29,58 @@ public abstract class InPlaceLocomotion : Locomotion
         [Tooltip("Geschwindigkeit in km/h")]
         public float InitialSpeed = 1.0f; 
         
+        /// <summary>
+        /// Wird dieser Wert überschritten lösen wir den
+        /// Trigger aus und die Bewegung startet.
+        /// </summary>
         [Tooltip("Schwellwert für das Auslösen der Bewegung")] 
         [Range(0.01f, 1.0f)]
         public float Threshold = 0.05f;
         
+                
+        [Header("Protokollierung der Berechnungen")]
+        /// <summary>
+        /// Aktivieren und De-Aktivieren Protokollieren
+        /// </summary>      
+        [Tooltip("Protollieren?")]
+        public bool Logs = false;
         
         /// <summary>
-        /// Update aufrufen und die Bewegung ausführen.
+        /// Dateiname für die Logs
+        /// </summary>      
+        [Tooltip("Name der Protokoll-Datei")]
+        public string fileName = "llcmwip.csv";
+
+        /// <summary>
+        /// Initialisierung
+        ///
+        /// Wir stellen den LogHander ein und
+        /// erzeugen anschließend Log-Ausgaben in LateUpdate.
+        protected override void Awake()
+        {
+            csvLogHandler = new CustomLogHandler(fileName);
+            if (!Logs)
+                Debug.unityLogger.logEnabled = false;
+            base.Awake();
+        }
+        
+        /// <summary>
+        /// Update aufrufen und die Bewegung ausführen,
+        /// falls sie aktiv ist,
         /// </summary>
         /// <remarks>
-        /// Wir verwenden den forward-Vektor des
-        /// Orientierungsobjekts als Bewegungsrichtung.
+        /// Wir überprüfen ob der Schwellwert überschritten wurde
+        /// und bestimmen anschließend die Bewegungsrichtung.
         ///
-        /// Deshalb verwenden wir hier nicht die Funktion
-        /// UpdateOrientation, sondern setzen die Bewegungsrichtung
-        /// direkt.
+        /// Anschließend führen wir die Veränderung der Bewegungsgeschwindigkeit
+        /// in UpdateSpeed aus und führen letztendlich die Bewegung durch.
         /// </remarks>
         protected virtual void Update()
         {
-            UpdateDirection();
-            UpdateSpeed();
             Trigger();
             if (!Moving) return;
+            UpdateDirection();
+            UpdateSpeed();
             Move();
         }
 
@@ -60,26 +88,12 @@ public abstract class InPlaceLocomotion : Locomotion
         /// Die Bewegung durchführen.
         /// </summary>
         /// <remarks>
-        /// Die Bewegung wird durchgeführt, falls die Variable
-        /// Moving in der Basisklasse true ist.
-        ///
-        /// Darüber entscheiden wir in der Funktion Trigger..
+        /// Die Funktion geht davon aus, dass die Überprüfung
+        /// der Variable Moving vor dem Aufruf bereits durchgeführt wurde!
         /// <remarks>
         protected override void Move()
         {
             transform.Translate(m_Speed * Time.deltaTime * m_Direction);
-        }
-        
-        /// <summary>
-        /// Berechnung der Geschwindigkeit der Fortbewegung
-        /// </summary>
-        /// <remarks>
-        /// Wir rechnen die km/h aus dem Interface durch Division
-        /// mit 3.6f in m/s um.
-        /// </remarks>
-        protected override void UpdateSpeed()
-        {
-            m_Speed = m_Velocity.Value/3.6f;
         }
         
         /// <summary>
@@ -94,6 +108,18 @@ public abstract class InPlaceLocomotion : Locomotion
                 0.0f, 2.0f * InitialSpeed);
             m_Speed = m_Velocity.Value/3.6f;
         }
+        
+        /// <summary>
+        /// Berechnung der Geschwindigkeit der Fortbewegung
+        /// </summary>
+        /// <remarks>
+        /// Wir rechnen die km/h aus dem Interface durch Division
+        /// mit 3.6f in m/s um.
+        /// </remarks>
+        protected override void UpdateSpeed()
+        {
+            m_Speed = m_Velocity.Value/3.6f;
+        }
 
         /// <summary>
         /// Die abgeleiteten Klassen entscheiden, wann die Locomotion
@@ -104,9 +130,13 @@ public abstract class InPlaceLocomotion : Locomotion
         /// <summary>
         /// Bewegungsrichtung auf den forward-Vektor des Orientierungsobjekts setzen.
         /// </summary>
-        protected override void UpdateDirection()
+        /// <remarks>
+        /// Wir führen ein Walk durch, deshalb setzen wir die y-Koordinate
+        /// der Richtung auf 0.
+        /// </remarks>
+        protected override void InitializeDirection()
         {
-            m_Direction = orientationObject.transform.forward;
+            m_Direction = OrientationObject.transform.forward;
             m_Direction.y = 0.0f;
             m_Direction.Normalize();
         }
@@ -114,16 +144,19 @@ public abstract class InPlaceLocomotion : Locomotion
         /// <summary>
         /// Bewegungsrichtung auf den forward-Vektor des Orientierungsobjekts setzen.
         /// </summary>
-        /// <remarks>
-        /// Vorerst protected gesetzt. Mittelfristig werden wir
-        /// die Geschwindigkeit aus der Bewegung auf der Stelle
-        /// herauslesen.
-        /// </remarks>
-        protected override void InitializeDirection()
+        protected override void UpdateDirection()
         {
-            m_Direction = orientationObject.transform.forward;
+            m_Direction = OrientationObject.transform.forward;
             m_Direction.y = 0.0f;
             m_Direction.Normalize();
+        }
+        
+        /// <summary>
+        /// Schließen der Protokolldatei
+        /// </summary>
+        private void OnDisable()
+        {
+            csvLogHandler.CloseTheLog();
         }
         
         /// <summary>
@@ -135,4 +168,15 @@ public abstract class InPlaceLocomotion : Locomotion
         {
             throw new System.NotImplementedException();
         }
+        
+                
+        /// <summary>
+        /// Eigener LogHandler
+        /// </summary>
+        protected CustomLogHandler csvLogHandler;
+
+        /// <summary>
+        /// Instanz des Default-Loggers in Unity
+        /// </summary>
+        protected static readonly ILogger s_Logger = Debug.unityLogger;
 }

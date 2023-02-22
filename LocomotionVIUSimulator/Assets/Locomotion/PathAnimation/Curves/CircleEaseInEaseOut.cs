@@ -47,7 +47,7 @@ public class CircleEaseInEaseOut : EaseInEaseOut
             for (var i = 0; i < NumberOfPoints; i++)
             {
                 x = t / (2.0f * Mathf.PI * Radius);
-                waypoints[i].x = Radius * Mathf.Cos(H33(x));
+                waypoints[i].x = Radius * Mathf.Cos(Mathf.SmoothStep(0.0f, 1.0f, x));
                 waypoints[i].y = Height;
                 waypoints[i].z = Radius * Mathf.Sin(H33(x));
                 velocities[i] = H33Prime(x);

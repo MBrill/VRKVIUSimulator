@@ -46,7 +46,7 @@ public class LineEaseInEaseOut : EaseInEaseOut
             var delta = (1.0f) / ((float)NumberOfPoints - 1.0f);
             for (var i = 0; i < NumberOfPoints; i++)
             {
-                waypoints[i] = p1 + H33(t) * m_dirVec;
+                waypoints[i] = p1 + Mathf.SmoothStep(0.0f, 1.0f, t) * m_dirVec;
                 velocities[i] = H33Prime(t);
                 t += delta;
             }

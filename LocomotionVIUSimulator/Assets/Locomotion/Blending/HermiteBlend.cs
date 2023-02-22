@@ -3,7 +3,7 @@
 using UnityEngine;
 
 /// <summary>
-/// bBerblenden mitdem H_3^3 Polynom1.
+///Überblenden mit dem H_3^3 Polynom aus Mathf.SmoothStep.
 /// </summary>
 public class HermiteBlend : ScalarBlend
 {
@@ -56,13 +56,14 @@ public class HermiteBlend : ScalarBlend
         base(theValue, theDelta, theA, thefA, theB, thefB) { }
 
     /// <summary>
-    /// Überblenden von [a, b] auf [fa, fb] mit dem H_3^3 Polynom.
+    /// Überblenden von [a, b] auf [fa, fb] mit dem H_3^3 Polynom
+    /// t * t * (3.0f - 2.0f * t).
     /// </summary>
     /// <param name="t">Wert im Intervall [a, b]</param>
-    /// <returns>t selbst.</returns>
+    /// <returns>Funktionswert H_3^3(t).</returns>
     /// To Do: Auswertung mit Horner-Schema.
     protected override float m_BlendFunction(float t)
     {
-        return t * t * (3.0f - 2.0f * t);
+        return Mathf.SmoothStep(0.0f, 1.0f, t);
     }
 }

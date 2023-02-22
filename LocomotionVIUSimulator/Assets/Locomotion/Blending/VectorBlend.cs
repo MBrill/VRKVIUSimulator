@@ -9,15 +9,15 @@ using UnityEngine;
  ///
  /// Man könnte ein Subject daraus machen, darauf wurde erstmal verzichtet.
  /// </summary>
-public class VectorProvider 
+public class VectorBlend 
 {
      /// <summary>
         /// Set und Get für den skalaren Wert
         /// </summary>
         public Vector3 value
         {
-            get => _value;
-            set => _value = this.value;
+            get => m_value;
+            set => m_value = this.value;
         }
         
         /// <summary>
@@ -26,8 +26,8 @@ public class VectorProvider
         /// </summary>
         public Vector3 delta
         {
-            get => _delta;
-            set => _delta = this.delta;
+            get => m_delta;
+            set => m_delta = this.delta;
         }
 
         /// <summary>
@@ -35,8 +35,8 @@ public class VectorProvider
         /// </summary>
         public Vector3 minimum
         {
-            get => _min;
-            set => _min = this.minimum;
+            get => m_min;
+            set => m_min = this.minimum;
         }
         
         /// <summary>
@@ -44,8 +44,8 @@ public class VectorProvider
         /// </summary>
         public Vector3 maximum
         {
-            get => _max;
-            set => _max = this.maximum;
+            get => m_max;
+            set => m_max = this.maximum;
         }
         
         /// <summary>
@@ -53,10 +53,10 @@ public class VectorProvider
         /// </summary>
         public void Increase()
         {
-            Vector3 sum = _value + delta;
-            _value.x = Mathf.Clamp(sum.x, _min.x, _max.x);
-            _value.y = Mathf.Clamp(sum.y, _min.y, _max.y);
-            _value.z = Mathf.Clamp(sum.z, _min.z, _max.z);
+            Vector3 sum = m_value + delta;
+            m_value.x = Mathf.Clamp(sum.x, m_min.x, m_max.x);
+            m_value.y = Mathf.Clamp(sum.y, m_min.y, m_max.y);
+            m_value.z = Mathf.Clamp(sum.z, m_min.z, m_max.z);
         }
         
         /// <summary>
@@ -64,10 +64,10 @@ public class VectorProvider
         /// </summary>
         public void Decrease()
         {
-            Vector3 diff = _value - delta;
-            _value.x = Mathf.Clamp(diff.x, _min.x, _max.x);
-            _value.y = Mathf.Clamp(diff.y, _min.y, _max.y);
-            _value.z = Mathf.Clamp(diff.z, _min.z, _max.z);
+            Vector3 diff = m_value - delta;
+            m_value.x = Mathf.Clamp(diff.x, m_min.x, m_max.x);
+            m_value.y = Mathf.Clamp(diff.y, m_min.y, m_max.y);
+            m_value.z = Mathf.Clamp(diff.z, m_min.z, m_max.z);
         }
 
         /// <summary>
@@ -75,43 +75,43 @@ public class VectorProvider
        /// <remarks>
        /// A und B wird auf -infty und infty gesetzt.
        /// </remarks>
-       /// <param name="theValue">Anfangswerte</param>
-       /// <param name="theDelta">Werte für die Veränderung </param>
+       /// <param name="theMValue">Anfangswerte</param>
+       /// <param name="theMDelta">Werte für die Veränderung </param>
        /// </summary>
-       public VectorProvider(Vector3 theValue, Vector3 theDelta)
+       public VectorBlend(Vector3 theMValue, Vector3 theMDelta)
        {
-           _value = theValue;
-           _delta = theDelta;
-           _min = Vector3.negativeInfinity;;
-           _max = Vector3.positiveInfinity;
+           m_value = theMValue;
+           m_delta = theMDelta;
+           m_min = Vector3.negativeInfinity;;
+           m_max = Vector3.positiveInfinity;
        }
   
         /// <summary>
         /// Wert,  Delta, A und B setzen.
-        /// <param name="theValue">Anfangsweret</param>
-        /// <param name="theDelta">Weret für die Veränderung </param>
-        /// <param name="theMin">Minimalr Werte</param>
-        /// <param name="theDelta">Maximale Werte </param>
+        /// <param name="theMValue">Anfangsweret</param>
+        /// <param name="theMDelta">Weret für die Veränderung </param>
+        /// <param name="theMMin">Minimalr Werte</param>
+        /// <param name="theMDelta">Maximale Werte </param>
         /// </summary>
-        public VectorProvider(Vector3 theValue, Vector3 theDelta,
-                                      Vector3 theMin, Vector3 theMax)
+        public VectorBlend(Vector3 theMValue, Vector3 theMDelta,
+                                      Vector3 theMMin, Vector3 theMMax)
         {
-            _value = theValue;
-            _delta = theDelta;
-            _min = theMin;
-            _max = theMax;
+            m_value = theMValue;
+            m_delta = theMDelta;
+            m_min = theMMin;
+            m_max = theMMax;
         }
 
         /// <summary>
        /// Der Vektort, den diese Klasse liefert.
        /// </summary>
-       private Vector3 _value;
+       private Vector3 m_value;
        
        /// <summary>
        /// DerVektorr, den wir für die Veränderung
        /// des skalaren Werts einsetzen.
        /// </summary>
-       private Vector3 _delta;
+       private Vector3 m_delta;
 
        /// <summary>
        /// Minimale Werte, die angenommen werden können.
@@ -119,7 +119,7 @@ public class VectorProvider
        /// Damit ist garantiert, dass der Wert immer im zulässigen
        /// Intervall liegt.
        /// </summary>
-       private Vector3 _min;
+       private Vector3 m_min;
   
        /// <summary>
        /// Maximalr Werte, die angenommen werden können.
@@ -127,5 +127,5 @@ public class VectorProvider
        /// Damit ist garantiert, dass der Wert immer im zulässigen
        /// Intervall liegt.
        /// </summary>
-       private Vector3 _max;
+       private Vector3 m_max;
 }

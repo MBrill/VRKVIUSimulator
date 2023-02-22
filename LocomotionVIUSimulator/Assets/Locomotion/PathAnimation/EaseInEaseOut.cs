@@ -8,7 +8,7 @@ using UnityEngine;
 public abstract class EaseInEaseOut : PathAnimation
 {
         /// <summary>
-        /// Hermite-Polynom H33.
+        /// Hermite-Polynom H33 
         /// </summary>
         /// <param name="x">x-Wert im Intervall [0, 1]</param>
         /// <returns>Wert des Hermite-Polynoms</returns>

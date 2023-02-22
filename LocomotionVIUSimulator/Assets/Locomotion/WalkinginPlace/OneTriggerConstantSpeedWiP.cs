@@ -19,41 +19,7 @@ public class OneTriggerConstantSpeedWiP : InPlaceLocomotion
         /// </summary>
         [Tooltip("Welches Objekt wird für die Fortbewegung bewegt?")]
         public GameObject TriggerObject;
-        
-        [Header("Protokollierung des Triggers")]
-        /// <summary>
-        /// Aktivieren und De-Aktivieren Protokollieren
-        /// </summary>      
-        [Tooltip("Protollieren?")]
-        public bool Logs = false;
-        
-        /// <summary>
-        /// Dateiname für die Logs
-        /// </summary>      
-        [Tooltip("Name der Protokoll-Datei")]
-        public string fileName = "asllcmwip.csv";
-        
-        /// <summary>
-        /// Initialisierung
-        ///
-        /// Wir stellen den LogHander ein und
-        /// erzeugen anschließend Log-Ausgaben in LateUpdate.
-        protected override void Awake()
-        {
-            csvLogHandler = new CustomLogHandler(fileName);
-            if (!Logs)
-                Debug.unityLogger.logEnabled = false;
-            base.Awake();
-        }
-     
-        /// <summary>
-        /// Schließen der Protokolldatei
-        /// </summary>
-        private void OnDisable()
-        {
-            csvLogHandler.CloseTheLog();
-        }
-        
+
         /// <summary>
         /// Walk wird so lange durchgeführt wie das Trigger-Objekt  bewegt wird.
         /// Das entscheiden wir auf Grund der Geschwindigkeit dieser
@@ -62,9 +28,9 @@ public class OneTriggerConstantSpeedWiP : InPlaceLocomotion
         /// </summary>
         protected override void Trigger()
         {
-            
-            float position = 0.0f,
-                signalVelocity = 0.0f;
+
+            var position = 0.0f;
+            var signalVelocity = 0.0f;
 
             // Numerisches Differenzieren
             position = TriggerObject.transform.position.y;
@@ -87,15 +53,4 @@ public class OneTriggerConstantSpeedWiP : InPlaceLocomotion
         /// Speicher für den letzten Wert
         /// </summary>
         private float m_LastValue = 1.6f;
-    
-        
-        /// <summary>
-        /// Eigener LogHandler
-        /// </summary>
-        private CustomLogHandler csvLogHandler;
-
-        /// <summary>
-        /// Instanz des Default-Loggers in Unity
-        /// </summary>
-        private static readonly ILogger s_Logger = Debug.unityLogger;
 }
