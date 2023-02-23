@@ -10,7 +10,6 @@ using UnityEngine;
 /// wie im  Buch beschrieben aus der letzten und der aktuellen
 /// Position.
 /// </remarks>
-
 public class SimpleBoots : ScaledWalking
 {
    /// <summary>

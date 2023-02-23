@@ -1347,49 +1347,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
---- !u!1 &1079610539 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 175660, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
-  m_PrefabInstance: {fileID: 1079610538}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1079610540 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 116882, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
-  m_PrefabInstance: {fileID: 1079610538}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1079610541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1079610539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6439eaf24883eab4ca564c179dbe487b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OrientationObject: {fileID: 1079610540}
-  Threshold: 2
-  ScalingThreshold: 5
-  MaximumScale: 7
-  Logs: 1
-  fileName: simpleboots.csv
---- !u!114 &1079610542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1079610539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c493d208d047a14ebac64d502709e62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayAreaPosition: {fileID: 1079610540}
-  Logs: 1
-  FileName: simpleboots.csv
 --- !u!4 &1088714084 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1914165571354974448, guid: 40759de4571288849a1f32612609bd42, type: 3}
@@ -1803,6 +1760,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61437c07d2855a94288e09a543a2d628, type: 3}
+--- !u!4 &1309297415 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 404836, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
+  m_PrefabInstance: {fileID: 1079610538}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1431869360
 GameObject:
   m_ObjectHideFlags: 0
@@ -2158,6 +2120,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 292997e75b899ba41a34f9ca98e12544, type: 3}
+--- !u!1 &1671451579 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 175660, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
+  m_PrefabInstance: {fileID: 1079610538}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1671451580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671451579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 147abfb84d59cd049aa07642b4048683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LeaningObject: {fileID: 1309297415}
+  Threshold: 0.05
+  Logs: 0
+  fileName: leaning.csv
 --- !u!1 &1686729428
 GameObject:
   m_ObjectHideFlags: 0

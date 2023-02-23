@@ -1345,6 +1345,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2071970, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
+      propertyPath: m_ClearFlags
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8189340, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 12406598, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb3370c18187bb444b240cfb08dcc02f, type: 3}
 --- !u!1 &1079610539 stripped
@@ -1380,9 +1392,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2facf227fcfd8054d901d738c055408f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PortalPosition: 1.5
-  DestinationPosition: 1.5
-  PrefabForVisualization: {fileID: 7906999851345293847, guid: 519ac73c8109a5f4c8ae4078f808eb65, type: 3}
+  PortalPosition: 3
+  DestinationPosition: 6
+  PrefabForVisualization: {fileID: 2792528672954634875, guid: 2d73f575e3cd3fd4f8ca971550b0f5f4, type: 3}
   Pivot: {fileID: 1894086670}
 --- !u!114 &1079610543
 MonoBehaviour:
@@ -1397,7 +1409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayAreaPosition: {fileID: 1894086670}
-  Logs: 1
+  Logs: 0
   FileName: SimplePortal.csv
 --- !u!4 &1088714084 stripped
 Transform:

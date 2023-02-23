@@ -30,9 +30,31 @@ public class SimpleForwardPortal : MonoBehaviour
     [Range(1.0f, 24.0f)]
     public float DestinationPosition = 6.0f;
 
+    /// <summary>
+    /// Prefab für die Visualisierung des Start- und Endpunkt des Portals
+    /// </summary>
+     [Tooltip("Prefab für die Visualisierung des Portals")]
     public GameObject PrefabForVisualization;
+
+    /// <summary>
+    /// y-Koordinate für die Sichthöhe.
+    /// </summary>
+    [Tooltip("Sichthöhe für die Platzierung des Prefabs")]
+    [Range(1.0f, 2.0f)]
+    public float PlayerHeight = 1.75f;
     
+    /// <summary>
+    /// Objekt, dessen Position die Transition auslöst.
+    /// </summary>
+    /// <remarks>
+    /// Camera im Rig ist die Default-Wahl.
+    /// </remarks>
+    [Tooltip("GameObject wie Camera im Rig")]
     public GameObject Pivot;
+    
+    /// <summary>
+    ///  Auslösen des Übergangs
+    /// </summary>
     private void Trigger()
     {
         var pos = Pivot.transform.position;
@@ -44,7 +66,6 @@ public class SimpleForwardPortal : MonoBehaviour
             m_Line.p1 = pos;
             m_Line.p2 = m_Line.p1 + deltaPos;
         }
-
     }
 
     /// <summary>
@@ -53,12 +74,16 @@ public class SimpleForwardPortal : MonoBehaviour
     /// </summary>
     void Awake()
     {
+        var angles = new Vector3(90.0f, 0.0f, 0.0f);
+        var orientation = new Quaternion();
+        
+        orientation.eulerAngles = angles;
         Instantiate(PrefabForVisualization,
-            new Vector3(0.0f, 2.0f, PortalPosition),
-            Quaternion.identity);
+            new Vector3(0.0f, PlayerHeight, PortalPosition),
+            orientation);
         Instantiate(PrefabForVisualization,
-            new Vector3(0.0f, 2.0f, PortalPosition+DestinationPosition),
-            Quaternion.identity);
+            new Vector3(0.0f, PlayerHeight, PortalPosition+DestinationPosition),
+            orientation);
     }
     
     /// <summary>
