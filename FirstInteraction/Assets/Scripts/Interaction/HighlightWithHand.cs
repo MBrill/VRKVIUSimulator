@@ -90,19 +90,19 @@ public class HighlightWithHand : MonoBehaviour
         ViveInput.RemoveListenerEx(MainHand,
                                    TheButton,
                                    ButtonEventType.Down,
-                                   changeColor);
+                                   m_ChangeColor);
 
         ViveInput.RemoveListenerEx(MainHand,
                                    TheButton,
                                    ButtonEventType.Up,
-                                   changeColor);
+                                   m_ChangeColor);
         
     }
     
     /// <summary>
     /// Farbwechsel, wird in den Listernern registriert
     /// </summary>
-    private void changeColor()
+    private void m_ChangeColor()
     { 
         if (!m_status)
             myMaterial.color = highlightColor;
