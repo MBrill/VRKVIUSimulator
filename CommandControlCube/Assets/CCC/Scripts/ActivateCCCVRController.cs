@@ -1,11 +1,13 @@
+//========= 2023 - Copyright Manfred Brill. All rights reserved. ===========
 using HTC.UnityPlugin.Vive;
 using UnityEngine;
 
 /// <summary>
-/// Aufzählungstyp für linke bzw. rechte Hand.
+/// Aktivierung der CCC-Komponente mit Eingaben in
+/// Vive Input Utility.
 /// </summary>
 /// <remarks>
-/// Je nach ausgewählter Hand aktivieren wir den Controller über doe Jamdrpöe.
+/// Je nach ausgewählter Hand aktivieren wir den Controller über die HandRolte.
 /// den Collider der anderen Hand deaktivieren wir.
 /// </remarks>
 public enum Hand : ushort

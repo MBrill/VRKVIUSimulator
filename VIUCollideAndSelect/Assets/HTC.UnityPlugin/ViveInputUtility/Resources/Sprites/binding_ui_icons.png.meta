@@ -282,18 +282,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -793,27 +781,27 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      binding_ui_project_HMD: 21300084
-      binding_ui_project_OculusTouchRight: 21300094
-      binding_ui_project_ViveController: 21300102
-      binding_ui_icons_arrow: 21300110
-      binding_ui_icons_plus: 21300100
-      binding_ui_icons_ViveTracker: 21300070
-      binding_ui_project_KnucklesRight: 21300086
-      binding_ui_icons_edit: 21300108
-      binding_ui_icons_ViveBaseStation: 21300072
-      binding_ui_icons_Unknown: 21300088
-      binding_ui_icons_cross: 21300098
-      binding_ui_icons_ViveController: 21300068
-      binding_ui_icons_OculusSensor: 21300082
-      binding_ui_icons_chain: 21300106
-      binding_ui_icons_warn: 21300096
-      binding_ui_icons_ViveHMD: 21300064
-      binding_ui_icons_OculusTouchRight: 21300080
-      binding_ui_icons_check: 21300090
-      binding_ui_icons_minus: 21300092
       binding_ui_icons_KnucklesRight: 21300076
       binding_ui_icons_OculusHMD: 21300066
+      binding_ui_icons_OculusSensor: 21300082
+      binding_ui_icons_OculusTouchRight: 21300080
+      binding_ui_icons_Unknown: 21300088
+      binding_ui_icons_ViveBaseStation: 21300072
+      binding_ui_icons_ViveController: 21300068
+      binding_ui_icons_ViveHMD: 21300064
+      binding_ui_icons_ViveTracker: 21300070
+      binding_ui_icons_arrow: 21300110
+      binding_ui_icons_chain: 21300106
+      binding_ui_icons_check: 21300090
+      binding_ui_icons_cross: 21300098
+      binding_ui_icons_edit: 21300108
+      binding_ui_icons_minus: 21300092
+      binding_ui_icons_plus: 21300100
+      binding_ui_icons_warn: 21300096
+      binding_ui_project_HMD: 21300084
+      binding_ui_project_KnucklesRight: 21300086
+      binding_ui_project_OculusTouchRight: 21300094
+      binding_ui_project_ViveController: 21300102
       binding_ui_project_ViveTracker: 21300104
   spritePackingTag: 
   pSDRemoveMatte: 0

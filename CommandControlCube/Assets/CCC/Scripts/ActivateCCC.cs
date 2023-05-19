@@ -1,5 +1,14 @@
+//========= 2023 - Copyright Manfred Brill. All rights reserved. ===========
 using UnityEngine;
 
+/// <summary>
+/// Basisklasse für Actions für die interaktive
+/// Aktivierung der Komponente CCC.
+/// </summary>
+/// <remarks>
+/// Die von dieser Klaasse abgeleiteten Versionen verwenden entweder
+/// das Input System und Unity XR oder Vive Input Utility.
+/// </remarks>
 public class ActivateCCC : MonoBehaviour
 {
     /// <summary>

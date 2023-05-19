@@ -29,6 +29,7 @@ public class Highlighter : MonoBehaviour
     /// Variable, die das Original-Material des Objekts enthält
     /// </summary>
     private Material myMaterial;
+    
     /// <summary>
     /// Wir fragen die Materialien ab und speichern die Farben als Instanzen
     /// der Klasse Color ab.

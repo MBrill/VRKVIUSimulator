@@ -1,8 +1,10 @@
+//========= 2023 - Copyright Manfred Brill. All rights reserved. ===========
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 /// <summary>
 /// Controller für das ein- und ausblenden der CCC mit dem keyboard.
+/// Diese Klasse realisiert die Interaktionen auf der Basis des Input Systems.
 /// </summary>
 public class ActivateCCCKeyboardController : ActivateCCC
 {
