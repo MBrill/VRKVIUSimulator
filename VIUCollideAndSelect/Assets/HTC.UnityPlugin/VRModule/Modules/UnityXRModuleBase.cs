@@ -84,8 +84,19 @@ namespace HTC.UnityPlugin.VRModuleManagement
         private uint moduleLeftIndex = INVALID_DEVICE_INDEX;
         private VRModule.SubmoduleBase.Collection submodules = new VRModule.SubmoduleBase.Collection(
             new ViveHandTrackingSubmodule(),
-            new WaveHandTrackingSubmodule()
+            new WaveHandTrackingSubmodule(),
+            new WaveTrackerSubmodule()
             );
+
+        private bool[] prevDeviceConnected = new bool[VRModule.MAX_DEVICE_COUNT];
+        private bool[] currDeviceConnected = new bool[VRModule.MAX_DEVICE_COUNT];
+        private void FlushDeviceConnectedState()
+        {
+            var temp = prevDeviceConnected;
+            prevDeviceConnected = currDeviceConnected;
+            currDeviceConnected = temp;
+            Array.Clear(currDeviceConnected, 0, (int)VRModule.MAX_DEVICE_COUNT);
+        }
 
         protected VRModuleKnownXRLoader KnownActiveLoader { get { return knownActiveLoader; } }
         protected VRModuleKnownXRInputSubsystem KnownActiveInputSubsystem { get { return knownActiveInputSubsystem; } }
@@ -152,22 +163,26 @@ namespace HTC.UnityPlugin.VRModuleManagement
             {
                 if (!indexMap.TryGetIndex(device, out deviceIndex))
                 {
+                    string deviceName;
+
                     if (indexMap.TryMapAsHMD(device))
                     {
                         deviceIndex = VRModule.HMD_DEVICE_INDEX;
                         EnsureValidDeviceState(deviceIndex, out prevState, out currState);
+                        deviceName = device.name;
                     }
                     else
                     {
                         // this function will skip VRModule.HMD_DEVICE_INDEX (preserved index for HMD)
                         deviceIndex = FindAndEnsureUnusedNotHMDDeviceState(out prevState, out currState);
                         indexMap.MapNonHMD(device, deviceIndex);
+                        deviceName = device.name;
                     }
 
                     currState.deviceClass = GetDeviceClass(device.name, device.characteristics);
-                    currState.serialNumber = device.name + " " + device.serialNumber + " " + (int)device.characteristics;
-                    currState.modelNumber = device.name + " (" + device.characteristics + ")";
-                    currState.renderModelName = device.name + " (" + device.characteristics + ")";
+                    currState.serialNumber = deviceName + " " + device.serialNumber + " " + (int)device.characteristics;
+                    currState.modelNumber = deviceName + " (" + device.characteristics + ")";
+                    currState.renderModelName = deviceName + " (" + device.characteristics + ")";
 
                     SetupKnownDeviceModel(currState);
 
@@ -214,33 +229,47 @@ namespace HTC.UnityPlugin.VRModuleManagement
                     currState.angularVelocity = GetDeviceFeatureValueOrDefault(device, CommonUsages.deviceAngularVelocity);
                 }
 
+                currDeviceConnected[deviceIndex] = true;
+
                 // TODO: update hand skeleton pose
             }
 
             // unmap index for disconnected device state
-            deviceIndex = 0u;
-            for (var len = GetDeviceStateLength(); deviceIndex < len; ++deviceIndex)
+            for (uint i = 0u, imax = VRModule.MAX_DEVICE_COUNT; i < imax; ++i)
             {
-                if (indexMap.IsMapped(deviceIndex))
+                if (prevDeviceConnected[i] && !currDeviceConnected[i])
                 {
-                    EnsureValidDeviceState(deviceIndex, out prevState, out currState);
-                    if (prevState.isConnected && !currState.isConnected)
+                    if (indexMap.IsMapped(deviceIndex))
                     {
                         indexMap.UnmapByIndex(deviceIndex);
+                    }
+                    else
+                    {
+                        Debug.LogWarning("[UnityXRModule] Disconnected device[" + deviceIndex + "] already unmapped");
+                    }
+
+                    if (TryGetValidDeviceState(deviceIndex, out prevState, out currState) && currState.isConnected)
+                    {
                         currState.Reset();
                         if (uxrRightIndex == deviceIndex) { uxrRightIndex = INVALID_DEVICE_INDEX; }
                         if (uxrLeftIndex == deviceIndex) { uxrLeftIndex = INVALID_DEVICE_INDEX; }
                     }
+                    else
+                    {
+                        Debug.LogWarning("[UnityXRModule] Disconnected device[" + deviceIndex + "] already been reset");
+                    }
                 }
             }
+
+            FlushDeviceConnectedState();
 
             submodules.UpdateModulesDeviceConnectionAndPoses();
 
             // process hand role
             var subRightIndex = submodules.GetFirstRightHandedIndex();
-            var currentRight = (subRightIndex == INVALID_DEVICE_INDEX || (TryGetValidDeviceState(uxrRightIndex, out prevState, out currState) && currState.isPoseValid)) ? uxrRightIndex : subRightIndex;
+            var currentRight = (subRightIndex == INVALID_DEVICE_INDEX || (TryGetValidDeviceState(uxrRightIndex, out prevState, out currState) && currState.isPoseValid && currState.deviceClass == VRModuleDeviceClass.Controller)) ? uxrRightIndex : subRightIndex;
             var subLeftIndex = submodules.GetFirstLeftHandedIndex();
-            var currentLeft = (subLeftIndex == INVALID_DEVICE_INDEX || (TryGetValidDeviceState(uxrLeftIndex, out prevState, out currState) && currState.isPoseValid)) ? uxrLeftIndex : subLeftIndex;
+            var currentLeft = (subLeftIndex == INVALID_DEVICE_INDEX || (TryGetValidDeviceState(uxrLeftIndex, out prevState, out currState) && currState.isPoseValid && currState.deviceClass == VRModuleDeviceClass.Controller)) ? uxrLeftIndex : subLeftIndex;
             var roleChanged = ChangeProp.Set(ref moduleRightIndex, currentRight);
             roleChanged |= ChangeProp.Set(ref moduleLeftIndex, currentLeft);
 
@@ -262,7 +291,8 @@ namespace HTC.UnityPlugin.VRModuleManagement
                 InputDevice device;
                 if (indexMap.TryGetDevice(deviceIndex, out device))
                 {
-                    if ((device.characteristics & InputDeviceCharacteristics.Controller) > 0)
+                    if ((device.characteristics & InputDeviceCharacteristics.Controller) > 0
+                        || (device.characteristics & InputDeviceCharacteristics.TrackedDevice) > 0)
                     {
                         IVRModuleDeviceState prevState;
                         IVRModuleDeviceStateRW currState;

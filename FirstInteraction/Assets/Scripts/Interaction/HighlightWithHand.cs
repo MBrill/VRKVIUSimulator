@@ -73,12 +73,12 @@ public class HighlightWithHand : MonoBehaviour
         ViveInput.AddListenerEx(MainHand,
                                 TheButton,
                                 ButtonEventType.Down,
-                                changeColor);
+                                m_ChangeColor);
 
         ViveInput.AddListenerEx(MainHand,
                                 TheButton,
                                 ButtonEventType.Up,
-                                changeColor);
+                                m_ChangeColor);
     }
 
     /// <summary>

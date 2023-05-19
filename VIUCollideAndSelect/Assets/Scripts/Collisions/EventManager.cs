@@ -7,7 +7,7 @@ using UnityEngine;
 /// hinzugefügt ist.
 /// </summary>
 /// <remarks>
-/// Das Prefab ViveColliders ist in der Szene enthalten.
+/// Voraussetzung: das Prefab ViveColliders ist in der Szene enthalten.
 ///
 /// Folgende Events werden behandelt:
 /// - HoverEnter

@@ -75,11 +75,14 @@ MonoBehaviour:
   m_externalCameraSwitchKeyModifier: 303
   m_activateOculusVRModule: 1
   m_oculusVRAndroidManifestPath: 
+  m_enableOculusSDKHandRenderModel: 1
+  m_enableOculusSDKControllerRenderModel: 1
+  m_enableOculusSDKControllerRenderModelSkeleton: 0
   m_activateSteamVRModule: 1
   m_steamVRLeftSkeletonMode: -1
   m_steamVRRightSkeletonMode: -1
   m_activateSimulatorModule: 1
-  m_simulatorAutoTrackMainCamera: 1
+  m_simulatorAutoTrackMainCamera: 0
   m_simulateTrackpadTouch: 1
   m_enableSimulatorKeyboardMouseControl: 1
   m_simulatorKeyMoveSpeed: 1.5

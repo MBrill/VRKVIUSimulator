@@ -46,13 +46,11 @@ public class GravitySwitch : MonoBehaviour
 
     public void OnColliderEventHoverEnter(ColliderHoverEventData eventData)
     {
-        Debug.Log("In OnColliderEventHoverEnter");
         SetGravityEnabled(!m_gravityEnabled);
     }
 
     private IEnumerator DisableGravity()
     {
-        Debug.Log("DisableGravity");
         Physics.gravity = impalse;
         yield return new WaitForSeconds(0.3f);
         Physics.gravity = Vector3.zero;

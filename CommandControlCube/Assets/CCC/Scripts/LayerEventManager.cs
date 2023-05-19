@@ -1,10 +1,11 @@
-using System;
+//========= 2023 - Copyright Manfred Brill. All rights reserved. ===========
 using HTC.UnityPlugin.ColliderEvent;
 using UnityEngine;
 using UnityEngine.Events;
 
 /// <summary>
-/// Hover-Events aus VIU für das Ein- und Ausblenden der Schichten im CCC.
+/// Hover-Events aus VIU für das Ein- und Ausblenden der Schichten in
+/// einer CCC-Komponente.
 /// </summary>
 public class LayerEventManager : MonoBehaviour,
     IColliderEventHoverEnterHandler,

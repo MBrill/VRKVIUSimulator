@@ -1,10 +1,11 @@
+//========= 2023 - Copyright Manfred Brill. All rights reserved. ===========
 using HTC.UnityPlugin.ColliderEvent;
 using UnityEngine;
 using UnityEngine.Events;
 
 /// <summary>
 /// Handling der Events HoverEnter, HoverExit,
-/// PressEnter und PressExit für einen einzelnen Cube in CCCalt.
+/// PressEnter und PressExit für einen einzelnen Cube in CCC.
 /// </summary>
 /// <remarks>
 /// Voraussetzung: Das Prefab ViveColliders ist in der Szene enthalten.
